@@ -1,0 +1,35 @@
+# Édouard Roche
+
+> **Query Topic**: Roche limit (Rank #2 Search Result)  
+> **Source Queue**: train (Row ID: 157, Frequency: 14)  
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Édouard_Roche
+
+---
+
+Édouard Albert Roche (French: [edwaʁ albɛʁ ʁɔʃ]; 17 October 1820 – 27 April 1883) was a French astronomer and mathematician, who is best known for his work in the field of celestial mechanics. His name was given to the concepts of the Roche sphere, Roche limit, and Roche lobe. He also was the author of works in meteorology.
+
+
+== Biography ==
+He was born in Montpellier, and studied at the University of Montpellier, receiving his D.Sc. in 1844 and later becoming a professor at the same institution, where he served in the Faculté des Sciences starting in 1849. Roche made a mathematical study of Laplace's nebular hypothesis and presented his results in a series of papers to the Academy of Montpellier from his appointment until 1877. The most important were on comets (1860) and the nebular hypothesis itself (1873). Roche's studies examined the effects of strong gravitational fields upon swarms of tiny particles.
+He is perhaps most famous for his theory that the planetary rings of Saturn were formed when a large icy moon came too close to Saturn and was pulled apart by gravitational forces. He described a method of calculating the distance at which an object held together only by gravity would break up due to tidal forces; this distance became known as the Roche limit.
+His other best known works also involved orbital mechanics. The Roche sphere describes the limits at which an object which is in orbit around two other objects will be captured by one or the other, and the Roche lobe approximates the gravitational sphere of influence of one astronomical body in the face of perturbations from another heavier body around which it orbits.
+Roche's works were not appreciated during his lifetime. In 1883 he was proposed for full membership to the French Academy of Sciences. However, he only received a single vote out of 56. He died of pneumonia two days later, unaware that his membership had been declined.
+
+
+== Works ==
+Roche's works are in French, his vernacular language.
+
+
+=== Lists of works ===
+List of works, on the site of the Académie des sciences (31 items) (Includes—unnumbered—works commenting that of Roche. Also includes works in meteorology)
+Liste des œuvres de M. Édouard Roche, p. 33, at Google Books, in Mémoires de la Société des sciences, de l'agriculture et des arts de Lille, 1885 (34 items)
+
+
+== See also ==
+Roche lobe
+Roche limit
+Roche sphere
+
+
+== References ==
+Z. Kopal, The Roche problem, Kluwer Academic Publishers, Dordrecht, 1989 ISBN 0-7923-0129-3.

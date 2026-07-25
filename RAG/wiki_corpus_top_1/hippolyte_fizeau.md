@@ -1,0 +1,36 @@
+# Hippolyte Fizeau
+
+> **Query Topic**: Hippolyte Fizeau  
+> **Source Queue**: train (Row ID: 67, Frequency: 10)  
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Hippolyte_Fizeau
+
+---
+
+Armand Hippolyte Louis Fizeau (French: [ipɔlit fizo]; 23 September 1819 – 18 September 1896) was a French physicist who, in 1849, measured the speed of light to within 5% accuracy. In 1851, he measured the speed of light in moving water in an experiment known as the Fizeau experiment.
+
+
+== Biography ==
+Fizeau was born in Paris to Louis and Beatrice Fizeau. He married into the de Jussieu botanical family. His earliest work was concerned with improvements in photographic processes. Following suggestions by François Arago, Léon Foucault and Fizeau collaborated in a series of investigations on the interference of light and heat. In 1848, he predicted the redshifting of electromagnetic waves.
+In 1849, Fizeau calculated a value for the speed of light to a better precision than the previous value determined by Ole Rømer in 1676. He used a beam of light reflected from a mirror 8633 meters away. The beam passed through the gaps between the teeth of a rapidly rotating wheel with 720 teeth. The speed of the wheel was increased until, at 12.6 rotations per second, the returning light hit the next tooth and could not be seen. At 25.2 rotations per second, the light was again visible. This gives a result of 
+2 x 8633m x 25.2 x 720/s = 313,274,304 m/s, which is within 5% of the correct value (299,792,458 meters per second). (See Fizeau's measurement of the speed of light in air.) Fizeau made the first suggestion in 1864 that the "speed of a light wave be used as a length standard".
+In 1850 he measured the relative speeds of light in air and water using a rotating mirror; however, Foucault independently achieved the same result seven weeks earlier.
+Fizeau was involved in the discovery of the Doppler effect, which is known in French as the Doppler–Fizeau effect.
+In 1853, Fizeau described the use of a capacitor (sometimes termed a "condenser") as a means to increase the efficiency of the induction coil. Later, he studied the thermal expansion of solids and applied the phenomenon of interference of light to the measurement of the dilatations of crystals. He became a member of the Académie des Sciences in 1860 and a member of the Bureau des Longitudes in 1878. He died in France at Venteuil on 18 September 1896.
+"Fizeau" is one of the 72 names inscribed on the frieze below the first platform of the Eiffel Tower, all of whom were French scientists, mathematicians, engineers, or industrialists from the hundred years before the tower's public opening for the 1889 World's Fair. Of the 72, Fizeau is the only one who was still alive when the tower was opened.
+The crater Fizeau on the far side of the Moon is named after him.
+
+
+== See also ==
+Daguerreotype
+Michelson stellar interferometer
+Optical chopper
+Léon Foucault
+
+
+== References ==
+
+
+== External links ==
+ Media related to Hippolyte Fizeau at Wikimedia Commons
+O'Connor, John J.; Robertson, Edmund F., "Armand-Hippolyte-Louis Fizeau", MacTutor History of Mathematics Archive, University of St Andrews
+Open Library

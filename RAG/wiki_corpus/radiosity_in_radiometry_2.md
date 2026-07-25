@@ -1,0 +1,486 @@
+# Radiometry
+
+> **Query Topic**: radiosity in radiometry (Rank #2 Search Result)  
+> **Source Queue**: train (Row ID: 170, Frequency: 9)  
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Radiometry
+
+---
+
+Radiometry is a set of techniques for measuring electromagnetic radiation, including visible light. Radiometric techniques in optics characterize the distribution of the radiation's power in space, as opposed to photometric techniques, which characterize the light's interaction with the human eye. 
+The fundamental difference between radiometry and photometry is that radiometry can cover the entire optical radiation spectrum, while photometry is limited to the visible spectrum. However, some definitions of radiometry include other portions of the electromagnetic radiation spectrum, and some glossaries define photometry such that associated quantities are weighted by wavelength according to the spectral sensitivity of the human visual system. Photometry can therefore be considered a kind of radiometry. Radiometry is distinct from quantum techniques such as photon counting.
+The use of radiometers to determine the temperature of objects and gasses by measuring radiation flux is called pyrometry.  Handheld pyrometer devices are often marketed as infrared thermometers.
+Radiometry is important in astronomy, especially radio astronomy, and plays a significant role in Earth remote sensing. The measurement techniques categorized as radiometry in optics are called photometry in some astronomical applications, contrary to the optics usage of the term.
+Spectroradiometry is the measurement of absolute radiometric quantities in narrow bands of wavelength.
+
+
+== Radiometric quantities ==
+
+
+== Integral and spectral radiometric quantities ==
+Integral quantities (like radiant flux) describe the total effect of radiation of all wavelengths or frequencies, while spectral quantities (like spectral power) describe the effect of radiation of a single wavelength λ or frequency ν. To each integral quantity there are corresponding spectral quantities, defined as the quotient of the integrated quantity by the range of frequency or wavelength considered. For example, the radiant flux Φe corresponds to the spectral power Φe,λ and Φe,ν.
+Getting an integral quantity's spectral counterpart requires a limit transition. This comes from the idea that the precisely requested wavelength photon existence probability is zero. Let us show the relation between them using the radiant flux as an example:
+Integral flux, whose unit is W:
+
+  
+    
+      
+        
+          Φ
+          
+            
+              e
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \Phi _{\mathrm {e} }.}
+  
+
+Spectral flux by wavelength, whose unit is W/m:
+
+  
+    
+      
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            λ
+          
+        
+        =
+        
+          
+            
+              d
+              
+                Φ
+                
+                  
+                    e
+                  
+                
+              
+            
+            
+              d
+              λ
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \Phi _{\mathrm {e} ,\lambda }={d\Phi _{\mathrm {e} } \over d\lambda },}
+  
+
+where 
+  
+    
+      
+        d
+        
+          Φ
+          
+            
+              e
+            
+          
+        
+      
+    
+    {\displaystyle d\Phi _{\mathrm {e} }}
+  
+ is the radiant flux of the radiation in a small wavelength interval 
+  
+    
+      
+        [
+        λ
+        −
+        
+          
+            
+              d
+              λ
+            
+            2
+          
+        
+        ,
+        λ
+        +
+        
+          
+            
+              d
+              λ
+            
+            2
+          
+        
+        ]
+      
+    
+    {\displaystyle [\lambda -{d\lambda  \over 2},\lambda +{d\lambda  \over 2}]}
+  
+.
+The area under a plot with wavelength horizontal axis equals to the total radiant flux.
+Spectral flux by frequency, whose unit is W/Hz:
+
+  
+    
+      
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            ν
+          
+        
+        =
+        
+          
+            
+              d
+              
+                Φ
+                
+                  
+                    e
+                  
+                
+              
+            
+            
+              d
+              ν
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \Phi _{\mathrm {e} ,\nu }={d\Phi _{\mathrm {e} } \over d\nu },}
+  
+
+where 
+  
+    
+      
+        d
+        
+          Φ
+          
+            
+              e
+            
+          
+        
+      
+    
+    {\displaystyle d\Phi _{\mathrm {e} }}
+  
+ is the radiant flux of the radiation in a small frequency interval 
+  
+    
+      
+        [
+        ν
+        −
+        
+          
+            
+              d
+              ν
+            
+            2
+          
+        
+        ,
+        ν
+        +
+        
+          
+            
+              d
+              ν
+            
+            2
+          
+        
+        ]
+      
+    
+    {\displaystyle [\nu -{d\nu  \over 2},\nu +{d\nu  \over 2}]}
+  
+.
+The area under a plot with frequency horizontal axis equals to the total radiant flux.
+The spectral quantities by wavelength λ and frequency ν are related to each other, since the product of the two variables is the speed of light (
+  
+    
+      
+        λ
+        ⋅
+        ν
+        =
+        c
+      
+    
+    {\displaystyle \lambda \cdot \nu =c}
+  
+):
+
+  
+    
+      
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            λ
+          
+        
+        =
+        
+          
+            c
+            
+              λ
+              
+                2
+              
+            
+          
+        
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            ν
+          
+        
+        ,
+      
+    
+    {\displaystyle \Phi _{\mathrm {e} ,\lambda }={c \over \lambda ^{2}}\Phi _{\mathrm {e} ,\nu },}
+  
+ or 
+  
+    
+      
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            ν
+          
+        
+        =
+        
+          
+            c
+            
+              ν
+              
+                2
+              
+            
+          
+        
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            λ
+          
+        
+        ,
+      
+    
+    {\displaystyle \Phi _{\mathrm {e} ,\nu }={c \over \nu ^{2}}\Phi _{\mathrm {e} ,\lambda },}
+  
+ or 
+  
+    
+      
+        λ
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            λ
+          
+        
+        =
+        ν
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            ν
+          
+        
+        .
+      
+    
+    {\displaystyle \lambda \Phi _{\mathrm {e} ,\lambda }=\nu \Phi _{\mathrm {e} ,\nu }.}
+  
+
+The integral quantity can be obtained by the spectral quantity's integration:
+
+  
+    
+      
+        
+          Φ
+          
+            
+              e
+            
+          
+        
+        =
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            λ
+          
+        
+        
+        d
+        λ
+        =
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            ν
+          
+        
+        
+        d
+        ν
+        =
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        λ
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            λ
+          
+        
+        
+        d
+        ln
+        ⁡
+        λ
+        =
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        ν
+        
+          Φ
+          
+            
+              e
+            
+            ,
+            ν
+          
+        
+        
+        d
+        ln
+        ⁡
+        ν
+        .
+      
+    
+    {\displaystyle \Phi _{\mathrm {e} }=\int _{0}^{\infty }\Phi _{\mathrm {e} ,\lambda }\,d\lambda =\int _{0}^{\infty }\Phi _{\mathrm {e} ,\nu }\,d\nu =\int _{0}^{\infty }\lambda \Phi _{\mathrm {e} ,\lambda }\,d\ln \lambda =\int _{0}^{\infty }\nu \Phi _{\mathrm {e} ,\nu }\,d\ln \nu .}
+  
+
+
+== See also ==
+Reflectivity
+Microwave radiometer
+Measurement of ionizing radiation
+Radiometric calibration
+Radiometric resolution
+
+
+== References ==
+
+
+== External links ==
+Radiometry and photometry FAQ Professor Jim Palmer's Radiometry FAQ page (The University of Arizona College of Optical Sciences).

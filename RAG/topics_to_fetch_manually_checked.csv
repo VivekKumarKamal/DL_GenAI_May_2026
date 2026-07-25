@@ -1,0 +1,303 @@
+topic,cache_filename,frequency,example_row_id,source
+Modified Newtonian Dynamics,modified_newtonian_dynamics.md,31,118,train
+Einstein,einstein.md,29,71,train
+Hamiltonian,hamiltonian.md,27,11,train
+Higgs,higgs.md,27,74,train
+Doppler effect,doppler_effect.md,24,67,train
+definition of an improper rotation,definition_of_an_improper_rotation.md,24,39,train
+Milky Way,milky_way.md,24,177,train
+Gravity Probe B,gravity_probe_b.md,23,290,train
+Gravity Probe B (GP-B) mission,gravity_probe_b_gp_b_mission.md,23,290,train
+Fe and Al on the Moon,fe_and_al_on_the_moon.md,23,290,train
+Planck constant,planck_constant.md,23,90,train
+fatty-acyl disorder in the thylakoid membranes of plants,fatty_acyl_disorder_in_the_thylakoid_membranes_of_plants.md,21,282,train
+gravitomagnetic interaction,gravitomagnetic_interaction.md,21,92,train
+Meissner effect,meissner_effect.md,21,92,train
+trophic level in an ecological pyramid,trophic_level_in_an_ecological_pyramid.md,20,57,train
+Pierre de Fermat's solution to the problem of refraction,pierre_de_fermat_s_solution_to_the_problem_of_refraction.md,19,27,train
+La Chambre,la_chambre.md,19,27,train
+January 1662,january_1662.md,19,27,train
+reciprocal length or inverse length,reciprocal_length_or_inverse_length.md,18,188,train
+relationship between interstellar and cometary chemistry,relationship_between_interstellar_and_cometary_chemistry.md,18,353,train
+Interstellar,interstellar.md,18,353,train
+Max Planck,max_planck.md,17,20,train
+main advantage of ferroelectric memristors,main_advantage_of_ferroelectric_memristors.md,17,202,train
+permutation-inversion groups,permutation_inversion_groups.md,17,43,train
+Eduardo R,eduardo_r.md,17,20,train
+SI base unit of time and how is it defined,si_base_unit_of_time_and_how_is_it_defined.md,17,337,train
+Hideki Yukawa,hideki_yukawa.md,17,20,train
+Maxwell's Demon thought experiment,maxwell_s_demon_thought_experiment.md,17,372,train
+Niels Bohr,niels_bohr.md,17,20,train
+concept of "maximal acceleration",concept_of_maximal_acceleration.md,17,20,train
+concept of simultaneity in Einstein's book Relativity,concept_of_simultaneity_in_einstein_s_book_relativity.md,17,5,train
+Maxwell's Demon,maxwell_s_demon.md,17,372,train
+Albert Einstein,albert_einstein.md,17,20,train
+Kutta,kutta.md,16,87,train
+Evans balance,evans_balance.md,16,144,train
+Evans,evans.md,16,144,train
+Kutta-Joukowski theorem,kutta_joukowski_theorem.md,16,87,train
+Kutta condition,kutta_condition.md,16,87,train
+Qatar University,qatar_university.md,16,42,train
+Environmental Science Center,environmental_science_center.md,16,42,train
+main focus of the Environmental Science Center at Qatar University,main_focus_of_the_environmental_science_center_at_qatar_university.md,16,42,train
+Liouville density,liouville_density.md,16,8,train
+relationship between dielectric loss and the transparency of a material,relationship_between_dielectric_loss_and_the_transparency_of_a_material.md,16,50,train
+Liouville,liouville.md,16,8,train
+Peierls,peierls.md,16,11,train
+Peierls bracket in canonical quantization,peierls_bracket_in_canonical_quantization.md,16,11,train
+Stefan-Boltzmann law,stefan_boltzmann_law.md,16,32,train
+Buckminster Fuller's Dymaxion,buckminster_fuller_s_dymaxion.md,16,332,train
+Sir Isaac Newton,sir_isaac_newton.md,16,25,train
+Landau-Lifshitz-Gilbert equation,landau_lifshitz_gilbert_equation.md,16,427,train
+Map,map.md,16,332,train
+Optical Signal-to-Noise Ratio,optical_signal_to_noise_ratio.md,16,23,train
+ReRAM,reram.md,16,94,train
+Newton's laws of motion,Newtons_laws_of_motion.md,16,25,train
+Ancient Africa,ancient_africa.md,16,332,train
+Bernoulli's principle,bernoulli_s_principle.md,15,95,train
+Hamiltonians,hamiltonians.md,15,179,train
+main sequence,main_sequence.md,15,127,train
+Stars,stars.md,15,127,train
+shower-curtain effect,shower_curtain_effect.md,15,95,train
+Ozma Problem,ozma_problem.md,15,248,train
+order of magnitude,order_of_magnitude.md,15,225,train
+indirect photophoresis,indirect_photophoresis.md,15,222,train
+SETI and GEO,seti_and_geo.md,15,71,train
+American Petroleum Institute (API) gravity,american_petroleum_institute_api_gravity.md,15,104,train
+Einstein@Home,einstein_home.md,15,71,train
+LIGO and GEO,ligo_and_geo.md,15,71,train
+Supersymmetric quantum mechanics,Supersymmetric_quantum_mechanics.md,15,179,train
+reactive Leidenfrost effect,reactive_leidenfrost_effect.md,15,216,train
+Kapteyn's star,kapteyn_s_star.md,15,75,train
+Leidenfrost effect,leidenfrost_effect.md,15,216,train
+Robert Hooke,robert_hooke.md,15,209,train
+quantum mechanics,quantum_mechanics.md,15,84,train
+information loss paradox in black holes,information_loss_paradox_in_black_holes.md,15,255,train
+Sagittarius,sagittarius.md,15,177,train
+Lorentz symmetry or Lorentz invariance in relativistic physics,lorentz_symmetry_or_lorentz_invariance_in_relativistic_physics.md,15,469,train
+crystallinity,crystallinity.md,15,63,train
+redshift,redshift.md,15,269,train
+isophotal diameter,isophotal_diameter.md,15,685,train
+virtual particle,virtual_particle.md,15,336,train
+water hammer,water_hammer.md,14,182,train
+Felix Klein,felix_klein.md,14,314,train
+Erlangen program,erlangen_program.md,14,314,train
+Insulators,insulators.md,14,34,train
+regular polytope,regular_polytope.md,14,321,train
+Deep Space Network,deep_space_network.md,14,324,train
+Lunar Laser Ranging Experiment,lunar_laser_ranging_experiment.md,14,324,train
+T1 and T2,t1_and_t2.md,14,108,train
+second law of thermodynamics,second_law_of_thermodynamics.md,14,208,train
+spinning superconductor,spinning_superconductor.md,14,6,train
+fibrous cardiac skeleton,fibrous_cardiac_skeleton.md,14,98,train
+amplitude of a sound wave,amplitude_of_a_sound_wave.md,14,99,train
+Essence of Chaos,essence_of_chaos.md,14,151,train
+Roche limit,roche_limit.md,14,157,train
+Roche,roche.md,14,157,train
+butterfly effect,butterfly_effect.md,14,151,train
+Lorenz,lorenz.md,14,151,train
+electromagnetic gauge symmetry in superconductors,electromagnetic_gauge_symmetry_in_superconductors.md,14,65,train
+Memristor,memristor.md,14,40,train
+supplemental non-baryonic matter,supplemental_non_baryonic_matter.md,14,74,train
+Earth,earth.md,14,308,train
+German,german.md,14,308,train
+French,french.md,14,308,train
+Italian,italian.md,14,308,train
+resistance-switching processes,resistance_switching_processes.md,14,51,train
+English,english.md,14,308,train
+Newton's manuscripts of the 1660s show,newton_s_manuscripts_of_the_1660s_show.md,14,73,train
+Spanish,spanish.md,14,308,train
+Erlangen,erlangen.md,14,314,train
+Compton effect,compton_effect.md,14,74,train
+Sun,sun.md,14,308,train
+United Nations,united_nations.md,14,44,train
+CEERS-93316,ceers_93316.md,14,76,train
+James Webb Space Telescope,james_webb_space_telescope.md,14,76,train
+Big Bang,big_bang.md,14,76,train
+recycling rare metals,recycling_rare_metals.md,14,44,train
+Giordano Bruno,giordano_bruno.md,14,308,train
+Vergleichende Betrachtungen,vergleichende_betrachtungen.md,14,314,train
+Higgs boson ,higgs_boson.md,13,478,train
+Standard Model,standard_model.md,13,478,train
+magnetic monopole in particle physics,magnetic_monopole_in_particle_physics.md,13,148,train
+Navier-Stokes,navier_stokes.md,13,125,train
+Navier-Stokes equations,navier_stokes_equations.md,13,125,train
+Newton's law,newton_s_law.md,13,200,train
+TGF-β and Foxp3,tgf_and_foxp3.md,13,441,train
+IL-10 and Tregs,il_10_and_tregs.md,13,441,train
+Martin Heidegger,martin_heidegger.md,13,1,train
+IL-10,il_10.md,13,441,train
+IL-10 and TGF-β,il_10_and_tgf.md,13,441,train
+TGF-β and Tregs,tgf_and_tregs.md,13,441,train
+Coulomb's law,coulomb_s_law.md,13,200,train
+result of the collapse of a cavitation bubble,result_of_the_collapse_of_a_cavitation_bubble.md,13,119,train
+supernova remnants,supernova_remnants.md,13,61,train
+chemical potential and quarks/antiquarks,chemical_potential_and_quarks_antiquarks.md,13,58,train
+Hamiltonian H,hamiltonian_h.md,13,10,train
+Wigner function and the density matrix operator,wigner_function_and_the_density_matrix_operator.md,13,10,train
+spin quantum number,spin_quantum_number.md,13,90,train
+coffee ring,coffee_ring.md,13,7,train
+definition of Atomristor,definition_of_atomristor.md,13,17,train
+amorphous ferromagnetic metallic alloys,amorphous_ferromagnetic_metallic_alloys.md,13,60,train
+Wigner,wigner.md,13,10,train
+formation of stars,formation_of_stars.md,13,29,train
+proximity-focusing design in a RICH detector,proximity_focusing_design_in_a_rich_detector.md,13,36,train
+the origin and significance of the triskeles symbol,the_origin_and_significance_of_the_triskeles_symbol.md,12,142,train
+interstellar medium (ISM),interstellar_medium_ism.md,12,203,train
+transient condensation cloud,transient_condensation_cloud.md,12,916,train
+coherent turbulent structures,coherent_turbulent_structures.md,12,195,train
+Minkowski diagram used,minkowski_diagram_used.md,12,194,train
+Minkowski,minkowski.md,12,194,train
+role of methane in Fischer-Tropsch processes,role_of_methane_in_fischer_tropsch_processes.md,12,124,train
+bollard pull primarily used for measuring,bollard_pull_primarily_used_for_measuring.md,12,437,train
+propagation constant in sinusoidal waves,propagation_constant_in_sinusoidal_waves.md,12,192,train
+horror vacui,meaning_of_the_term_horror_vacui.md,12,80,train
+radiometric dating,radiometric_dating.md,12,267,train
+Heisenberg,heisenberg.md,12,49,train
+Heisenberg uncertainty principle,heisenberg_uncertainty_principle.md,12,49,train
+Class L,class_l.md,12,52,train
+Copernican principle,copernican_principle.md,12,308,train
+Class L dwarfs,class_l_dwarfs.md,12,52,train
+SI unit of the physical quantity m/Q,si_unit_of_the_physical_quantity_m_q.md,12,359,train
+two main factors that cause resistance in a metal,two_main_factors_that_cause_resistance_in_a_metal.md,12,646,train
+significance of regularization in terms of renormalization problems,significance_of_regularization_in_terms_of_renormalization_problems.md,11,41,train
+linear frame dragging,linear_frame_dragging.md,11,342,train
+Escher,escher.md,11,206,train
+Print Gallery,print_gallery.md,11,206,train
+Droste effect,droste_effect.md,11,206,train
+Hilbert space in quantum mechanics,hilbert_space_in_quantum_mechanics.md,11,207,train
+uniform tiling in the hyperbolic plane,uniform_tiling_in_the_hyperbolic_plane.md,11,28,train
+Penrose process,penrose_process.md,11,56,train
+reason for heating metals to a temperature just above the upper critical temperature,reason_for_heating_metals_to_a_temperature_just_above_the_upper_critical_temperature.md,11,383,train
+Penrose,penrose.md,11,56,train
+phageome,phageome.md,11,233,train
+complete electromagnetic Hamiltonian of a molecule and the parity operation,complete_electromagnetic_hamiltonian_of_a_molecule_and_the_parity_operation.md,11,234,train
+ultraviolet catastrophe,ultraviolet_catastrophe.md,11,237,train
+Kelvin-Helmholtz instability,kelvin_helmholtz_instability.md,11,114,train
+Regularizing,regularizing.md,11,41,train
+piezoelectric strain coefficient for AT-cut quartz crystals,piezoelectric_strain_coefficient_for_at_cut_quartz_crystals.md,11,64,train
+Gauss's law,gauss_s_law.md,11,59,train
+Kelvin-Helmholtz,kelvin_helmholtz.md,11,114,train
+Jan Misset in 1904,jan_misset_in_1904.md,11,206,train
+magnetic susceptibility,magnetic_susceptibility.md,11,590,train
+relevant type of coherence for the Young's double-slit interferometer,relevant_type_of_coherence_for_the_young_s_double_slit_interferometer.md,11,106,train
+Cauchy,cauchy.md,11,107,train
+Diameter,diameter.md,11,106,train
+identity operation in symmetry groups,identity_operation_in_symmetry_groups.md,11,518,train
+Cauchy momentum equation and the Navier-Stokes equation,cauchy_momentum_equation_and_the_navier_stokes_equation.md,11,107,train
+PMF and PDF,pmf_and_pdf.md,11,105,train
+Coordinated Universal Time,coordinated_universal_time.md,11,193,train
+Universal Time,universal_time.md,11,193,train
+UTC and Universal Time,utc_and_universal_time.md,11,193,train
+butterfly effect,butterfly_effect.md,11,103,train
+relationship between Coordinated Universal Time (UTC) and Universal Time (UT1),relationship_between_coordinated_universal_time_utc_and_universal_time_ut1.md,11,193,train
+formalism that angular momentum is associated with in rotational invariance,formalism_that_angular_momentum_is_associated_with_in_rotational_invariance.md,11,197,train
+Mackie's INUS,mackie_s_inus.md,11,103,train
+Navier-Stokes equation,navier_stokes_equation.md,11,107,train
+Nobel Prize,nobel_prize.md,10,22,train
+mechanism of FTIR,mechanism_of_ftir.md,10,370,train
+Murray Gell-Mann and George Zweig,murray_gell_mann_and_george_zweig.md,10,22,train
+Mohr's theorem,mohr_s_theorem.md,10,55,train
+Fresnel predict and verify with regards to total internal reflections,fresnel_predict_and_verify_with_regards_to_total_internal_reflections.md,10,680,train
+Ilya Prigogine in 1979,ilya_prigogine_in_1979.md,10,85,train
+De Haas-Van Alphen effect,de_haas_van_alphen_effect.md,10,143,train
+Earnshaw's theorem,earnshaw_s_theorem.md,10,895,train
+function of mammary glands in mammals,function_of_mammary_glands_in_mammals.md,10,37,train
+Earnshaw's theorem state,earnshaw_s_theorem_state.md,10,895,train
+Peter Higgs and Francois Englert,peter_higgs_and_francois_englert.md,10,22,train
+Birkhoff's theorem,birkhoff_s_theorem.md,10,112,train
+Schwarzschild black hole,schwarzschild_black_hole.md,10,112,train
+Steven Weinberg and Sheldon Glashow,steven_weinberg_and_sheldon_glashow.md,10,22,train
+Makoto Kobayashi and Toshihide Maskawa,makoto_kobayashi_and_toshihide_maskawa.md,10,22,train
+effective supersymmetry in quark-diquark models,effective_supersymmetry_in_quark_diquark_models.md,10,340,train
+main factor that determines the occurrence of each type of supernova,main_factor_that_determines_the_occurrence_of_each_type_of_supernova.md,10,515,train
+René Descartes in 1637,ren_descartes_in_1637.md,10,85,train
+light-matter interactions,light_matter_interactions.md,10,3,train
+Henri Atlan in 1972,henri_atlan_in_1972.md,10,85,train
+CYCLOIDEA genes,cycloidea_genes.md,10,88,train
+Richard Feynman and Julian Schwinger,richard_feynman_and_julian_schwinger.md,10,22,train
+Democritus and Lucretius,democritus_and_lucretius.md,10,85,train
+complexity from noise,complexity_from_noise.md,10,85,train
+Carnot,carnot.md,10,398,train
+Carnot engine,carnot_engine.md,10,398,train
+Hippolyte Fizeau,hippolyte_fizeau.md,10,67,train
+crab pulsar,crab_pulsar.md,10,93,train
+X-ray pulsar-based navigation (XNAV),x_ray_pulsar_based_navigation_xnav.md,10,96,train
+Yoichiro Nambu,yoichiro_nambu.md,10,22,train
+Isaac Newton,isaac_newton.md,10,101,train
+crystalline naphthalene,crystalline_naphthalene.md,10,66,train
+rectilinear propagation of light,rectilinear_propagation_of_light.md,10,101,train
+definition of anatomy,definition_of_anatomy.md,10,265,train
+cryogenic and noble liquid detectors in dark matter experiments,cryogenic_and_noble_liquid_detectors_in_dark_matter_experiments.md,10,256,train
+Vogel and Scheiner,vogel_and_scheiner.md,10,67,train
+Josephson effect,josephson_effect.md,10,250,train
+William Huggins,william_huggins.md,10,67,train
+WIMPs,wimps.md,9,9,train
+free neutron decay process,decay_energy_for_the_free_neutron_decay_process.md,9,711,train
+accelerator-based light-ion fusion,accelerator_based_light_ion_fusion.md,9,2,train
+constituents of cold dark matter,constituents_of_cold_dark_matter.md,9,9,train
+Einstein's types of gravitational waves,einstein_s_types_of_gravitational_waves.md,9,381,train
+Arthur Eddington,arthur_eddington.md,9,381,train
+classical mechanics,classical_mechanics.md,9,891,train
+Ramsauer-Townsend effect,ramsauer_townsend_effect.md,9,47,train
+Hesse's principle of transfer in geometry,hesse_s_principle_of_transfer_in_geometry.md,9,26,train
+synapstor or synapse transistor,synapstor_or_synapse_transistor.md,9,226,train
+Hesse's principle,hesse_s_principle.md,9,26,train
+spatial dispersion,spatial_dispersion.md,9,146,train
+radiosity in radiometry,radiosity_in_radiometry.md,9,170,train
+light-year,light_year.md,9,278,train
+Minkowski space,minkowski_space.md,9,219,train
+resistivity,resistivity.md,8,1399,train
+permanent moment in paramagnetism,permanent_moment_in_paramagnetism.md,8,538,train
+order parameter,order_parameter.md,8,172,train
+organography,organography.md,8,187,train
+dimension in mathematics,dimension_of_dimension_in_mathematics.md,8,438,train
+geometric quantization in mathematical physics,geometric_quantization_in_mathematical_physics.md,8,184,train
+pycnometer,pycnometer.md,8,35,train
+spontaneous symmetry breaking,spontaneous_symmetry_breaking.md,8,312,train
+explicit symmetry breaking in theoretical physics,explicit_symmetry_breaking_in_theoretical_physics.md,8,307,train
+dynamic scaling in self-similar mechanisms,definition_of_dynamic_scaling_in_self_similar_mechanisms.md,7,492,train
+Baryon Acoustic Oscillations,baryon_acoustic_oscillations.md,7,295,train
+speed of light in vacuum,speed_of_light_in_vacuum.md,7,718,train
+planetary structure,planetary_structure.md,7,147,train
+emissivity,emissivity.md,7,480,train
+planetary mechanism,planetary_mechanism.md,7,163,train
+crossover experiment,crossover_experiment.md,6,205,train
+natural convection and forced convection,natural_convection_and_forced_convection.md,6,132,train
+Doppler redshift,doppler_redshift.md,6,707,train
+linear time-invariant frameworks,linear_time_invariant_frameworks.md,6,15,train
+active and passive transport in cells,active_and_passive_transport_in_cells.md,5,645,train
+first person to describe the pulmonary circulation framework,first_person_to_describe_the_pulmonary_circulation_framework.md,5,632,train
+illuminance and luminance,illuminance_and_luminance.md,5,648,train
+probability mass function (PMF) and probability density function (PDF),probability_mass_function_pmf_and_probability_density_function_pdf.md,5,105,train
+inhomogeneous physical framework,inhomogeneous_physical_framework.md,5,511,train
+Keplerian principle,keplerian_principle.md,5,373,train
+natural convection and forced convection,natural_convection_and_forced_convection.md,5,221,train
+myrmecophytes and the mutualistic symbiosis of mycorrhiza,myrmecophytes_and_the_mutualistic_symbiosis_of_mycorrhiza.md,5,109,train
+axioms,axioms.md,5,198,train
+dynamic scaling in self-similar frameworks,dynamic_scaling_in_self_similar_frameworks.md,5,390,train
+surgical resection specimens,surgical_resection_specimens.md,5,81,train
+interpretation of supersymmetry in stochastic supersymmetric principle,interpretation_of_supersymmetry_in_stochastic_supersymmetric_principle.md,4,635,train
+planetary framework,planetary_framework.md,4,1017,train
+Einstein's principle,einstein_s_principle.md,4,74,train
+coevolution of myrmecophytes and the mutualistic symbiosis of mycorrhiza,coevolution_of_myrmecophytes_and_the_mutualistic_symbiosis_of_mycorrhiza.md,3,100,train
+natural convection and forced convection,natural_convection_and_forced_convection.md,3,701,train
+illuminance and luminance,illuminance_and_luminance.md,3,19,train
+principle of Relativity,principle_of_relativity.md,3,1694,train
+throttling process,throttling_process.md,3,12,train
+active and passive transport in cells,distinction_between_active_and_passive_transport_in_cells.md,3,574,train
+planetary system,planetary_system.md,2,1757,train
+pulmonary circulation structure,pulmonary_circulation_structure.md,2,1585,train
+linear time-invariant structures,linear_time_invariant_structures.md,2,1873,train
+Solar System,solar_system.md,2,1746,train
+inhomogeneous physical system,inhomogeneous_physical_system.md,2,1416,train
+throttling process,throttling_process.md,2,1453,train
+Galilean principle,galilean_principle.md,2,841,train
+Ptolemaic principle,ptolemaic_principle.md,2,373,train
+role of axioms in a formal framework,role_of_axioms_in_a_formal_framework.md,2,422,train
+natural convection and forced convection,difference_between_natural_convection_and_forced_convection.md,2,183,train
+dynamic scaling in self-similar structures,definition_of_dynamic_scaling_in_self_similar_structures.md,2,484,train
+Theory of Relativity,theory_of_relativity.md,2,169,train
+coevolution of myrmecophytes and the mutualistic symbiosis of mycorrhiza,coevolution_of_myrmecophytes_and_the_mutualistic_symbiosis_of_mycorrhiza.md,2,160,train
+supersymmetry in stochastic supersymmetric framework,interpretation_of_supersymmetry_in_stochastic_supersymmetric_framework.md,2,768,train
+Aristotelian principle,aristotelian_principle.md,1,308,train

@@ -1,0 +1,1948 @@
+# Quantum state
+
+> **Query Topic**: Hilbert space in quantum mechanics  
+> **Source Queue**: train (Row ID: 207, Frequency: 11)  
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Quantum_state
+
+---
+
+In quantum physics, a quantum state is a mathematical entity that represents a physical system. Quantum mechanics specifies the construction, evolution, and measurement of a quantum state. Knowledge of the quantum state, and the rules for the system's evolution in time, exhausts all that can be known about a quantum system.
+Quantum states are either pure or mixed, and have several possible representations. Pure quantum states are commonly represented as a vector in a Hilbert space. Mixed states are statistical mixtures of pure states and cannot be represented as vectors on that Hilbert space, and instead are commonly represented as density matrices.
+Common examples of quantum states are the wave functions describing position and momentum, finite-dimensional vectors describing spin such as the singlet, and states describing many-body quantum systems in a Fock space.
+
+
+== From the states of classical mechanics ==
+As a tool for physics, quantum states grew out of states in classical mechanics. A classical dynamical state consists of a set of dynamical variables with well-defined real values at each instant of time. For example, the state of a cannon ball would consist of its position and velocity. The state values evolve under equations of motion and thus remain strictly determined. If we know the position of a cannon and the exit velocity of its projectiles, then we can use equations containing the force of gravity to predict the trajectory of a cannon ball precisely.
+Similarly, quantum states consist of sets of dynamical variables that evolve under equations of motion. However, the values derived from quantum states are complex numbers, quantized, limited by uncertainty relations, and only provide a probability distribution for the outcomes for a system. These constraints alter the nature of quantum dynamic variables. For example, the quantum state of an electron in a double-slit experiment would consist of complex values over the detection region and, when squared, only predict the probability distribution of electron counts across the detector.
+
+
+== Role in quantum mechanics ==
+The process of describing a quantum system with quantum mechanics begins with identifying a set of variables defining the quantum state of the system.  The set will contain compatible and incompatible variables. Simultaneous measurement of a complete set of compatible variables prepares the system in a unique state. The state then evolves deterministically according to the equations of motion. Subsequent measurement of the state produces a sample from a probability distribution predicted by the quantum mechanical operator corresponding to the measurement.
+The fundamentally statistical or probabilisitic nature of quantum measurements changes the role of quantum states in quantum mechanics compared to classical states in classical mechanics. In classical mechanics, the initial state of one or more bodies is measured; the state evolves according to the equations of motion; measurements of the final state are compared to predictions. In quantum mechanics, ensembles of identically prepared quantum states evolve according to the equations of motion and many repeated measurements are compared to predicted probability distributions.
+
+
+== Measurements ==
+
+Measurements, macroscopic operations on quantum states, filter the state. Whatever the input quantum state might be, repeated identical measurements give consistent values. For this reason, measurements 'prepare' quantum states for experiments, placing the system in a partially defined state. Subsequent measurements may either further prepare the system – these are compatible measurements – or it may alter the state, redefining it – these are called incompatible or complementary measurements. For example, we may measure the momentum of a state along the 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ axis any number of times and get the same result, but if we measure the position after once measuring the momentum, subsequent measurements of momentum are changed. The quantum state appears unavoidably altered by incompatible measurements. This is known as the uncertainty principle.
+
+
+== Eigenstates and pure states ==
+
+The quantum state after a measurement is in an eigenstate corresponding to that measurement and the value measured. Other aspects of the state may be unknown. Repeating the measurement will not alter the state. In some cases, compatible measurements can further refine the state, causing it to be an eigenstate corresponding to all these measurements. A full set of compatible measurements produces a pure state.  Any state that is not pure is called a mixed state as discussed in more depth below.
+The eigenstate solutions to the Schrödinger equation can be formed into pure states.  Experiments rarely produce pure states. Therefore statistical mixtures of solutions must be compared to experiments.
+
+
+== Representations ==
+The same physical quantum state can be expressed mathematically in different ways called representations. The position wave function is one representation often seen first in introductions to quantum mechanics. The equivalent momentum wave function is another wave function based representation. Representations are analogous to coordinate systems or similar mathematical devices like parametric equations. Selecting a representation will make some aspects of a problem easier at the cost of making other things difficult.
+In formal quantum mechanics (see § Formalism in quantum physics below) the theory develops in terms of abstract 'vector space', avoiding any particular representation. This allows many elegant concepts of quantum mechanics to be expressed and to be applied even in cases where no classical analog exists.
+
+
+== Wave function representations ==
+
+Wave functions represent quantum states, particularly when they are  functions of position or of momentum.  Historically, definitions of quantum states used wavefunctions before the more formal methods were developed. The wave function is a complex-valued function of any complete set of commuting or compatible degrees of freedom. For example, one set could be the 
+  
+    
+      
+        x
+        ,
+        y
+        ,
+        z
+      
+    
+    {\displaystyle x,y,z}
+  
+ spatial coordinates of an electron.
+Preparing a system by measuring the complete set of compatible observables produces a pure quantum state. More common, incomplete preparation produces a mixed quantum state. Wave function solutions of Schrödinger's equations of motion for operators corresponding to measurements can readily be expressed as pure states; they must be combined with statistical weights matching experimental preparation to compute the expected probability distribution.
+
+
+=== Pure states of wave functions ===
+
+Numerical or analytic solutions in quantum mechanics can be expressed as pure states. These solution states, called eigenstates, are labeled with quantized values, typically quantum numbers.
+For example, when dealing with the energy spectrum of the electron in a hydrogen atom, the relevant pure states are identified by the principal quantum number n, the angular momentum quantum number ℓ, the magnetic quantum number m, and the spin z-component sz. For another example, if the spin of an electron is measured in any direction, e.g. with a Stern–Gerlach experiment, there are two possible results: up or down. A pure state here is represented by a two-dimensional complex vector 
+  
+    
+      
+        (
+        α
+        ,
+        β
+        )
+      
+    
+    {\displaystyle (\alpha ,\beta )}
+  
+, with a length of one; that is, with
+
+  
+    
+      
+        
+          |
+        
+        α
+        
+          
+            |
+          
+          
+            2
+          
+        
+        +
+        
+          |
+        
+        β
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        1
+        ,
+      
+    
+    {\displaystyle |\alpha |^{2}+|\beta |^{2}=1,}
+  
+
+where 
+  
+    
+      
+        
+          |
+        
+        α
+        
+          |
+        
+      
+    
+    {\displaystyle |\alpha |}
+  
+ and 
+  
+    
+      
+        
+          |
+        
+        β
+        
+          |
+        
+      
+    
+    {\displaystyle |\beta |}
+  
+ are the absolute values of 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ and 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+.
+The postulates of quantum mechanics state that pure states, at a given time  t,  correspond to vectors in a separable complex Hilbert space, while each measurable physical quantity (such as the energy or momentum of a particle) is associated with a mathematical operator called the observable. The operator serves as a linear function that acts on the states of the system. The eigenvalues of the operator correspond to the possible values of the observable. For example, it is possible to observe a particle with a momentum of 1 kg⋅m/s if and only if one of the eigenvalues of the momentum operator is 1 kg⋅m/s. The corresponding eigenvector (which physicists call an eigenstate) with eigenvalue 1 kg⋅m/s would be a quantum state with a definite, well-defined value of momentum of 1 kg⋅m/s, with no quantum uncertainty. If its momentum were measured, the result is guaranteed to be 1 kg⋅m/s.
+On the other hand, a pure state described as a superposition of multiple different eigenstates does in general have quantum uncertainty for the given observable. Using bra–ket notation,  this linear combination of eigenstates can be represented as:
+
+  
+    
+      
+        
+          |
+        
+        Ψ
+        (
+        t
+        )
+        ⟩
+        =
+        
+          ∑
+          
+            n
+          
+        
+        
+          C
+          
+            n
+          
+        
+        (
+        t
+        )
+        
+          |
+        
+        
+          Φ
+          
+            n
+          
+        
+        ⟩
+        .
+      
+    
+    {\displaystyle |\Psi (t)\rangle =\sum _{n}C_{n}(t)|\Phi _{n}\rangle .}
+  
+
+The coefficient that corresponds to a particular state in the linear combination is a complex number, thus allowing interference effects between states. The coefficients are time dependent. How a quantum state changes in time is governed by the time evolution operator.
+
+
+=== Mixed states of wave functions ===
+A mixed quantum state corresponds to a probabilistic mixture of pure states; however, different distributions of pure states can generate equivalent (i.e., physically indistinguishable) mixed states. A mixture of quantum states is again a quantum state.
+A mixed state for electron spins, in the density-matrix formulation, has the structure of a 
+  
+    
+      
+        2
+        ×
+        2
+      
+    
+    {\displaystyle 2\times 2}
+  
+ matrix that is Hermitian and positive semi-definite, and has trace 1. A more complicated case is given (in bra–ket notation) by the singlet state, which exemplifies quantum entanglement:
+
+  
+    
+      
+        
+          |
+          ψ
+          ⟩
+        
+        =
+        
+          
+            1
+            
+              2
+            
+          
+        
+        
+          
+            (
+          
+        
+        
+          |
+          
+            ↑↓
+          
+          ⟩
+        
+        −
+        
+          |
+          
+            ↓↑
+          
+          ⟩
+        
+        
+          
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle \left|\psi \right\rangle ={\frac {1}{\sqrt {2}}}{\bigl (}\left|\uparrow \downarrow \right\rangle -\left|\downarrow \uparrow \right\rangle {\bigr )},}
+  
+
+which involves superposition of joint spin states for two particles with spin 1/2. The singlet state satisfies the property that if the particles' spins are measured along the same direction then either the spin of the first particle is observed up and the spin of the second particle is observed down, or the first one is observed down and the second one is observed up, both possibilities occurring with equal probability.
+A pure quantum state can be represented by a ray, an element of a projective Hilbert space over the complex numbers, while mixed states are represented by density matrices, which are positive semidefinite operators that act on Hilbert spaces.
+The Schrödinger–HJW theorem classifies the multitude of ways to write a given mixed state as a convex combination of pure states. 
+Before a particular measurement is performed on a quantum system, the theory gives only a probability distribution for the outcome, and the form that this distribution takes is completely determined by the quantum state and the linear operators describing the measurement. Probability distributions for different measurements exhibit tradeoffs exemplified by the uncertainty principle: a state that implies a narrow spread of possible outcomes for one experiment necessarily implies a wide spread of possible outcomes for another.
+Statistical mixtures of states are a different type of linear combination. A statistical mixture of states is a statistical ensemble of independent systems. Statistical mixtures represent the degree of knowledge whilst the uncertainty within quantum mechanics is fundamental. Mathematically, a statistical mixture is not a combination using complex coefficients, but rather a combination using real-valued, positive probabilities of different states 
+  
+    
+      
+        
+          Φ
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \Phi _{n}}
+  
+. A number 
+  
+    
+      
+        
+          P
+          
+            n
+          
+        
+      
+    
+    {\displaystyle P_{n}}
+  
+ represents the probability of a randomly selected system being in the state 
+  
+    
+      
+        
+          Φ
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \Phi _{n}}
+  
+. Unlike the linear combination case each system is in a definite eigenstate.
+The expectation value 
+  
+    
+      
+        
+          
+            ⟨
+            A
+            ⟩
+          
+          
+            σ
+          
+        
+      
+    
+    {\displaystyle {\langle A\rangle }_{\sigma }}
+  
+ of an observable A is a statistical mean of measured values of the observable. It is this mean, and the distribution of probabilities, that is predicted by physical theories.
+There is no state that is simultaneously an eigenstate for all observables. For example, we cannot prepare a state such that both the position measurement Q(t) and the momentum measurement P(t) (at the same time t) are known exactly; at least one of them will have a range of possible values. This is the content of the Heisenberg uncertainty relation.
+Moreover, in contrast to classical mechanics, it is unavoidable that performing a measurement on the system generally changes its state. More precisely: After measuring an observable A, the system will be in an eigenstate of A; thus the state has changed, unless the system was already in that eigenstate. This expresses a kind of logical consistency: If we measure A twice in the same run of the experiment, the measurements being directly consecutive in time, then they will produce the same results. This has some strange consequences, however, as follows.
+Consider two incompatible observables, A and B, where A corresponds to a measurement earlier in time than B. 
+Suppose that the system is in an eigenstate of B at the experiment's beginning. If we measure only B, all runs of the experiment will yield the same result.
+If we measure first A and then B in the same run of the experiment, the system will transfer to an eigenstate of A after the first measurement, and we will generally notice that the results of B are statistical. Thus: Quantum mechanical measurements influence one another, and the order in which they are performed is important.
+Another feature of quantum states becomes relevant if we consider a physical system that consists of multiple subsystems; for example, an experiment with two particles rather than one. Quantum physics allows for certain states, called entangled states, that show certain statistical correlations between measurements on the two particles which cannot be explained by classical theory. For details, see Quantum entanglement. These entangled states lead to experimentally testable properties (Bell's theorem)
+that allow us to distinguish between quantum theory and alternative classical (non-quantum) models.
+
+
+=== Schrödinger picture vs. Heisenberg picture ===
+One can take the observables to be dependent on time, while the state σ was fixed once at the beginning of the experiment. This approach is called the Heisenberg picture. (This approach was taken in the later part of the discussion above, with time-varying observables P(t), Q(t).) One can, equivalently, treat the observables as fixed, while the state of the system depends on time; that is known as the Schrödinger picture. (This approach was taken in the earlier part of the discussion above, with a time-varying state 
+  
+    
+      
+        
+          |
+        
+        Ψ
+        (
+        t
+        )
+        ⟩
+        =
+        
+          ∑
+          
+            n
+          
+        
+        
+          C
+          
+            n
+          
+        
+        (
+        t
+        )
+        
+          |
+        
+        
+          Φ
+          
+            n
+          
+        
+        ⟩
+      
+    
+    {\textstyle |\Psi (t)\rangle =\sum _{n}C_{n}(t)|\Phi _{n}\rangle }
+  
+.) Conceptually (and mathematically), the two approaches are equivalent; choosing one of them is a matter of convention.
+Both viewpoints are used in quantum theory. While non-relativistic quantum mechanics is usually formulated in terms of the Schrödinger picture, the Heisenberg picture is often preferred in a relativistic context, that is, for quantum field theory. Compare with Dirac picture.
+
+
+== Formalism in quantum physics ==
+
+
+=== Pure states as rays in a complex Hilbert space ===
+
+Quantum physics is most commonly formulated in terms of linear algebra, as follows. Any given system is identified with some finite- or infinite-dimensional Hilbert space. The pure states correspond to vectors of norm 1. Thus the set of all pure states corresponds to the unit sphere in the Hilbert space, because the unit sphere is defined as the set of all vectors with norm 1.
+Multiplying a pure state by a scalar is physically inconsequential (as long as the state is considered by itself). If a vector in a complex Hilbert space 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ can be obtained from another vector by multiplying by some non-zero complex number, the two vectors in 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ are said to correspond to the same ray in the projective Hilbert space 
+  
+    
+      
+        
+          P
+        
+        (
+        H
+        )
+      
+    
+    {\displaystyle \mathbf {P} (H)}
+  
+  of 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+. Note that although the word ray is used, properly speaking, a point in the projective Hilbert space corresponds to a line passing through the origin of the Hilbert space, rather than a half-line, or ray in the geometrical sense.
+
+
+=== Spin ===
+
+The angular momentum has the same dimension (M·L2·T−1) as the Planck constant and, at quantum scale, behaves as a discrete degree of freedom of a quantum system. Most particles possess a kind of intrinsic angular momentum that does not appear at all in classical mechanics and arises from Dirac's relativistic generalization of the theory. Mathematically it is described with spinors. In non-relativistic quantum mechanics the group representations of the Lie group SU(2) are used to describe this additional freedom. For a given particle, the choice of representation (and hence the range of possible values of the spin observable) is specified by a non-negative number S that, in units of the reduced Planck constant ħ, is either an integer (0, 1, 2, ...) or a half-integer (1/2, 3/2, 5/2, ...). For a massive particle with spin S, its spin quantum number m always assumes one of the 2S + 1 possible values in the set 
+
+  
+    
+      
+        {
+        −
+        S
+        ,
+        −
+        S
+        +
+        1
+        ,
+        …
+        ,
+        S
+        −
+        1
+        ,
+        S
+        }
+      
+    
+    {\displaystyle \{-S,-S+1,\ldots ,S-1,S\}}
+  
+
+As a consequence, the quantum state of a particle with spin is described by a vector-valued wave function with values in C2S+1. Equivalently, it is represented by a complex-valued function of four variables: one discrete quantum number variable (for the spin) is added to the usual three continuous variables (for the position in space).
+
+
+=== Many-body states and particle statistics ===
+
+The quantum state of a system of N particles, each potentially with spin, is described by a complex-valued function with four variables per particle, corresponding to 3 spatial coordinates and spin, e.g.
+
+  
+    
+      
+        
+          |
+        
+        ψ
+        (
+        
+          
+            r
+          
+          
+            1
+          
+        
+        ,
+        
+        
+          m
+          
+            1
+          
+        
+        ;
+        
+        …
+        ;
+        
+        
+          
+            r
+          
+          
+            N
+          
+        
+        ,
+        
+        
+          m
+          
+            N
+          
+        
+        )
+        ⟩
+        .
+      
+    
+    {\displaystyle |\psi (\mathbf {r} _{1},\,m_{1};\;\dots ;\;\mathbf {r} _{N},\,m_{N})\rangle .}
+  
+
+Here, the spin variables mν assume values from the set 
+
+  
+    
+      
+        {
+        −
+        
+          S
+          
+            ν
+          
+        
+        ,
+        
+        −
+        
+          S
+          
+            ν
+          
+        
+        +
+        1
+        ,
+        
+        …
+        ,
+        
+        
+          S
+          
+            ν
+          
+        
+        −
+        1
+        ,
+        
+        
+          S
+          
+            ν
+          
+        
+        }
+      
+    
+    {\displaystyle \{-S_{\nu },\,-S_{\nu }+1,\,\ldots ,\,S_{\nu }-1,\,S_{\nu }\}}
+  
+
+where 
+  
+    
+      
+        
+          S
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle S_{\nu }}
+  
+ is the spin of νth particle. 
+  
+    
+      
+        
+          S
+          
+            ν
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle S_{\nu }=0}
+  
+ for a particle that does not exhibit spin.
+The treatment of identical particles is very different for bosons (particles with integer spin) versus fermions (particles with half-integer spin). The above N-particle function must either be symmetrized (in the bosonic case) or anti-symmetrized (in the fermionic case) with respect to the particle numbers. If not all N particles are identical, but some of them are, then the function must be (anti)symmetrized separately over the variables corresponding to each group of identical variables, according to its statistics (bosonic or fermionic).
+Electrons are fermions with S = 1/2, photons (quanta of light) are bosons with S = 1 (although in the vacuum they are massless and can't be described with Schrödinger mechanics).
+When symmetrization or anti-symmetrization is unnecessary, N-particle spaces of states can be obtained simply by tensor products of one-particle spaces, to which we will return later.
+
+
+=== Basis states of one-particle systems ===
+
+A state 
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle |\psi \rangle }
+  
+ belonging to a separable complex Hilbert space 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ can always be expressed uniquely as a linear combination of elements of an orthonormal basis of 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+.
+Using bra–ket notation, this means any state 
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle |\psi \rangle }
+  
+ can be written as
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  |
+                
+                ψ
+                ⟩
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                  
+                
+                
+                  c
+                  
+                    i
+                  
+                
+                
+                  |
+                
+                
+                  
+                    k
+                    
+                      i
+                    
+                  
+                
+                ⟩
+                ,
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                  
+                
+                
+                  |
+                
+                
+                  
+                    k
+                    
+                      i
+                    
+                  
+                
+                ⟩
+                ⟨
+                
+                  k
+                  
+                    i
+                  
+                
+                
+                  |
+                
+                ψ
+                ⟩
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}|\psi \rangle &=\sum _{i}c_{i}|{k_{i}}\rangle ,\\&=\sum _{i}|{k_{i}}\rangle \langle k_{i}|\psi \rangle ,\end{aligned}}}
+  
+
+with complex coefficients 
+  
+    
+      
+        
+          c
+          
+            i
+          
+        
+        =
+        ⟨
+        
+          
+            k
+            
+              i
+            
+          
+        
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle c_{i}=\langle {k_{i}}|\psi \rangle }
+  
+ and basis elements 
+  
+    
+      
+        
+          |
+        
+        
+          k
+          
+            i
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |k_{i}\rangle }
+  
+. In this case, the normalization condition translates to
+
+  
+    
+      
+        ⟨
+        ψ
+        
+          |
+        
+        ψ
+        ⟩
+        =
+        
+          ∑
+          
+            i
+          
+        
+        ⟨
+        ψ
+        
+          |
+        
+        
+          
+            k
+            
+              i
+            
+          
+        
+        ⟩
+        ⟨
+        
+          k
+          
+            i
+          
+        
+        
+          |
+        
+        ψ
+        ⟩
+        =
+        
+          ∑
+          
+            i
+          
+        
+        
+          
+            |
+            
+              c
+              
+                i
+              
+            
+            |
+          
+          
+            2
+          
+        
+        =
+        1.
+      
+    
+    {\displaystyle \langle \psi |\psi \rangle =\sum _{i}\langle \psi |{k_{i}}\rangle \langle k_{i}|\psi \rangle =\sum _{i}\left|c_{i}\right|^{2}=1.}
+  
+
+In physical terms, 
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle |\psi \rangle }
+  
+ has been expressed as a quantum superposition of the "basis states" 
+  
+    
+      
+        
+          |
+        
+        
+          
+            k
+            
+              i
+            
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |{k_{i}}\rangle }
+  
+, i.e., the eigenstates of an observable. In particular, if said observable is measured on the normalized state 
+  
+    
+      
+        
+          |
+        
+        ψ
+        ⟩
+      
+    
+    {\displaystyle |\psi \rangle }
+  
+, then 
+  
+    
+      
+        
+          |
+        
+        
+          c
+          
+            i
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          |
+        
+        ⟨
+        
+          
+            k
+            
+              i
+            
+          
+        
+        
+          |
+        
+        ψ
+        ⟩
+        
+          
+            |
+          
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle |c_{i}|^{2}=|\langle {k_{i}}|\psi \rangle |^{2},}
+  
+ 
+is the probability that the result of the measurement is 
+  
+    
+      
+        
+          k
+          
+            i
+          
+        
+      
+    
+    {\displaystyle k_{i}}
+  
+.
+In general, the expression for probability always consist of a relation between the quantum state and a portion of the spectrum of the dynamical variable (i.e. random variable) being observed. For example, the situation above describes the discrete case as eigenvalues 
+  
+    
+      
+        
+          k
+          
+            i
+          
+        
+      
+    
+    {\displaystyle k_{i}}
+  
+ belong to the point spectrum. Likewise, the wave function is just the eigenfunction of the Hamiltonian operator with corresponding eigenvalue(s) 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+; the energy of the system.
+An example of the continuous case is given by the position operator. The probability measure for a system in state 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ is given by:
+
+  
+    
+      
+        
+          P
+          r
+        
+        (
+        x
+        ∈
+        B
+        
+          |
+        
+        ψ
+        )
+        =
+        
+          ∫
+          
+            B
+            ⊂
+            
+              R
+            
+          
+        
+        
+          |
+        
+        ψ
+        (
+        x
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        d
+        x
+        ,
+      
+    
+    {\displaystyle \mathrm {Pr} (x\in B|\psi )=\int _{B\subset \mathbb {R} }|\psi (x)|^{2}dx,}
+  
+
+where 
+  
+    
+      
+        
+          |
+        
+        ψ
+        (
+        x
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle |\psi (x)|^{2}}
+  
+ is the probability density function for finding a particle at a given position. These examples emphasize the distinction in charactertistics between the state and the observable. That is, whereas 
+  
+    
+      
+        ψ
+      
+    
+    {\displaystyle \psi }
+  
+ is a pure state belonging to 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+, the (generalized) eigenvectors of the position operator do not.
+
+
+=== Pure states vs. bound states ===
+
+Though closely related, pure states are not the same as bound states belonging to the pure point spectrum of an observable with no quantum uncertainty. A particle is said to be in a bound state if it remains localized in a bounded region of space for all times. A pure state 
+  
+    
+      
+        
+          |
+        
+        ϕ
+        ⟩
+      
+    
+    {\displaystyle |\phi \rangle }
+  
+ is called a bound state if and only if for every 
+  
+    
+      
+        ε
+        >
+        0
+      
+    
+    {\displaystyle \varepsilon >0}
+  
+ there is a compact set 
+  
+    
+      
+        K
+        ⊂
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle K\subset \mathbb {R} ^{3}}
+  
+ such that 
+  
+    
+      
+        
+          ∫
+          
+            K
+          
+        
+        
+          |
+        
+        ϕ
+        (
+        
+          r
+        
+        ,
+        t
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        
+        
+          
+            d
+          
+          
+            3
+          
+        
+        
+          r
+        
+        ≥
+        1
+        −
+        ε
+      
+    
+    {\displaystyle \int _{K}|\phi (\mathbf {r} ,t)|^{2}\,\mathrm {d} ^{3}\mathbf {r} \geq 1-\varepsilon }
+  
+
+for all 
+  
+    
+      
+        t
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle t\in \mathbb {R} }
+  
+. The integral represents the probability that a particle is found in a bounded region 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+ at any time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+. If the probability remains arbitrarily close to 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ then the particle is said to remain in 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+.
+For example, non-normalizable solutions of the free Schrödinger equation can  be expressed as functions that are normalizable, using wave packets. These wave packets belong to the pure point spectrum of a corresponding projection operator which, mathematically speaking, constitutes an observable. However, they are not bound states.
+
+
+=== Superposition of pure states ===
+
+As mentioned above, quantum states may be superposed. If 
+  
+    
+      
+        
+          |
+        
+        α
+        ⟩
+      
+    
+    {\displaystyle |\alpha \rangle }
+  
+ and 
+  
+    
+      
+        
+          |
+        
+        β
+        ⟩
+      
+    
+    {\displaystyle |\beta \rangle }
+  
+ are two kets corresponding to quantum states, the ket
+
+  
+    
+      
+        
+          c
+          
+            α
+          
+        
+        
+          |
+        
+        α
+        ⟩
+        +
+        
+          c
+          
+            β
+          
+        
+        
+          |
+        
+        β
+        ⟩
+      
+    
+    {\displaystyle c_{\alpha }|\alpha \rangle +c_{\beta }|\beta \rangle }
+  
+
+is also a quantum state of the same system. Both 
+  
+    
+      
+        
+          c
+          
+            α
+          
+        
+      
+    
+    {\displaystyle c_{\alpha }}
+  
+ and 
+  
+    
+      
+        
+          c
+          
+            β
+          
+        
+      
+    
+    {\displaystyle c_{\beta }}
+  
+ can be complex numbers; their relative amplitude and relative phase will influence the resulting quantum state. 
+Writing the superposed state using 
+
+  
+    
+      
+        
+          c
+          
+            α
+          
+        
+        =
+        
+          A
+          
+            α
+          
+        
+        
+          e
+          
+            i
+            
+              θ
+              
+                α
+              
+            
+          
+        
+         
+         
+        
+          c
+          
+            β
+          
+        
+        =
+        
+          A
+          
+            β
+          
+        
+        
+          e
+          
+            i
+            
+              θ
+              
+                β
+              
+            
+          
+        
+      
+    
+    {\displaystyle c_{\alpha }=A_{\alpha }e^{i\theta _{\alpha }}\ \ c_{\beta }=A_{\beta }e^{i\theta _{\beta }}}
+  
+
+and defining the norm of the state as:
+
+  
+    
+      
+        
+          |
+        
+        
+          c
+          
+            α
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        +
+        
+          |
+        
+        
+          c
+          
+            β
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          A
+          
+            α
+          
+          
+            2
+          
+        
+        +
+        
+          A
+          
+            β
+          
+          
+            2
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle |c_{\alpha }|^{2}+|c_{\beta }|^{2}=A_{\alpha }^{2}+A_{\beta }^{2}=1}
+  
+
+and extracting the common factors gives:
+
+  
+    
+      
+        
+          e
+          
+            i
+            
+              θ
+              
+                α
+              
+            
+          
+        
+        
+          (
+          
+            
+              A
+              
+                α
+              
+            
+            
+              |
+            
+            α
+            ⟩
+            +
+            
+              
+                1
+                −
+                
+                  A
+                  
+                    α
+                  
+                  
+                    2
+                  
+                
+              
+            
+            
+              e
+              
+                i
+                
+                  θ
+                  
+                    β
+                  
+                
+                −
+                i
+                
+                  θ
+                  
+                    α
+                  
+                
+              
+            
+            
+              |
+            
+            β
+            ⟩
+          
+          )
+        
+      
+    
+    {\displaystyle e^{i\theta _{\alpha }}\left(A_{\alpha }|\alpha \rangle +{\sqrt {1-A_{\alpha }^{2}}}e^{i\theta _{\beta }-i\theta _{\alpha }}|\beta \rangle \right)}
+  
+
+The overall phase factor in front has no physical effect. Only the relative phase affects the physical nature of the superposition.
+One example of superposition is the double-slit experiment, in which superposition leads to quantum interference. Another example of the importance of relative phase   is Rabi oscillations, where the relative phase of two states varies in time due to the Schrödinger equation. The resulting superposition ends up oscillating back and forth between two different states.
+
+
+=== Mixed states ===
+
+A pure quantum state is a state which can be described by a single ket vector, as described above. A mixed quantum state is a statistical ensemble of pure states (see Quantum statistical mechanics).
+Mixed states arise in quantum mechanics in two different situations: first, when the preparation of the system is not fully known, and thus one must deal with a statistical ensemble of possible preparations; and second, when one wants to describe a physical system which is entangled with another, as its state cannot be described by a pure state. In the first case, there could theoretically be another person who knows the full history of the system, and therefore describe the same system as a pure state; in this case, the density matrix is simply used to represent the limited knowledge of a quantum state. In the second case, however, the existence of quantum entanglement theoretically prevents the existence of complete knowledge about the subsystem, and it's impossible for any person to describe the subsystem of an entangled pair as a pure state.
+Mixed states inevitably arise from pure states when, for a composite quantum system 
+  
+    
+      
+        
+          H
+          
+            1
+          
+        
+        ⊗
+        
+          H
+          
+            2
+          
+        
+      
+    
+    {\displaystyle H_{1}\otimes H_{2}}
+  
+ with an entangled state on it, the part 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+      
+    
+    {\displaystyle H_{2}}
+  
+ is inaccessible to the observer. The state of the part 
+  
+    
+      
+        
+          H
+          
+            1
+          
+        
+      
+    
+    {\displaystyle H_{1}}
+  
+ is expressed then as the partial trace over 
+  
+    
+      
+        
+          H
+          
+            2
+          
+        
+      
+    
+    {\displaystyle H_{2}}
+  
+.
+A mixed state cannot be described with a single ket vector. Instead, it is described by its associated density matrix (or density operator), usually denoted ρ. Density matrices can describe both mixed and pure states, treating them on the same footing. Moreover, a mixed quantum state on a given quantum system described by a Hilbert space 
+  
+    
+      
+        H
+      
+    
+    {\displaystyle H}
+  
+ can be always represented as the partial trace of a pure quantum state (called a purification) on a larger bipartite system 
+  
+    
+      
+        H
+        ⊗
+        K
+      
+    
+    {\displaystyle H\otimes K}
+  
+ for a sufficiently large Hilbert space 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+.
+The density matrix describing a mixed state is defined to be an operator of the form
+
+  
+    
+      
+        ρ
+        =
+        
+          ∑
+          
+            s
+          
+        
+        
+          p
+          
+            s
+          
+        
+        
+          |
+        
+        
+          ψ
+          
+            s
+          
+        
+        ⟩
+        ⟨
+        
+          ψ
+          
+            s
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle \rho =\sum _{s}p_{s}|\psi _{s}\rangle \langle \psi _{s}|}
+  
+
+where ps is the fraction of the ensemble in each pure state 
+  
+    
+      
+        
+          |
+        
+        
+          ψ
+          
+            s
+          
+        
+        ⟩
+        .
+      
+    
+    {\displaystyle |\psi _{s}\rangle .}
+  
+ The density matrix can be thought of as a way of using the one-particle formalism to describe the behavior of many similar particles by giving a probability distribution (or ensemble) of states that these particles can be found in.
+A simple criterion for checking whether a density matrix is describing a pure or mixed state is that the trace of ρ2 is equal to 1 if the state is pure, and less than 1 if the state is mixed. Another, equivalent, criterion is that the von Neumann entropy is 0 for a pure state, and strictly positive for a mixed state.
+The rules for measurement in quantum mechanics are particularly simple to state in terms of density matrices. For example, the ensemble average (expectation value) of a measurement corresponding to an observable A is given by
+
+  
+    
+      
+        ⟨
+        A
+        ⟩
+        =
+        
+          ∑
+          
+            s
+          
+        
+        
+          p
+          
+            s
+          
+        
+        ⟨
+        
+          ψ
+          
+            s
+          
+        
+        
+          |
+        
+        A
+        
+          |
+        
+        
+          ψ
+          
+            s
+          
+        
+        ⟩
+        =
+        
+          ∑
+          
+            s
+          
+        
+        
+          ∑
+          
+            i
+          
+        
+        
+          p
+          
+            s
+          
+        
+        
+          a
+          
+            i
+          
+        
+        
+          |
+        
+        ⟨
+        
+          α
+          
+            i
+          
+        
+        
+          |
+        
+        
+          ψ
+          
+            s
+          
+        
+        ⟩
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        tr
+        ⁡
+        (
+        ρ
+        A
+        )
+      
+    
+    {\displaystyle \langle A\rangle =\sum _{s}p_{s}\langle \psi _{s}|A|\psi _{s}\rangle =\sum _{s}\sum _{i}p_{s}a_{i}|\langle \alpha _{i}|\psi _{s}\rangle |^{2}=\operatorname {tr} (\rho A)}
+  
+
+where 
+  
+    
+      
+        
+          |
+        
+        
+          α
+          
+            i
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\alpha _{i}\rangle }
+  
+ and 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+      
+    
+    {\displaystyle a_{i}}
+  
+ are eigenkets and eigenvalues, respectively, for the operator A, and "tr" denotes trace. Two types of averaging are occurring, one (over 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+) being the usual expected value of the observable when the quantum is in state  
+  
+    
+      
+        
+          |
+        
+        
+          ψ
+          
+            s
+          
+        
+        ⟩
+      
+    
+    {\displaystyle |\psi _{s}\rangle }
+  
+, and the other (over 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+) being a statistical (said incoherent) average with the probabilities ps that the quantum is in those states.
+
+
+== Mathematical generalizations ==
+States can be formulated in terms of observables, rather than as vectors in a vector space. These are positive normalized linear functionals on a C*-algebra, or sometimes other classes of algebras of observables.
+See State on a C*-algebra and Gelfand–Naimark–Segal construction for more details.
+
+
+== See also ==
+
+
+== Notes ==
+
+
+== References ==
+
+
+== Further reading ==
+The concept of quantum states, in particular the content of the section Formalism in quantum physics above, is covered in most standard textbooks on quantum mechanics.
+For a discussion of conceptual aspects and a comparison with classical states, see:
+
+Isham, Chris J (1995). Lectures on Quantum Theory: Mathematical and Structural Foundations. Imperial College Press. ISBN 978-1-86094-001-9.
+For a more detailed coverage of mathematical aspects, see:
+
+Bratteli, Ola; Robinson, Derek W (1987). Operator Algebras and Quantum Statistical Mechanics 1. Springer. ISBN 978-3-540-17093-8. 2nd edition. In particular, see Sec. 2.3.
+For a discussion of purifications of mixed quantum states, see Chapter 2 of John Preskill's lecture notes for Physics 219  at Caltech.
+For a discussion of geometric aspects see:
+
+Bengtsson I; Życzkowski K (2006). Geometry of Quantum States. Cambridge: Cambridge University Press., second, revised edition (2017)
