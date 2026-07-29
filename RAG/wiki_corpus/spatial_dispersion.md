@@ -1,660 +1,93 @@
-# Dispersion (optics)
+# Spatial dispersion
 
-> **Query Topic**: spatial dispersion (Rank #1 Search Result)  
-> **Source Queue**: train (Row ID: 146, Frequency: 9)  
-> **Wikipedia Page**: https://en.wikipedia.org/wiki/Dispersion_(optics)
+> **Query Topic**: spatial dispersion (Rank #2 Search Result)
+> **Source Queue**: test (Row ID: 418, Frequency: 9)
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Spatial_dispersion
 
 ---
 
-Dispersion is the phenomenon in which the phase velocity of a wave depends on its frequency. Sometimes the term chromatic dispersion is used to refer to optics specifically, as opposed to wave propagation in general.  A medium having this common property may be termed a dispersive medium.
-Although the term is used in the field of optics to describe light and other electromagnetic waves, dispersion in the same sense can apply to any sort of wave motion such as acoustic dispersion in the case of sound and seismic waves, and in gravity waves (ocean waves). Within optics, dispersion is a property of telecommunication signals along transmission lines (such as microwaves in coaxial cable) or the pulses of light in optical fiber.
-In optics, one important and familiar consequence of dispersion is the change in the angle of refraction of different colors of light, as seen in the spectrum produced by a dispersive prism and in chromatic aberration of lenses. Design of compound achromatic lenses, in which chromatic aberration is largely cancelled, uses a quantification of a glass's dispersion given by its Abbe number V, where lower Abbe numbers correspond to greater dispersion over the visible spectrum. In some applications such as telecommunications, the absolute phase of a wave is often not important but only the propagation of wave packets or "pulses"; in that case one is interested only in variations of group velocity with frequency, so-called group-velocity dispersion.
-All common transmission media also vary in attenuation (normalized to transmission length) as a function of frequency, leading to attenuation distortion; this is not dispersion, although sometimes reflections at closely spaced impedance boundaries (e.g. crimped segments in a cable) can produce signal distortion which further aggravates inconsistent transit time as observed across signal bandwidth.
+In the physics of continuous media , spatial dispersion is a phenomenon where material parameters such as the permittivity or conductivity have dependence on wavevector . Normally such a dependence is assumed to be absent for simplicity, however spatial dispersion exists to varying degrees in all materials.
 
+The underlying physical reason for the wavevector dependence is often that the material has some spatial structure smaller than the wavelength of any signals (such as light or sound) being considered. Since these small spatial structures cannot be resolved by the waves, only indirect effects (e.g. wavevector dependence) remain detectable. In such a case, although the light cannot resolve the individual atoms, they nevertheless can as an aggregate affect how the light propagates. Another common mechanism is that the (e.g.) light is coupled to an excitation of the material, such as a plasmon .
 
-== Examples ==
-Dispersion causes a rainbow's spatial separation of a white light into components of different wavelengths (different colors). However, dispersion also has an effect in many other circumstances: for example, group-velocity dispersion causes pulses to spread in optical fibers, degrading signals over long distances; also, a cancellation between group-velocity dispersion and nonlinear effects leads to soliton waves.
+Spatial dispersion can be compared to temporal dispersion, the latter often just called dispersion . Temporal dispersion represents memory effects in systems, commonly seen in optics and electronics. Spatial dispersion on the other hand represents spreading effects and is usually significant only at microscopic length scales. Spatial dispersion contributes relatively small perturbations to optics, providing weak effects such as optical activity . Spatial dispersion and temporal dispersion may occur in the same system.
 
+Spatial dispersion is also distinct from anisotropic effects like birefringence . In such phenomena, the effective material parameters felt by a wave depend on direction of the wavevector, but that can be entirely captured as a tensorial material parameter where the tensor components are independent of wavevector. By contrast, spatial dispersion means that the tensor parameter itself depends on the wavevector — its magnitude and (often) direction too.
 
-== Material and waveguide dispersion ==
-Most often, chromatic dispersion refers to bulk material dispersion, that is,  the change in refractive index with optical frequency. However, in a waveguide there is also the phenomenon of waveguide dispersion, in which case a wave's phase velocity in a structure depends on its frequency simply due to the structure's geometry. More generally, "waveguide" dispersion can occur for waves propagating through any inhomogeneous structure (e.g., a photonic crystal), whether or not the waves are confined to some region. In a waveguide, both types of dispersion will generally be present, although they are not strictly additive. For example, in fiber optics the material and waveguide dispersion can effectively cancel each other out to produce a zero-dispersion wavelength, important for fast fiber-optic communication.
+## Origin: nonlocal response
 
+The origin of spatial dispersion can be modelled as a nonlocal response, where response to a force field appears at many locations, and can appear even in locations where the force is zero. This usually arises due to a spreading of effects by the hidden microscopic degrees of freedom.
 
-== Material dispersion in optics ==
+As an example, consider the current $J(x,t)$ that is driven in response to an electric field $E(x,t)$ , which is varying in space (x) and time (t). Simplified laws such as Ohm's law would say that these are directly proportional to each other, $J=\sigma E$ , but this breaks down if the system has memory (temporal dispersion) or spreading (spatial dispersion). The most general linear response is given by:
 
-Material dispersion can be a desirable or undesirable effect in optical applications. The dispersion of light by glass prisms is used to construct spectrometers and spectroradiometers. However, in lenses, dispersion causes chromatic aberration, an undesired effect that may degrade images in microscopes, telescopes, and photographic objectives.
-The phase velocity v of a wave in a given uniform medium is given by
+$J(x,t)=\int _{-\infty }^{-\infty }dx'\int _{-\infty }^{-\infty }dt'\,\sigma (x,x',t,t')E(x',t'),$
 
-  
-    
-      
-        v
-        =
-        
-          
-            c
-            n
-          
-        
-        ,
-      
-    
-    {\displaystyle v={\frac {c}{n}},}
-  
+where $\sigma (x,x',t,t')dx'\,dt'$ is the nonlocal conductivity function.
 
-where c is the speed of light in vacuum, and n is the refractive index of the medium.
-In general, the refractive index is some function of the frequency f of the light, thus n = n(f), or alternatively, with respect to the wave's wavelength n = n(λ). The wavelength dependence of a material's refractive index is usually quantified by its Abbe number or its coefficients in an empirical formula such as the Cauchy or Sellmeier equations.
-Because of the Kramers–Kronig relations, the wavelength dependence of the real part of the refractive index is related to the material absorption, described by the imaginary part of the refractive index (also called the extinction coefficient). In particular, for non-magnetic materials (μ = μ0), the susceptibility χ that appears in the Kramers–Kronig relations is the electric susceptibility χe = n2 − 1.
-The most commonly seen consequence of dispersion in optics is the separation of white light into a color spectrum by a prism. From Snell's law it can be seen that the angle of refraction of light in a prism depends on the refractive index of the prism material. Since that refractive index varies with wavelength, it follows that the angle that the light is refracted by will also vary with wavelength, causing an angular separation of the colors known as angular dispersion.
-For visible light, the refraction index n of most transparent materials (e.g., air, glasses) decreases with increasing wavelength λ:
+If the system is invariant in time ( time translation symmetry ) and invariant in space (space translation symmetry), then we can simplify because $\sigma (x,x',t,t')=\sigma _{\rm {sym}}(x-x',t-t')$ for some convolution kernel $\sigma _{\rm {sym}}$ . We can also consider plane wave solutions for $E$ and $J$ like so:
 
-  
-    
-      
-        1
-        <
-        n
-        (
-        
-          λ
-          
-            red
-          
-        
-        )
-        <
-        n
-        (
-        
-          λ
-          
-            yellow
-          
-        
-        )
-        <
-        n
-        (
-        
-          λ
-          
-            blue
-          
-        
-        )
-        ,
-      
-    
-    {\displaystyle 1<n(\lambda _{\text{red}})<n(\lambda _{\text{yellow}})<n(\lambda _{\text{blue}}),}
-  
+$J(x,t)=\operatorname {Re} (J_{0}e^{ikx-i\omega t})$
 
-or generally,
+$E(x,t)=\operatorname {Re} (E_{0}e^{ikx-i\omega t})$
 
-  
-    
-      
-        
-          
-            
-              d
-              n
-            
-            
-              d
-              λ
-            
-          
-        
-        <
-        0.
-      
-    
-    {\displaystyle {\frac {dn}{d\lambda }}<0.}
-  
+which yields a remarkably simple relationship between the two plane waves' complex amplitudes:
 
-In this case, the medium is said to have normal dispersion. However, if the index increases with increasing wavelength (which is typically the case in the ultraviolet), the medium is said to have anomalous dispersion.
-At the interface of such a material with air or vacuum (index of ~1), Snell's law predicts that light incident at an angle θ to the normal will be refracted at an angle arcsin(⁠sin θ/n⁠). Thus, in the case of normal dispersion, blue light, with a higher refractive index, will be bent more strongly than red light, resulting in the well-known rainbow pattern.
+$J_{0}={\tilde {\sigma }}(k,\omega )E_{0}.$
 
+where the function ${\tilde {\sigma }}(k,\omega )$ is given by a Fourier transform of the space-time response function:
 
-== Group-velocity dispersion ==
+${\tilde {\sigma }}(k,\omega )=\int _{-\infty }^{-\infty }dx''\int _{-\infty }^{-\infty }dt''\,e^{-ikx''+i\omega t''}\sigma _{\rm {sym}}(x'',t'').$
 
-Beyond simply describing a change in the phase velocity over wavelength, a more serious consequence of dispersion in many applications is termed  group-velocity dispersion (GVD). While phase velocity v is defined as v = c/n, this describes only one frequency component. When different frequency components are combined, as when considering a signal or a pulse, one is often more interested in the group velocity, which describes the speed at which a pulse or information superimposed on a wave (modulation) propagates. In the accompanying animation, it can be seen that the wave itself (orange-brown) travels at a phase velocity much faster than the speed of the envelope (black), which corresponds to the group velocity. This pulse might be a communications signal, for instance, and its information only travels at the group velocity rate, even though it consists of wavefronts advancing at a faster rate (the phase velocity).
-It is possible to calculate the group velocity from the refractive-index curve n(ω) or more directly from the wavenumber k = ωn/c, where ω is the radian frequency ω = 2πf. Whereas one expression for the phase velocity is vp = ω/k, the group velocity can be expressed using the derivative: vg = dω/dk. Or in terms of the phase velocity vp,
+The conductivity function ${\tilde {\sigma }}(k,\omega )$ has spatial dispersion if it is dependent on the wavevector k . This occurs if the spatial function $\sigma _{\rm {sym}}(x-x',t-t')$ is not pointlike ( delta function ) response in x-x' .
 
-  
-    
-      
-        
-          v
-          
-            g
-          
-        
-        =
-        
-          
-            
-              v
-              
-                p
-              
-            
-            
-              1
-              −
-              
-                
-                  
-                    ω
-                    
-                      v
-                      
-                        p
-                      
-                    
-                  
-                
-              
-              
-                
-                  
-                    
-                      d
-                      
-                        v
-                        
-                          p
-                        
-                      
-                    
-                    
-                      d
-                      ω
-                    
-                  
-                
-              
-            
-          
-        
-        .
-      
-    
-    {\displaystyle v_{\text{g}}={\frac {v_{\text{p}}}{1-{\dfrac {\omega }{v_{\text{p}}}}{\dfrac {dv_{\text{p}}}{d\omega }}}}.}
-  
+## Spatial dispersion in electromagnetism
 
-When dispersion is present, not only the group velocity is not equal to the phase velocity, but generally it itself varies with wavelength. This is known as group-velocity dispersion and causes a short pulse of light to be broadened, as the different-frequency components within the pulse travel at different velocities. Group-velocity dispersion is quantified as the derivative of the reciprocal of the group velocity with respect to angular frequency, which results in group-velocity dispersion = d2k/dω2.
-If a light pulse is propagated through a material with positive group-velocity dispersion, then the shorter-wavelength components travel slower than the longer-wavelength components. The pulse therefore becomes positively chirped, or up-chirped, increasing in frequency with time. On the other hand, if a pulse travels through a material with negative group-velocity dispersion, shorter-wavelength components travel faster than the longer ones, and the pulse becomes negatively chirped, or down-chirped, decreasing in frequency with time.
-An everyday example of a negatively chirped signal in the acoustic domain is that of an approaching train hitting deformities on a welded track. The sound caused by the train itself is impulsive and travels much faster in the metal tracks than in air, so that the train can be heard well before it arrives. However, from afar it is not heard as causing impulses, but leads to a distinctive descending chirp, amidst reverberation caused by the complexity of the vibrational modes of the track. Group-velocity dispersion can be heard in that the volume of the sounds stays audible for a surprisingly long time, up to several seconds.
+In electromagnetism , spatial dispersion plays a role in a few material effects such as optical activity and doppler broadening . Spatial dispersion also plays an important role in the understanding of electromagnetic metamaterials . Most commonly, the spatial dispersion in permittivity ε is of interest.
 
+### Crystal optics
 
-== Dispersion control ==
+Inside crystals there may be a combination of spatial dispersion, temporal dispersion, and anisotropy. The constitutive relation for the polarization vector can be written as:
 
-The result of GVD, whether negative or positive, is ultimately temporal spreading of the pulse. This makes dispersion management extremely important in optical communications systems based on optical fiber, since if dispersion is too high, a group of pulses representing a bit-stream will spread in time and merge, rendering the bit-stream unintelligible. This limits the length of fiber that a signal can be sent down without regeneration. One possible answer to this problem is to send signals down the optical fibre at a wavelength where the GVD is zero (e.g., around 1.3–1.5 μm in silica fibres), so pulses at this wavelength suffer minimal spreading from dispersion. In practice, however, this approach causes more problems than it solves because zero GVD unacceptably amplifies other nonlinear effects (such as four-wave mixing). Another possible option is to use soliton pulses in the regime of negative dispersion, a form of optical pulse which uses a nonlinear optical effect to self-maintain its shape. Solitons have the practical problem, however, that they require a certain power level to be maintained in the pulse for the nonlinear effect to be of the correct strength. Instead, the solution that is currently used in practice is to perform dispersion compensation, typically by matching the fiber with another fiber of opposite-sign dispersion so that the dispersion effects cancel; such compensation is ultimately limited by nonlinear effects such as self-phase modulation, which interact with dispersion to make it very difficult to undo.
-Dispersion control is also important in lasers that produce short pulses. The overall dispersion of the optical resonator is a major factor in determining the duration of the pulses emitted by the laser. A pair of prisms can be arranged to produce net negative dispersion, which can be used to balance the usually positive dispersion of the laser medium. Diffraction gratings can also be used to produce dispersive effects; these are often used in high-power laser amplifier systems. Recently, an alternative to prisms and gratings has been developed: chirped mirrors. These dielectric mirrors are coated so that different wavelengths have different penetration lengths, and therefore different group delays. The coating layers can be tailored to achieve a net negative dispersion.
+$P_{i}({\vec {k}},\omega )=\sum _{j}(\epsilon _{ij}({\vec {k}},\omega )-\epsilon _{0}\delta _{ij})E_{j}({\vec {k}},\omega ),$
 
+i.e., the permittivity is a wavevector- and frequency-dependent tensor .
 
-== In waveguides ==
-Waveguides are highly dispersive due to their geometry (rather than just to their material composition). Optical fibers are a sort of waveguide for optical frequencies (light) widely used in modern telecommunications systems. The rate at which data can be transported on a single fiber is limited by pulse broadening due to chromatic dispersion among other phenomena.
-In general, for a waveguide mode with an angular frequency ω(β) at a propagation constant β (so that the electromagnetic fields in the propagation direction z oscillate proportional to ei(βz−ωt)), the group-velocity dispersion parameter D is defined as
+Considering Maxwell's equations , one can find the plane wave normal modes inside such crystals. These occur when the following relationship is satisfied for a nonzero electric field vector ${\vec {E}}$ :
 
-  
-    
-      
-        D
-        =
-        −
-        
-          
-            
-              2
-              π
-              c
-            
-            
-              λ
-              
-                2
-              
-            
-          
-        
-        
-          
-            
-              
-                d
-                
-                  2
-                
-              
-              β
-            
-            
-              d
-              
-                ω
-                
-                  2
-                
-              
-            
-          
-        
-        =
-        
-          
-            
-              2
-              π
-              c
-            
-            
-              
-                v
-                
-                  g
-                
-                
-                  2
-                
-              
-              
-                λ
-                
-                  2
-                
-              
-            
-          
-        
-        
-          
-            
-              d
-              
-                v
-                
-                  g
-                
-              
-            
-            
-              d
-              ω
-            
-          
-        
-        ,
-      
-    
-    {\displaystyle D=-{\frac {2\pi c}{\lambda ^{2}}}{\frac {d^{2}\beta }{d\omega ^{2}}}={\frac {2\pi c}{v_{g}^{2}\lambda ^{2}}}{\frac {dv_{g}}{d\omega }},}
-  
+$\omega ^{2}\mu _{0}\epsilon ({\vec {k}},\omega ){\vec {E}}-({\vec {k}}\cdot {\vec {k}}){\vec {E}}+({\vec {k}}\cdot {\vec {E}}){\vec {k}}=0.$
 
-where λ = 2πc/ω is the vacuum wavelength, and vg = dω/dβ is the group velocity. This formula generalizes the one in the previous section for homogeneous media and includes both waveguide dispersion and material dispersion. The reason for defining the dispersion in this way is that |D| is the (asymptotic) temporal pulse spreading Δt per unit bandwidth
-Δλ per unit distance travelled, commonly reported in ps/(nm⋅km) for optical fibers.
-In the case of multi-mode optical fibers, so-called modal dispersion will also lead to pulse  broadening. Even in single-mode fibers, pulse broadening can occur as a result of polarization mode dispersion (since there are still two polarization modes). These are not examples of chromatic dispersion, as they are not dependent on the wavelength or bandwidth of the pulses propagated.
+Spatial dispersion in $\epsilon ({\vec {k}},\omega )$ can lead to strange phenomena, such as the existence of multiple modes at the same frequency and wavevector direction, but with different wavevector magnitudes.
 
+Nearby crystal surfaces and boundaries, it is no longer valid to describe system response in terms of wavevectors. For a full description it is necessary to return to a full nonlocal response function (without translational symmetry ), however the end effect can sometimes be described by "additional boundary conditions" (ABC's).
 
-== Higher-order dispersion over broad bandwidths ==
-When a broad range of frequencies (a broad bandwidth) is present in a single wavepacket, such as in an ultrashort pulse or a chirped pulse or other forms of spread spectrum transmission, it may not be accurate to approximate the dispersion by a constant over the entire bandwidth, and more complex calculations are required to compute effects such as pulse spreading.
-In particular, the dispersion parameter D defined above is obtained from only one derivative of the group velocity. Higher derivatives are known as higher-order dispersion. These terms are simply a Taylor series expansion of the dispersion relation β(ω) of the medium or waveguide around some particular frequency. Their effects can be computed via numerical evaluation of Fourier transforms of the waveform, via integration of higher-order slowly varying envelope approximations, by a split-step method (which can use the exact dispersion relation rather than a Taylor series), or by direct simulation of the full Maxwell's equations rather than an approximate envelope equation.
+### In isotropic media
 
+In materials that have no relevant crystalline structure, spatial dispersion can be important.
 
-== Spatial dispersion ==
+Although symmetry demands that the permittivity is isotropic for zero wavevector, this restriction does not apply for nonzero wavevector. The non-isotropic permittivity for nonzero wavevector leads to effects such as optical activity in solutions of chiral molecules. In isotropic materials without optical activity, the permittivity tensor can be broken down to transverse and longitudinal components, referring to the response to electric fields either perpendicular or parallel to the wavevector.
 
-In electromagnetics and optics, the term dispersion generally refers to aforementioned temporal or frequency dispersion. Spatial dispersion refers to the non-local response of the medium to the space; this can be reworded as the wavevector dependence of the permittivity. For an exemplary anisotropic medium, the spatial relation between electric and electric displacement field can be expressed as a convolution:
+For frequencies nearby an absorption line (e.g., an exciton ), spatial dispersion can play an important role.
 
-  
-    
-      
-        
-          D
-          
-            i
-          
-        
-        (
-        t
-        ,
-        r
-        )
-        =
-        
-          E
-          
-            i
-          
-        
-        (
-        t
-        ,
-        r
-        )
-        +
-        
-          ∫
-          
-            0
-          
-          
-            ∞
-          
-        
-        ∫
-        
-          f
-          
-            i
-            k
-          
-        
-        (
-        τ
-        ;
-        r
-        ,
-        
-          r
-          ′
-        
-        )
-        
-          E
-          
-            k
-          
-        
-        (
-        t
-        −
-        τ
-        ,
-        
-          r
-          ′
-        
-        )
-        
-        d
-        
-          V
-          ′
-        
-        
-        d
-        τ
-        ,
-      
-    
-    {\displaystyle D_{i}(t,r)=E_{i}(t,r)+\int _{0}^{\infty }\int f_{ik}(\tau ;r,r')E_{k}(t-\tau ,r')\,dV'\,d\tau ,}
-  
+### Landau damping
 
-where the kernel 
-  
-    
-      
-        
-          f
-          
-            i
-            k
-          
-        
-      
-    
-    {\displaystyle f_{ik}}
-  
- is dielectric response (susceptibility); its indices make it in general a tensor to account for the anisotropy of the medium. Spatial dispersion is negligible in most macroscopic cases, where the scale of variation of 
-  
-    
-      
-        
-          E
-          
-            k
-          
-        
-        (
-        t
-        −
-        τ
-        ,
-        
-          r
-          ′
-        
-        )
-      
-    
-    {\displaystyle E_{k}(t-\tau ,r')}
-  
- is much larger than atomic dimensions, because the dielectric kernel dies out at macroscopic distances. Nevertheless, it can result in non-negligible macroscopic effects, particularly in conducting media such as metals, electrolytes and plasmas. Spatial dispersion also plays role in optical activity and Doppler broadening, as well as in the theory of metamaterials.
+In plasma physics, a wave can be collisionlessly damped by particles in the plasma whose velocity matches the wave's phase velocity. This is typically represented as a spatially dispersive loss in the plasma's permittivity.
 
+### Permittivity–permeability ambiguity at nonzero frequency
 
-== In gemology ==
+At nonzero frequencies, it is possible to represent all magnetizations as time-varying polarizations . Moreover, since the electric and magnetic fields are directly related by $\nabla \times E=-\partial B/\partial t$ , the magnetization induced by a magnetic field can be represented instead as a polarization induced by the electric field, though with a highly dispersive relationship.
 
-In the technical terminology of gemology, dispersion is the difference in the refractive index of a material at the B and G (686.7 nm and 430.8 nm) or C and F (656.3 nm and 486.1 nm) Fraunhofer wavelengths, and is meant to express the degree to which a prism cut from the gemstone demonstrates "fire".  Fire is a colloquial term used by gemologists to describe a gemstone's dispersive nature or lack thereof. Dispersion is a material property. The amount of fire demonstrated by a given gemstone is a function of the gemstone's facet angles, the polish quality, the lighting environment, the material's refractive index, the saturation of color, and the orientation of the viewer relative to the gemstone.
+What this means is that at nonzero frequency, any contribution to permeability μ can instead be alternatively represented by a spatially dispersive contribution to permittivity ε . The values of the permeability and permittivity are different in this alternative representation, however this leads to no observable differences in real quantities such as electric field, magnetic flux density, magnetic moments, and current.
 
+As a result, it is most common at optical frequencies to set μ to the vacuum permeability μ 0 and only consider a dispersive permittivity ε . There is some discussion over whether this is appropriate in metamaterials where effective medium approximations for μ are used, and debate over the reality of "negative permeability" seen in negative index metamaterials .
 
-== In imaging ==
-In photographic and microscopic lenses, dispersion causes chromatic aberration, which causes the different colors in the image not to overlap properly. Various techniques have been developed to counteract this, such as the use of achromats, multielement lenses with glasses of different dispersion. They are constructed in such a way that the chromatic aberrations of the different parts cancel out.
+### Static spatial dispersion
 
+Even at zero frequency, a charge disturbance in one location will cause a delocalized cloud that screens its effect. This delocalization can be described as spatial dispersion in the static permittivity. In a metal this takes the form of Friedel oscillations , wherein in the permittivity function $\epsilon (k)$ can be understood as a hard cutoff for wavevectors exceeding twice the Fermi wavevector, and this hard cutoff causing a form of ringing artifact .
 
-== Pulsar emissions ==
-Pulsars are spinning neutron stars that emit pulses at very regular intervals ranging from milliseconds to seconds. Astronomers believe that the pulses are emitted simultaneously over a wide range of frequencies. However, as observed on Earth, the components of each pulse emitted at higher radio frequencies arrive before those emitted at lower frequencies. This dispersion occurs because of the ionized component of the interstellar medium, mainly the free electrons, which make the group velocity frequency-dependent. The extra delay added at a frequency ν is
+## Spatial dispersion in acoustics
 
-  
-    
-      
-        t
-        =
-        
-          k
-          
-            DM
-          
-        
-        ⋅
-        
-          (
-          
-            
-              DM
-              
-                ν
-                
-                  2
-                
-              
-            
-          
-          )
-        
-        ,
-      
-    
-    {\displaystyle t=k_{\text{DM}}\cdot \left({\frac {\text{DM}}{\nu ^{2}}}\right),}
-  
+In acoustics , especially in solids, spatial dispersion can be significant for wavelengths comparable to the lattice spacing, which typically occurs at very high frequencies ( gigahertz and above).
 
-where the dispersion constant kDM is given by
+In solids, the difference in propagation for transverse acoustic modes and longitudinal acoustic modes of sound is due to a spatial dispersion in the elasticity tensor which relates stress and strain. For polar vibrations ( optical phonons ), the distinction between longitudinal and transverse modes can be seen as a spatial dispersion in the restoring forces, from the "hidden" non-mechanical degree of freedom that is the electromagnetic field.
 
-  
-    
-      
-        
-          k
-          
-            DM
-          
-        
-        =
-        
-          
-            
-              e
-              
-                2
-              
-            
-            
-              2
-              π
-              
-                m
-                
-                  e
-                
-              
-              c
-            
-          
-        
-        ≈
-        4.149
-         
-        
-          
-            GHz
-          
-          
-            2
-          
-        
-        
-        
-          
-            pc
-          
-          
-            −
-            1
-          
-        
-        
-        
-          
-            cm
-          
-          
-            3
-          
-        
-        
-        
-          ms
-        
-        ,
-      
-    
-    {\displaystyle k_{\text{DM}}={\frac {e^{2}}{2\pi m_{\text{e}}c}}\approx 4.149~{\text{GHz}}^{2}\,{\text{pc}}^{-1}\,{\text{cm}}^{3}\,{\text{ms}},}
-  
-
-and the dispersion measure (DM) is the column density of free electrons (total electron content) –  i.e. the number density of electrons ne integrated along the path traveled by the photon from the pulsar to the Earth –  and is given by
-
-  
-    
-      
-        
-          DM
-        
-        =
-        
-          ∫
-          
-            0
-          
-          
-            d
-          
-        
-        
-          n
-          
-            e
-          
-        
-        
-        d
-        l
-      
-    
-    {\displaystyle {\text{DM}}=\int _{0}^{d}n_{e}\,dl}
-  
-
-with units of parsecs per cubic centimetre (1 pc/cm3 = 30.857×1021 m−2).
-Typically for astronomical observations, this delay cannot be measured directly, since the emission time is unknown. What can be measured is the difference in arrival times at two different frequencies. The delay Δt between a high-frequency νhi and a low-frequency νlo component of a pulse will be
-
-  
-    
-      
-        Δ
-        t
-        =
-        
-          k
-          
-            DM
-          
-        
-        ⋅
-        
-          DM
-        
-        ⋅
-        
-          (
-          
-            
-              
-                1
-                
-                  ν
-                  
-                    lo
-                  
-                  
-                    2
-                  
-                
-              
-            
-            −
-            
-              
-                1
-                
-                  ν
-                  
-                    hi
-                  
-                  
-                    2
-                  
-                
-              
-            
-          
-          )
-        
-        .
-      
-    
-    {\displaystyle \Delta t=k_{\text{DM}}\cdot {\text{DM}}\cdot \left({\frac {1}{\nu _{\text{lo}}^{2}}}-{\frac {1}{\nu _{\text{hi}}^{2}}}\right).}
-  
-
-Rewriting the above equation in terms of Δt allows one to determine the DM by measuring pulse arrival times at multiple frequencies. This in turn can be used to study the interstellar medium, as well as allow observations of pulsars at different frequencies to be combined.
-
-
-== See also ==
-
-
-== References ==
-
-
-== External links ==
-
-Dispersive Wiki Archived 2017-07-23 at the Wayback Machine – discussing the mathematical aspects of dispersion.
-Dispersion – Encyclopedia of Laser Physics and Technology
-Animations demonstrating optical dispersion by QED
-Interactive webdemo for chromatic dispersion Institute of Telecommunications, University of Stuttgart
+Many electromagnetic wave effects from spatial dispersion find an analogue in acoustic waves . For example, there is acoustical activity — the rotation of the polarization plane of transverse sound waves — in chiral materials , analogous to optical activity.

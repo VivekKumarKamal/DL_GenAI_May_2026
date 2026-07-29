@@ -1,16 +1,24 @@
+# It fetches the top 3 articles from searching topics_to_search
+# renames file names so they don't contain any unallowed characters in kaggle
+
 import os
+import re
+import sys
 import json
 import time
+import hashlib
+import threading
+import unicodedata
 import requests
+from urllib.parse import quote
 import pandas as pd
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Dynamic path resolution so the pipeline runs portably on any machine/environment
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Input CSV: manually checked queue file
-QUEUE_PATH = os.path.join(BASE_DIR, "topics_to_fetch_manually_checked.csv")
+DEFAULT_QUEUE_PATH = os.path.join(BASE_DIR, "topics_to_fetch.csv")
+QUEUE_PATH = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_QUEUE_PATH
 
 CACHE_DIR = os.path.join(BASE_DIR, "wiki_corpus")
 FAILURES_LOG_PATH = os.path.join(BASE_DIR, "fetch_failures.json")
@@ -20,17 +28,119 @@ WIKI_API_URL = "https://en.wikipedia.org/w/api.php"
 HEADERS = {
     "User-Agent": "SmartMCQSolverBot/1.0 (https://github.com/example/mcq-solver; contact: student@example.com)"
 }
-MAX_WORKERS = 2        # 2 worker threads + polite delays to respect Wikipedia API rate limits (avoid HTTP 429)
-MAX_RETRIES = 5        # Retries per request with exponential backoff
-DELAY_BETWEEN_REQ = 0.25  # Delay in seconds between API requests
-TOP_K_ARTICLES = 2    # Download top 2 articles per topic search for broader RAG context coverage
+MAX_WORKERS = 4
+MAX_RETRIES = 5
+DELAY_BETWEEN_REQ = 0.25
+TOP_K_ARTICLES = 3
+
+
+
+_PUNCT_MAP = {
+    "‐": "-", "‑": "-", "‒": "-",   # hyphen variants
+    "–": "-", "—": "-", "―": "-",   # en dash, em dash, horizontal bar
+    "‘": "", "’": "", "‚": "", "‛": "",   # single quotes
+    "“": "", "”": "", "„": "", "‟": "",   # double quotes
+    "′": "", "″": "",                    # prime, double prime
+    " ": " ",                                 # non-breaking space
+    "'": "", '"': "",                              # ASCII quotes
+}
+_PUNCT_MAP.update({
+    "&": " and ", "°": "deg", "±": "pm", "×": "x", "÷": "div",
+    "→": "to", "∞": "inf", "≈": "approx", "≠": "ne", "≤": "le", "≥": "ge",
+})
+
+_GREEK_MAP = {
+    "α": "alpha", "β": "beta", "γ": "gamma", "δ": "delta", "ε": "epsilon",
+    "ζ": "zeta", "η": "eta", "θ": "theta", "ι": "iota", "κ": "kappa",
+    "λ": "lambda", "μ": "mu", "ν": "nu", "ξ": "xi", "ο": "omicron",
+    "π": "pi", "ρ": "rho", "σ": "sigma", "ς": "sigma", "τ": "tau",
+    "υ": "upsilon", "φ": "phi", "χ": "chi", "ψ": "psi", "ω": "omega",
+}
+_GREEK_MAP.update({g.upper(): n.capitalize() for g, n in list(_GREEK_MAP.items())})
+_PUNCT_MAP.update(_GREEK_MAP)
+
+_UNSAFE_FILENAME_CHARS = re.compile(r"[^A-Za-z0-9._-]")
+_MAX_STEM_LEN = 120  
+
+
+def title_to_filename(title: str) -> str:
+    text = str(title).strip()
+    for src, dst in _PUNCT_MAP.items():
+        text = text.replace(src, dst)
+
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
+
+    text = _UNSAFE_FILENAME_CHARS.sub("_", text)
+    text = re.sub(r"_{2,}", "_", text).strip("._-")
+    return f"{text[:_MAX_STEM_LEN] or 'untitled'}.md"
+
+
+def normalize_title(title: str) -> str:
+    return re.sub(r"\s+", " ", str(title).replace("_", " ")).strip().casefold()
+
+
+def scan_existing_titles(cache_dir: str) -> dict:
+   
+    known = {}
+    if not os.path.isdir(cache_dir):
+        return known
+
+    for name in os.listdir(cache_dir):
+        if not name.endswith(".md"):
+            continue
+        path = os.path.join(cache_dir, name)
+        try:
+            if os.path.getsize(path) <= 100:
+                continue
+            with open(path, "r", encoding="utf-8") as f:
+                head = f.read(2048)
+        except OSError:
+            continue
+
+        match = re.match(r"#\s+(.+)", head)
+        if not match:
+            match = re.search(r"\*\*Wikipedia Page\*\*:\s*\S+/wiki/(\S+)", head)
+        if match:
+            key = normalize_title(match.group(1))
+            if key not in known:
+                known[key] = name
+                USED_FILENAMES[name] = key
+
+    return known
+
+
+_titles_lock = threading.Lock()
+EXISTING_TITLES = {}   # normalized title -> filename
+USED_FILENAMES = {}    # filename -> normalized title
+
+
+def claim_article(title: str) -> str | None:
+    
+    key = normalize_title(title)
+    with _titles_lock:
+        if key in EXISTING_TITLES:
+            return None
+
+        filename = title_to_filename(title)
+        if USED_FILENAMES.get(filename, key) != key:
+            stem, ext = os.path.splitext(filename)
+            filename = f"{stem}_{hashlib.md5(key.encode('utf-8')).hexdigest()[:6]}{ext}"
+
+        EXISTING_TITLES[key] = filename
+        USED_FILENAMES[filename] = key
+        return filename
+
+
+def release_title(title: str) -> None:
+    """Undo a claim when the download turns out to fail, so a retry can pick it up."""
+    key = normalize_title(title)
+    with _titles_lock:
+        filename = EXISTING_TITLES.pop(key, None)
+        if filename:
+            USED_FILENAMES.pop(filename, None)
 
 
 def make_wikipedia_api_request(params: dict, session: requests.Session) -> dict | None:
-    """
-    Helper function to perform Wikipedia API GET requests with robust HTTP 429 rate-limit handling,
-    exponential backoff, and safe JSON parsing.
-    """
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             resp = session.get(WIKI_API_URL, params=params, headers=HEADERS, timeout=12)
@@ -53,10 +163,6 @@ def make_wikipedia_api_request(params: dict, session: requests.Session) -> dict 
 
 
 def search_wikipedia_titles(topic: str, session: requests.Session, top_k: int = TOP_K_ARTICLES) -> list[str]:
-    """
-    Query Wikipedia's Search API to find the top `top_k` canonical article titles for a topic string.
-    This resolves descriptive topics to their most relevant Wikipedia articles (e.g. top 2 results).
-    """
     params = {
         "action": "query",
         "list": "search",
@@ -74,11 +180,87 @@ def search_wikipedia_titles(topic: str, session: requests.Session, top_k: int = 
     return titles
 
 
+# fetch clean markdown, with real formulas
+
+USE_HTML_API = True
+
+REST_HTML_URL = "https://en.wikipedia.org/api/rest_v1/page/html/{}"
+
+# Sections that hold only link lists and citations.
+TAIL_SECTIONS = {
+    "see also", "references", "further reading", "external links",
+    "notes", "bibliography", "sources", "citations", "works cited",
+}
+
+DROP_SELECTORS = [
+    "style", "script", "table", "figure", "figcaption", "img", "audio", "video",
+    "sup.mw-ref", "sup.reference", "span.mw-editsection", "link", "meta",
+    "div.hatnote", "div.navbox", "ol.references", "span.mw-cite-backlink",
+]
+
+
+def _tex_of(node) -> str:
+    """Pull the original TeX out of a <math> element."""
+    annotation = node.find("annotation", attrs={"encoding": "application/x-tex"})
+    tex = (annotation.get_text() if annotation else node.get("alttext") or "").strip()
+    # Wikipedia wraps display maths as "{\displaystyle ... }"; drop the wrapper.
+    match = re.match(r"^\{\\displaystyle\s(.*)\}$", tex, re.S)
+    if match:
+        tex = match.group(1)
+    return re.sub(r"\s+", " ", tex).strip()
+
+
+def html_to_markdown(html: str) -> str:
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(html, "lxml")
+
+    for node in soup.find_all("math"):
+        tex = _tex_of(node)
+        node.replace_with(f" ${tex}$ " if tex else " ")
+
+    for selector in DROP_SELECTORS:
+        for element in soup.select(selector):
+            element.decompose()
+
+    blocks = []
+    for el in (soup.body or soup).find_all(["h2", "h3", "h4", "p", "li", "dd"]):
+        if el.name in ("h2", "h3", "h4"):
+            heading = re.sub(r"\s+", " ", el.get_text(" ", strip=True))
+            if el.name == "h2" and heading.lower().strip() in TAIL_SECTIONS:
+                break
+            if heading:
+                blocks.append("\n" + "#" * int(el.name[1]) + " " + heading)
+            continue
+        text = re.sub(r"[ \t]+", " ", el.get_text(" ", strip=True)).strip()
+        if len(text) < 2:
+            continue
+        blocks.append(f"- {text}" if el.name == "li" else text)
+
+    markdown = re.sub(r"\n{3,}", "\n\n", "\n\n".join(blocks))
+    return re.sub(r"[ \t]+\$", " $", markdown).strip()
+
+
+def fetch_wikipedia_html(title: str, session: requests.Session) -> str | None:
+    """Fetch a page as Parsoid HTML and convert it to clean markdown."""
+    url = REST_HTML_URL.format(quote(title.replace(" ", "_"), safe=""))
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            resp = session.get(url, headers=HEADERS, timeout=30)
+            if resp.status_code == 429:
+                time.sleep(int(resp.headers.get("Retry-After", attempt * 2)))
+                continue
+            if resp.status_code == 200:
+                return html_to_markdown(resp.text)
+            if resp.status_code == 404:
+                return None
+        except (requests.RequestException, ValueError):
+            time.sleep(attempt * 1.5)
+        time.sleep(DELAY_BETWEEN_REQ)
+    return None
+
+
 def fetch_wikipedia_text(title: str, session: requests.Session) -> str | None:
-    """
-    Fetch the full plain-text extract of a Wikipedia page using MediaWiki prop=extracts.
-    Follows redirects automatically (explaintext=True returns clean markdown-friendly text).
-    """
     params = {
         "action": "query",
         "prop": "extracts",
@@ -97,88 +279,72 @@ def fetch_wikipedia_text(title: str, session: requests.Session) -> str | None:
 
 
 def fetch_and_save_topic(row: dict, session: requests.Session) -> dict:
-    """
-    Process a single topic row: search Wikipedia for the top 2 articles, retrieve page texts,
-    and save them as separate Markdown files (e.g., 'topic.md' for Rank #1 and 'topic_2.md' for Rank #2).
-    """
     topic = row["topic"]
-    filename = row["cache_filename"]
-    base_name, ext = os.path.splitext(filename)
-
-    # Determine file paths for Top 2 articles
-    # Rank 1: 'einstein.md'
-    # Rank 2: 'einstein_2.md'
-    file_1 = os.path.join(CACHE_DIR, filename)
-    file_2 = os.path.join(CACHE_DIR, f"{base_name}_2{ext}")
-
-    # Check if both articles are already downloaded and valid (>100 bytes)
-    has_1 = os.path.exists(file_1) and os.path.getsize(file_1) > 100
-    has_2 = os.path.exists(file_2) and os.path.getsize(file_2) > 100
-
-    if has_1 and has_2:
-        return {"topic": topic, "status": "already_cached", "filename": filename, "articles_saved": 2}
 
     time.sleep(DELAY_BETWEEN_REQ)
 
-    # 1. Search Wikipedia API for top 2 titles
     wiki_titles = search_wikipedia_titles(topic, session, top_k=TOP_K_ARTICLES)
     if not wiki_titles:
-        return {"topic": topic, "status": "search_failed", "filename": filename, "error": "No Wikipedia search match found"}
+        return {"topic": topic, "status": "search_failed", "error": "No Wikipedia search match found"}
 
     example_id = row.get("example_row_id", "N/A")
     source = row.get("source", "N/A")
     freq = row.get("frequency", 1)
 
-    saved_count = 0
     saved_titles = []
+    skipped_titles = []
 
-    # 2. Iterate through returned search results (up to top 2)
     for rank, wiki_title in enumerate(wiki_titles, start=1):
-        target_filepath = file_1 if rank == 1 else file_2
-
-        # Skip if this specific rank file is already cached
-        if os.path.exists(target_filepath) and os.path.getsize(target_filepath) > 100:
-            saved_count += 1
-            saved_titles.append(wiki_title)
+        filename = claim_article(wiki_title)
+        if filename is None:
+            skipped_titles.append(wiki_title)
             continue
 
+        target_filepath = os.path.join(CACHE_DIR, filename)
         time.sleep(DELAY_BETWEEN_REQ)
 
-        # Retrieve full article text
-        content = fetch_wikipedia_text(wiki_title, session)
-        if content and len(content.strip()) >= 100:
-            markdown_doc = f"""# {wiki_title}
+        content = None
+        if USE_HTML_API:
+            content = fetch_wikipedia_html(wiki_title, session)
+        if not content or len(content.strip()) < 100:
 
-> **Query Topic**: {topic} (Rank #{rank} Search Result)  
-> **Source Queue**: {source} (Row ID: {example_id}, Frequency: {freq})  
+            # fall back to the plaintext extract rather than losing the article.
+            content = fetch_wikipedia_text(wiki_title, session)
+        if not content or len(content.strip()) < 100:
+            release_title(wiki_title)  
+            continue
+
+        markdown_doc = f"""# {wiki_title}
+
+> **Query Topic**: {topic} (Rank #{rank} Search Result)
+> **Source Queue**: {source} (Row ID: {example_id}, Frequency: {freq})
 > **Wikipedia Page**: https://en.wikipedia.org/wiki/{wiki_title.replace(' ', '_')}
 
 ---
 
 {content.strip()}
 """
-            with open(target_filepath, "w", encoding="utf-8") as f:
-                f.write(markdown_doc)
+        with open(target_filepath, "w", encoding="utf-8") as f:
+            f.write(markdown_doc)
 
-            saved_count += 1
-            saved_titles.append(wiki_title)
+        saved_titles.append(wiki_title)
 
-    if saved_count == 0:
-        return {"topic": topic, "status": "fetch_failed", "filename": filename, "error": "Empty or short article content for all results"}
+    if not saved_titles and not skipped_titles:
+        return {"topic": topic, "status": "fetch_failed", "error": "Empty or short article content for all results"}
+
+    if not saved_titles:
+        return {"topic": topic, "status": "already_cached", "skipped_titles": skipped_titles}
 
     return {
         "topic": topic,
         "status": "success",
-        "filename": filename,
-        "saved_count": saved_count,
+        "saved_count": len(saved_titles),
         "saved_titles": saved_titles,
+        "skipped_titles": skipped_titles,
     }
 
 
 def main():
-    # ---------------------------------------------------------------------------
-    # Step 1: Load input queue file
-    # ---------------------------------------------------------------------------
     if not os.path.exists(QUEUE_PATH):
         print(f"Error: Queue CSV file not found at {QUEUE_PATH}")
         return
@@ -187,26 +353,27 @@ def main():
     queue_df = pd.read_csv(QUEUE_PATH)
     print(f"Loaded {len(queue_df)} topics to process (fetching Top {TOP_K_ARTICLES} Wikipedia articles per topic).")
 
-    # ---------------------------------------------------------------------------
-    # Step 2: Ensure cache directory exists
-    # ---------------------------------------------------------------------------
     os.makedirs(CACHE_DIR, exist_ok=True)
 
-    # Convert DataFrame records to list of dicts
+    global EXISTING_TITLES
+    EXISTING_TITLES = scan_existing_titles(CACHE_DIR)
+    n_files = len([f for f in os.listdir(CACHE_DIR) if f.endswith(".md")])
+    print(f"Corpus already holds {len(EXISTING_TITLES)} distinct articles across {n_files} files.")
+    if n_files > len(EXISTING_TITLES):
+        print(f"  ({n_files - len(EXISTING_TITLES)} of those files are duplicate copies of an "
+              f"article stored under another name — legacy topic-based filenames.)")
+
     topic_records = queue_df.to_dict("records")
 
     already_cached = 0
     newly_fetched = 0
+    articles_saved = 0
     failed = []
 
-    # ---------------------------------------------------------------------------
-    # Step 3: Concurrent Multi-Threaded Fetching
-    # ---------------------------------------------------------------------------
     print(f"\nFetching Top {TOP_K_ARTICLES} Wikipedia articles using {MAX_WORKERS} rate-limited threads...")
     
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         with requests.Session() as session:
-            # Submit tasks to thread pool
             future_to_row = {
                 executor.submit(fetch_and_save_topic, row, session): row
                 for row in topic_records
@@ -221,20 +388,20 @@ def main():
                     already_cached += 1
                 elif status == "success":
                     newly_fetched += 1
+                    articles_saved += res.get("saved_count", 0)
                 else:
                     failed.append(res)
 
-    # ---------------------------------------------------------------------------
-    # Step 4: Print Summary Statistics
-    # ---------------------------------------------------------------------------
     print("\n" + "=" * 50)
     print(" FETCH SUMMARY REPORT")
     print("=" * 50)
-    print(f"Total topics in queue   : {len(topic_records)}")
-    print(f"Already fully cached    : {already_cached} (skipped)")
-    print(f"Newly downloaded topics : {newly_fetched}")
-    print(f"Failed topics           : {len(failed)}")
-    print(f"Wiki Corpus directory   : {CACHE_DIR}")
+    print(f"Total topics in queue    : {len(topic_records)}")
+    print(f"Already fully cached     : {already_cached} (skipped)")
+    print(f"Topics with new articles : {newly_fetched}")
+    print(f"New articles downloaded  : {articles_saved}")
+    print(f"Failed topics            : {len(failed)}")
+    print(f"Distinct articles held   : {len(EXISTING_TITLES)}")
+    print(f"Wiki Corpus directory    : {CACHE_DIR}")
 
     if failed:
         with open(FAILURES_LOG_PATH, "w", encoding="utf-8") as f:

@@ -3,26 +3,18 @@ import os
 import json
 import pandas as pd
 
-# Dynamic path resolution so the pipeline runs portably on any machine/environment
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TRAIN_PATH = os.path.join(BASE_DIR, "train.csv")
 TEST_PATH = os.path.join(BASE_DIR, "test.csv")
-CACHE_DIR = os.path.join(BASE_DIR, "wiki_corpus")          # where downloaded .md files will live
-QUEUE_PATH = os.path.join(BASE_DIR, "topics_to_fetch.csv")  # output of this script
+CACHE_DIR = os.path.join(BASE_DIR, "wiki_corpus")
+QUEUE_PATH = os.path.join(BASE_DIR, "topics_to_fetch.csv")
 
 
-# ---------------------------------------------------------------------------
-# STEP 1: Strip the templated wrapper phrasing around each prompt
-# ---------------------------------------------------------------------------
-# Your prompts are a real question wrapped in one of a handful of template
-# phrases, e.g. "Pick the best possible answer: What is X? among the listed
-# options." The wrapper is noise for topic extraction -- strip it first.
-# Optimization: Combined into pre-compiled regexes for ~5x faster execution.
-# ---------------------------------------------------------------------------
 
 PREFIX_PATTERN = re.compile(
     r"^(?:pick the best possible answer|select the most accurate option|"
     r"identify the correct statement|choose the correct answer|"
+    r"definition of|distinction between|first person to describe the|"
     r"determine the correct option|which of the following is correct)[\:\?\,\.]?\s*",
     flags=re.IGNORECASE,
 )
@@ -34,25 +26,21 @@ SUFFIX_PATTERN = re.compile(
 )
 
 
+QUOTE_CHARS = '"“”„‟″«»'
+_QUOTE_PATTERN = re.compile(f"[{re.escape(QUOTE_CHARS)}]")
+
+
+def strip_quotes(text: str) -> str:
+    """Remove double-quote characters and tidy the whitespace they leave behind."""
+    return re.sub(r"\s+", " ", _QUOTE_PATTERN.sub("", str(text))).strip()
+
+
 def strip_template(prompt: str) -> str:
-    text = prompt.strip()
+    text = strip_quotes(prompt)
     text = PREFIX_PATTERN.sub("", text)
     text = SUFFIX_PATTERN.sub("", text)
     return text.strip()
 
-
-# ---------------------------------------------------------------------------
-# STEP 1.5: Stopword trimming + junk filtering
-# ---------------------------------------------------------------------------
-# The raw regex extraction grabs phrases like "Observations of the" or
-# "Which of the" -- these are template/connector debris, not real topics.
-# We handle this in two passes:
-#   1. TRIM edge stopwords off the front/back of every candidate (e.g.
-#      "Observations of the" -> "Observations", "The Higgs" -> "Higgs")
-#   2. BLOCK candidates that are pure junk even after trimming (e.g.
-#      "Which of", "None of", or anything left with zero real content words)
-# Simplification: Self-contained STOPWORDS set removes heavy scikit-learn dependency.
-# ---------------------------------------------------------------------------
 
 STOPWORDS = {
     "a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are",
@@ -71,13 +59,14 @@ STOPWORDS = {
     "we'd", "we'll", "we're", "we've", "were", "weren't", "what", "what's", "when", "when's",
     "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with",
     "won't", "would", "wouldn't", "you", "you'd", "you'll", "you're", "you've", "your",
-    "yours", "yourself", "yourselves",
-    # Domain template / generic noise words that pollute candidate topics
+    "yours", "yourself", "yourselves", "definition", "distinction", "difference", "contrast",
+    "concept",
+    # generic noise words 
     "correct", "accurate", "statement", "option", "options", "choice", "choices", "answer",
     "following", "none", "observations", "results", "analysis", "study", "studies", "aim",
 }
 
-# Common English non-topic words and sentence-starting adverbs that pollute single-word extractions
+# Common English non-topic words: only applies to single-word titles
 COMMON_SINGLE_WORDS = {
     "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
     "first", "second", "third", "fourth", "fifth", "main", "key", "type", "types",
@@ -91,11 +80,19 @@ COMMON_SINGLE_WORDS = {
     "normally", "frequently", "rarely", "basically", "specifically",
 }
 
-# Phrases that are junk on their own even if they survive trimming
+# Bare action verbs that survive extraction as a single word but don't describe the topic title
+GENERIC_GERUNDS = {
+    "detecting", "measuring", "calculating", "determining", "describing",
+    "comparing", "using", "increasing", "decreasing", "following", "containing",
+    "representing", "observing", "testing", "showing", "identifying",
+    "explaining", "occurring", "resulting", "involving", "regarding",
+}
+
+# Phrases that are junk even if they survive trimming
 JUNK_PHRASES = {
     "which of", "none of", "some of", "all of", "either of", "neither of",
     "the following", "following statements", "listed options", "observations of",
-    "observations of the", "aim of the", "significance of the", "distinction between", "definition of", "first person to describe the"
+    "observations of the", "aim of the", "significance of the", "definition of", "first person to describe the"
 }
 
 # Trailing clause patterns to clean off question subjects (e.g. "used for in physics" -> "")
@@ -123,7 +120,7 @@ def is_junk_topic(phrase: str) -> bool:
     lower_phrase = phrase.lower()
     if lower_phrase in JUNK_PHRASES:
         return True
-    # Nothing left but stopwords -> junk
+   
     if all(w.lower() in STOPWORDS for w in words):
         return True
     # Single leftover word that's a stopword, generic word, or too short to be a useful search term
@@ -131,26 +128,32 @@ def is_junk_topic(phrase: str) -> bool:
         w_lower = words[0].lower()
         if w_lower in STOPWORDS or w_lower in COMMON_SINGLE_WORDS or len(words[0]) < 3:
             return True
+        
+        # not putting an "-ing" rule, because many of real physics
+        # topics are gerunds: string, damping, scattering, coupling, tunneling.
+        if w_lower in GENERIC_GERUNDS:
+            return True
     return False
 
 
 def clean_topic(phrase: str) -> str | None:
     """Trim + junk-filter a raw candidate. Clean possessives ('s) & punctuation. Returns None if junk."""
-    # Fix: Strip trailing possessives ('s) and surrounding punctuation to avoid truncated terms like "Moon's"
     phrase = re.sub(r"'s$", "", phrase.strip(), flags=re.IGNORECASE).strip(" .,;:'\"`")
+    # Drop every double quote. Regex slicing often leaves one half of a quoted
+    # span behind ('concept of "maximal acceleration'), and even balanced quotes
+    # hurt: Wikipedia's search API reads them as an exact-phrase operator, so
+    # they narrow the search instead of helping it.
+    phrase = strip_quotes(phrase)
+    # Drop commas too. They carry no weight in a Wikipedia search, and any topic
+    # containing one forces the CSV writer to wrap the whole field in double
+    # quotes -- which then reads as though the topic itself were quoted.
+    phrase = re.sub(r"\s+", " ", phrase.replace(",", " ")).strip()
     phrase = TAIL_CLEANUP_PATTERN.sub("", phrase).strip()
     trimmed = trim_edge_stopwords(phrase)
     if is_junk_topic(trimmed):
         return None
     return trimmed
 
-
-# ---------------------------------------------------------------------------
-# STEP 2: Extract a "core topic" from a cleaned question
-# ---------------------------------------------------------------------------
-# Optimization: Expanded pattern to catch "What is/are/was/were/does...",
-# "Who proposed/discovered...", "Which ... is known as..."
-# ---------------------------------------------------------------------------
 
 CORE_TOPIC_PATTERN = re.compile(
     r"^(?:what|who|which)\s+(?:is|are|was|were|does|do|did|proposed|discovered|shared)?\s*(?:the\s+|an?\s+)?(.+?)\??$",
@@ -162,24 +165,13 @@ def extract_core_topic(cleaned_prompt: str) -> str | None:
     match = CORE_TOPIC_PATTERN.match(cleaned_prompt.strip())
     if match:
         topic = match.group(1).strip()
-        # Drop a trailing "?" if the regex left one in (nested question marks)
         topic = topic.rstrip("?").strip()
-        if 1 <= len(topic.split()) <= 16:  # sanity bound, avoid grabbing whole paragraphs
+        if 1 <= len(topic.split()) <= 16: 
             return clean_topic(topic)
     return None
 
 
-# ---------------------------------------------------------------------------
-# STEP 3: General-purpose proper-noun / technical-term extractor
-# ---------------------------------------------------------------------------
-# Works on ANY text (prompt or option), not just "what is" questions.
-# Heuristic: sequences of Capitalized Words / Alphanumeric Terms, allowing
-# lowercase "glue" words in between (of, the, effect, law, theorem, etc.).
-# Optimization: Allows 1-word capitalized technical terms from options (e.g. "Blueshifting").
-# ---------------------------------------------------------------------------
-
-GLUE_WORDS = r"(?:of|the|and|in|on|for|effect|law|theorem|principle|equation|constant)"
-# Allow alphanumeric terms like CEERS-93316 or GP-B
+GLUE_WORDS = r"(?:of|the|and|in|on|for|effect|law|theorem|principle|equation|constant|between)"
 PROPER_PHRASE_PATTERN = re.compile(
     rf"\b[A-Z][\w'-]*(?:\s+(?:[A-Z0-9][\w'-]*|{GLUE_WORDS}))*\b"
 )
@@ -200,10 +192,6 @@ def extract_proper_phrases(text: str, is_option: bool = False) -> list[str]:
     return cleaned
 
 
-# ---------------------------------------------------------------------------
-# STEP 4: Pull all candidate topics out of one row (prompt + options A-E)
-# ---------------------------------------------------------------------------
-
 def extract_topics_from_row(row: dict) -> set:
     topics = set()
 
@@ -216,23 +204,26 @@ def extract_topics_from_row(row: dict) -> set:
     topics.update(extract_proper_phrases(cleaned_prompt, is_option=False))
 
     for opt_col in ["A", "B", "C", "D", "E"]:
-        opt_text = str(row.get(opt_col, ""))
+        # Options never pass through strip_template, so de-quote them here.
+        opt_text = strip_quotes(row.get(opt_col, ""))
         topics.update(extract_proper_phrases(opt_text, is_option=True))
 
     # Normalize: strip trailing possessive ('s), collapse whitespace, drop empties, and re-check for junk
     normalized = set()
     for t in topics:
-        t = re.sub(r"'s$", "", t.strip(), flags=re.IGNORECASE)
-        t = re.sub(r"\s+", " ", t).strip(" .,;:'\"`")
+        t = re.sub(r"'s$", "", strip_quotes(t), flags=re.IGNORECASE)
+        t = re.sub(r"\s+", " ", t).strip(" .,;:'`")
         if t and not is_junk_topic(t):
             normalized.add(t)
 
+
+    if not normalized:
+        fallback = " ".join(strip_quotes(cleaned_prompt).replace(",", " ").split()[:20]).strip(" .,;:'`?")
+        if len(fallback.split()) >= 3:
+            normalized.add(fallback)
+
     return normalized
 
-
-# ---------------------------------------------------------------------------
-# STEP 5: Cache-key helper -- what filename would this topic be saved as?
-# ---------------------------------------------------------------------------
 
 def topic_to_filename(topic: str) -> str:
     key = topic.lower().strip()
@@ -240,9 +231,6 @@ def topic_to_filename(topic: str) -> str:
     return f"{key}.md"
 
 
-# ---------------------------------------------------------------------------
-# MAIN
-# ---------------------------------------------------------------------------
 
 def main():
     train_df = pd.read_csv(TRAIN_PATH)
@@ -254,11 +242,14 @@ def main():
     # topic -> info about where it came from (frequency + one example row)
     topic_info = {}  # normalized_key -> {"display": str, "count": int, "example_id": int}
 
-    for df, source_name in [(train_df, "train"), (test_df, "test")]:
+    row_topic_keys = {}   # (source, row id) -> set of topic keys, for coverage checks
+
+    for df, source_name in [(test_df, "test"), (train_df, "train")]:
         # Optimization: iterate over dict records (~20x faster than pd.DataFrame.iterrows())
         for row in df.to_dict("records"):
             row_topics = extract_topics_from_row(row)
             row_id = row["id"]
+            row_topic_keys[(source_name, row_id)] = {t.lower() for t in row_topics}
             for t in row_topics:
                 key = t.lower()
                 if key not in topic_info:
@@ -267,7 +258,29 @@ def main():
 
     print(f"\nExtracted {len(topic_info)} unique candidate topics across both files.")
 
-    # ---- Check against local cache (already-downloaded .md files) ----
+    
+    token_lists = {k: tuple(k.split()) for k in topic_info}
+    longer_by_head = {}
+    for key, toks in token_lists.items():
+        for n in range(1, len(toks)):
+            longer_by_head.setdefault(toks[:n], []).append(key)
+
+    redundant = {key for key, toks in token_lists.items() if toks in longer_by_head}
+
+ 
+    rescued = set()
+    for keys in row_topic_keys.values():
+        if keys and keys <= redundant:
+            rescued.add(max(keys, key=lambda k: len(k.split())))
+    redundant -= rescued
+
+    for key in redundant:
+        topic_info.pop(key, None)
+    print(f"Dropped {len(redundant)} token-prefix duplicates "
+          f"(kept {len(rescued)} that were a row's only topic).")
+    print(f"Queue after merge + dedupe: {len(topic_info)} topics.")
+
+    
     os.makedirs(CACHE_DIR, exist_ok=True)
     already_cached_files = set(os.listdir(CACHE_DIR))
 
@@ -294,9 +307,6 @@ def main():
     queue_df = pd.DataFrame(to_fetch).sort_values("frequency", ascending=False)
     queue_df.to_csv(QUEUE_PATH, index=False)
     print(f"\nSaved fetch queue to: {QUEUE_PATH}")
-
-    print("\nTop 15 most frequent candidate topics (highest value to fetch first):")
-    print(queue_df[["topic", "frequency", "source"]].head(15).to_string(index=False))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,214 @@
+# Navier–Stokes existence and smoothness
+
+> **Query Topic**: Navier-Stokes equations (Rank #2 Search Result)
+> **Source Queue**: test (Row ID: 230, Frequency: 13)
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Navier–Stokes_existence_and_smoothness
+
+---
+
+The Navier–Stokes existence and smoothness problem concerns the mathematical properties of solutions to the Navier–Stokes equations , a system of partial differential equations that describe the motion of a fluid in space. Solutions to the Navier–Stokes equations are used in many practical applications. However, theoretical understanding of the solutions to these equations is incomplete. In particular, solutions of the Navier–Stokes equations often include turbulence , which remains one of the greatest unsolved problems in physics , despite its immense importance in science and engineering.
+
+Even more basic (and seemingly intuitive) properties of the solutions to Navier–Stokes have never been proven. For the three-dimensional system of equations, and given some initial conditions , mathematicians have neither proved that smooth solutions always exist, nor found any counter-examples. This is called the Navier–Stokes existence and smoothness problem.
+
+Since understanding the Navier–Stokes equations is considered to be the first step to understanding the elusive phenomenon of turbulence , the Clay Mathematics Institute in May 2000 made this problem one of its seven Millennium Prize problems in mathematics. It offered a US$1,000,000 prize to the first person providing a solution for a specific statement of the problem:
+
+Prove or give a counter-example of the following statement:
+
+In three space dimensions and time, given an initial velocity field, there exists a vector velocity and a scalar pressure field, which are both smooth and globally defined, that solve the Navier–Stokes equations.
+
+## The Navier–Stokes equations
+
+In mathematics, the Navier–Stokes equations are a system of nonlinear partial differential equations for abstract vector fields of any size. In physics and engineering, they are a system of equations that model the motion of liquids or non- rarefied gases (in which the mean free path is short enough so that it can be thought of as a continuum mean instead of a collection of particles) using continuum mechanics . The equations are a statement of Newton's second law , with the forces modeled according to those in a viscous Newtonian fluid —as the sum of contributions by pressure, viscous stress and an external body force . Since the setting of the problem proposed by the Clay Mathematics Institute is in three dimensions, for an incompressible and homogeneous fluid, only that case is considered below.
+
+Let $\mathbf {v} ({\boldsymbol {x}},t)$ be a 3-dimensional vector field, the velocity of the fluid, and let $p({\boldsymbol {x}},t)$ be the pressure of the fluid. The Navier–Stokes equations are:
+
+${\frac {\partial \mathbf {v} }{\partial t}}+(\mathbf {v} \cdot \nabla )\mathbf {v} =-{\frac {1}{\rho }}\nabla p+\nu \Delta \mathbf {v} +\mathbf {f} ({\boldsymbol {x}},t)$
+
+where $\nu >0$ is the kinematic viscosity , $\mathbf {f} ({\boldsymbol {x}},t)$ the external volumetric force, $\nabla$ is the gradient operator and $\displaystyle \Delta$ is the Laplacian operator, which is also denoted by $\nabla \cdot \nabla$ or $\nabla ^{2}$ . Note that this is a vector equation, i.e. it has three scalar equations. Writing down the coordinates of the velocity and the external force
+
+$\mathbf {v} ({\boldsymbol {x}},t)={\big (}\,v_{1}({\boldsymbol {x}},t),\,v_{2}({\boldsymbol {x}},t),\,v_{3}({\boldsymbol {x}},t)\,{\big )}\,,\qquad \mathbf {f} ({\boldsymbol {x}},t)={\big (}\,f_{1}({\boldsymbol {x}},t),\,f_{2}({\boldsymbol {x}},t),\,f_{3}({\boldsymbol {x}},t)\,{\big )}$
+
+then for each $i=1,2,3$ there is the corresponding scalar Navier–Stokes equation:
+
+${\frac {\partial v_{i}}{\partial t}}+\sum _{j=1}^{3}{\frac {\partial v_{i}}{\partial x_{j}}}v_{j}=-{\frac {1}{\rho }}{\frac {\partial p}{\partial x_{i}}}+\nu \sum _{j=1}^{3}{\frac {\partial ^{2}v_{i}}{\partial x_{j}^{2}}}+f_{i}({\boldsymbol {x}},t).$
+
+The unknowns are the velocity $\mathbf {v} ({\boldsymbol {x}},t)$ and the pressure $p({\boldsymbol {x}},t)$ . Since in three dimensions, there are three equations and four unknowns (three scalar velocities and the pressure), then a supplementary equation is needed. This extra equation is the continuity equation for incompressible fluids that describes the conservation of mass of the fluid:
+
+$\nabla \cdot \mathbf {v} =0.$
+
+Due to this last property, the solutions for the Navier–Stokes equations are searched in the set of solenoidal (" divergence -free") functions. For this flow of a homogeneous medium, density and viscosity are constants.
+
+Since only its gradient appears, the pressure p can be eliminated by taking the curl of both sides of the Navier–Stokes equations. In this case the Navier–Stokes equations reduce to the vorticity-transport equations .
+
+The Navier–Stokes equations are nonlinear , meaning that the terms in the equations do not have a simple linear relationship with each other. This means that the equations cannot be solved using traditional linear techniques, and more advanced methods must be used instead. This nonlinearity allows the equations to describe a wide range of fluid dynamics phenomena, including the formation of shock waves and other complex flow patterns.
+
+One way to understand the nonlinearity of the Navier–Stokes equations is to consider the term $(\mathbf {v} \cdot \nabla )\mathbf {v}$ in the equations. This term represents the acceleration of the fluid, and it is a product of the velocity vector v and the gradient operator ∇. Because the gradient operator is a linear operator, the term (v · ∇)v is nonlinear in the velocity vector v. This means that the acceleration of the fluid depends on the magnitude and direction of the velocity, as well as the spatial distribution of the velocity within the fluid.
+
+(In the case of compressible flow , another source of nonlinearity in the Navier–Stokes equations is the pressure term $-{\frac {1}{\rho }}\nabla p$ . The pressure in a fluid depends on the density and the gradient of the pressure, and this term is therefore nonlinear in the pressure.)
+
+To see this more explicitly, consider the case of a circular obstacle of radius $R$ placed in a uniform flow with velocity $\mathbf {v_{0}}$ and density $\rho$ . Let $\mathbf {v} (\mathbf {x} ,t)$ be the velocity of the fluid at position $\mathbf {x}$ and time $t$ , and let $p(\mathbf {x} ,t)$ be the pressure at the same position and time.
+
+The Navier–Stokes equations in this case are:
+
+${\frac {\partial \mathbf {v} }{\partial t}}+(\mathbf {v} \cdot \nabla )\mathbf {v} =-{\frac {1}{\rho }}\nabla p+\nu \Delta \mathbf {v}$
+
+$\nabla \cdot \mathbf {v} =0$
+
+where $\nu$ is the kinematic viscosity of the fluid.
+
+Assuming that the flow is steady (meaning that the velocity and pressure do not vary with time), we can set the time derivative terms equal to zero:
+
+$(\mathbf {v} \cdot \nabla )\mathbf {v} =-{\frac {1}{\rho }}\nabla p+\nu \Delta \mathbf {v}$
+
+$\nabla \cdot \mathbf {v} =0$
+
+We can now consider the flow near the circular obstacle. In this region, the velocity of the fluid will be higher than the uniform flow velocity $\mathbf {v_{0}}$ due to the presence of the obstacle. This results in a nonlinear term $(\mathbf {v} \cdot \nabla )\mathbf {v}$ in the Navier–Stokes equations that is proportional to the velocity of the fluid.
+
+At the same time, the presence of the obstacle will also result in a pressure gradient , with higher pressure near the obstacle and lower pressure farther away. This can be seen by considering the continuity equation, which states that the mass flow rate through any surface must be constant. Since the velocity is higher near the obstacle, the mass flow rate through a surface near the obstacle will be higher than the mass flow rate through a surface farther away from the obstacle. This can be compensated for by a pressure gradient, with higher pressure near the obstacle and lower pressure farther away.
+
+As a result of these nonlinear effects, the Navier–Stokes equations in this case become difficult to solve, and approximations or numerical methods must be used to find the velocity and pressure fields in the flow.
+Consider the case of a two-dimensional fluid flow in a rectangular domain, with a velocity field $\mathbf {v} (x,t)$ and a pressure field $p(x,t)$ . We can use a finite element method to solve the Navier–Stokes equation for the velocity field:
+
+${\frac {\partial u}{\partial t}}+u{\frac {\partial u}{\partial x}}+v{\frac {\partial u}{\partial y}}=-{\frac {1}{\rho }}{\frac {\partial p}{\partial x}}+\nu \left({\frac {\partial ^{2}u}{\partial x^{2}}}+{\frac {\partial ^{2}u}{\partial y^{2}}}\right)+f_{x}(x,y,t)$
+
+To do this, we divide the domain into a series of smaller elements, and represent the velocity field as:
+
+$u(x,y,t)=\sum _{i=1}^{N}U_{i}(t)\phi _{i}(x,y)$
+
+where $N$ is the number of elements, and $\phi _{i}(x,y)$ are the shape functions associated with each element. Substituting this expression into the Navier–Stokes equation and applying the finite element method, we can derive a system of ordinary differential equations:
+
+${\frac {dU_{i}}{dt}}=-{\frac {1}{\rho }}\sum _{j=1}^{N}\left({\frac {\partial p}{\partial x}}\right)j\int {\Omega }\phi _{j}{\frac {\partial \phi _{i}}{\partial x}}d\Omega +\nu \sum _{j=1}^{N}\int _{\Omega }\left({\frac {\partial ^{2}u}{\partial x^{2}}}\right)\phi _{j}{\frac {\partial ^{2}\phi _{i}}{\partial x^{2}}}d\Omega +\int {\Omega }f_{x}\phi _{i}d\Omega$
+
+where $\Omega$ is the domain, and the integrals are over the domain. This system of ordinary differential equations can be solved using techniques such as the finite element method or spectral methods.
+
+Here, we will use the finite difference method. To do this, we can divide the time interval $[t_{0},t_{f}]$ into a series of smaller time steps, and approximate the derivative at each time step using a finite difference formula:
+
+${\frac {U_{i+1}-U_{i}}{\Delta t}}\approx -{\frac {1}{\rho }}\sum _{j=1}^{N}\left({\frac {\partial p}{\partial x}}\right)j\int {\Omega }\phi _{j}{\frac {\partial \phi _{i}}{\partial x}}d\Omega +\nu \sum _{j=1}^{N}\int _{\Omega }\left({\frac {\partial ^{2}u}{\partial x^{2}}}\right)j\phi _{j}{\frac {\partial ^{2}\phi _{i}}{\partial x^{2}}}d\Omega +\int {\Omega }f_{x}\phi _{i}d\Omega$
+
+where $\Delta t=t_{i+1}-t_{i}$ is the size of the time step, and $U_{i}$ and $t_{i}$ are the values of $U_{i}$ and $t$ at time step $i$ .
+
+Using this approximation, we can iterate through the time steps and compute the value of $U_{i}$ at each time step. For example, starting at time step $i$ and using the approximation above, we can compute the value of $U_{i}$ at time step $i+1$ :
+
+$U_{i+1}=U_{i}+\Delta t\cdot \left(-{\frac {1}{\rho }}\sum _{j=1}^{N}\left({\frac {\partial p}{\partial x}}\right)j\int {\Omega }\phi _{j}{\frac {\partial \phi _{i}}{\partial x}}d\Omega +\nu \sum _{j=1}^{N}\int _{\Omega }\left({\frac {\partial ^{2}u}{\partial x^{2}}}\right)_{j}\phi _{j}{\frac {\partial ^{2}\phi _{i}}{\partial x^{2}}}d\Omega +\int _{\Omega }f_{x}\phi _{i}d\Omega \right)$
+
+This process can be repeated until we reach the final time step $t_{f}$ .
+
+There are many other approaches to solving ordinary differential equations, each with its own advantages and disadvantages. The choice of approach depends on the specific equation being solved, and the desired accuracy and efficiency of the solution.
+
+## Two settings: unbounded and periodic space
+
+There are two different settings for the one-million-dollar-prize Navier–Stokes existence and smoothness problem. The original problem is in the whole space $\mathbb {R} ^{3}$ , which needs extra conditions on the growth behavior of the initial condition and the solutions. In order to rule out the problems at infinity, the Navier–Stokes equations can be set in a periodic framework, which implies that they are no longer working on the whole space $\mathbb {R} ^{3}$ but in the 3-dimensional torus $\mathbb {T} ^{3}=\mathbb {R} ^{3}/\mathbb {Z} ^{3}$ . Each case will be treated separately.
+
+## Statement of the problem in the whole space
+
+### Hypotheses and growth conditions
+
+The initial condition $\mathbf {v} _{0}(x)$ is assumed to be a smooth and divergence-free function (see smooth function ) such that, for every multi-index $\alpha$ (see multi-index notation ) and any $K>0$ , there exists a constant $C=C(\alpha ,K)>0$ such that
+
+$\vert \partial ^{\alpha }\mathbf {v_{0}} (x)\vert \leq {\frac {C}{(1+\vert x\vert )^{K}}}\qquad$ for all $\qquad x\in \mathbb {R} ^{3}.$
+
+The external force $\mathbf {f} (x,t)$ is assumed to be a smooth function as well, and satisfies a very analogous inequality (now the multi-index includes time derivatives as well):
+
+$\vert \partial ^{\alpha }\mathbf {f} (x,t)\vert \leq {\frac {C}{(1+\vert x\vert +t)^{K}}}\qquad$ for all $\qquad (x,t)\in \mathbb {R} ^{3}\times [0,\infty ).$
+
+For physically reasonable conditions, the type of solutions expected are smooth functions that do not grow large as $\vert x\vert \to \infty$ . More precisely, the following assumptions are made:
+
+- $\mathbf {v} (x,t)\in C^{\infty }(\mathbb {R} ^{3}\times [0,\infty )),\qquad p(x,t)\in C^{\infty }(\mathbb {R} ^{3}\times [0,\infty ))$
+
+- There exists a constant $E\in (0,\infty )$ such that $\int _{\mathbb {R} ^{3}}\vert \mathbf {v} (x,t)\vert ^{2}\,dx<E$ for all $t\geq 0\,.$
+
+Condition 1 implies that the functions are smooth and globally defined and condition 2 means that the kinetic energy of the solution is globally bounded.
+
+### The Millennium Prize conjectures in the whole space
+
+(A) Existence and smoothness of the Navier–Stokes solutions in $\mathbb {R} ^{3}$
+
+Let $\mathbf {f} (x,t)\equiv 0$ . For any initial condition $\mathbf {v} _{0}(x)$ satisfying the above hypotheses there exist smooth and globally defined solutions to the Navier–Stokes equations, i.e. there is a velocity vector $\mathbf {v} (x,t)$ and a pressure $p(x,t)$ satisfying conditions 1 and 2 above.
+
+(B) Breakdown of the Navier–Stokes solutions in $\mathbb {R} ^{3}$
+
+There exists an initial condition $\mathbf {v} _{0}(x)$ and an external force $\mathbf {f} (x,t)$ such that there exists no solutions $\mathbf {v} (x,t)$ and $p(x,t)$ satisfying conditions 1 and 2 above.
+
+The Millennium Prize conjectures are two mathematical problems that were chosen by the Clay Mathematics Institute as the most important unsolved problems in mathematics. The first conjecture, which is known as the "smoothness" conjecture, states that there should always exist smooth and globally defined solutions to the Navier–Stokes equations in three-dimensional space . The second conjecture, known as the "breakdown" conjecture, states that there should be at least one set of initial conditions and external forces for which there are no smooth solutions to the Navier–Stokes equations.
+The Navier–Stokes equations are a set of partial differential equations that describe the motion of fluids. They are given by:
+
+${\frac {\partial \mathbf {v} }{\partial t}}+(\mathbf {v} \cdot \nabla )\mathbf {v} =-{\frac {1}{\rho }}\nabla p+\nu \nabla ^{2}\mathbf {v} +\mathbf {f}$
+
+$\nabla \cdot \mathbf {v} =0$
+
+where $\mathbf {v} (x,t)$ is the velocity field of the fluid, $p(x,t)$ is the pressure, $\rho$ is the density, $\nu$ is the kinematic viscosity, and $\mathbf {f} (x,t)$ is an external force. The first equation is known as the momentum equation, and the second equation is known as the continuity equation.
+
+These equations are typically accompanied by boundary conditions, which describe the behavior of the fluid at the edges of the domain. For example, in the case of a fluid flowing through a pipe, the boundary conditions might specify that the velocity and pressure are fixed at the walls of the pipe.
+
+The Navier–Stokes equations are nonlinear and highly coupled, making them difficult to solve in general. In particular, the difficulty of solving these equations lies in the term $(\mathbf {v} \cdot \nabla )\mathbf {v}$ , which represents the nonlinear advection of the velocity field by itself. This term makes the Navier–Stokes equations highly sensitive to initial conditions, and it is the main reason why the Millennium Prize conjectures are so challenging.
+
+In addition to the mathematical challenges of solving the Navier–Stokes equations, there are also many practical challenges in applying these equations to real-world situations. For example, the Navier–Stokes equations are often used to model fluid flows that are turbulent, which means that the fluid is highly chaotic and unpredictable. Turbulence is a difficult phenomenon to model and understand, and it adds another layer of complexity to the problem of solving the Navier–Stokes equations.
+To solve the Navier–Stokes equations, we need to find a velocity field $\mathbf {v} (x,t)$ and a pressure field $p(x,t)$ that satisfy the equations and the given boundary conditions. This can be done using a variety of numerical techniques, such as finite element methods, spectral methods, or finite difference methods.
+
+For example, consider the case of a two-dimensional fluid flow in a rectangular domain, with velocity and pressure fields $\mathbf {v} (x,t)$ and a pressure field $p(x,t)$ ,respectively. The Navier–Stokes equations can be written as:
+
+${\frac {\partial u}{\partial t}}+u{\frac {\partial u}{\partial x}}+v{\frac {\partial u}{\partial y}}=-{\frac {1}{\rho }}{\frac {\partial p}{\partial x}}+\nu \left({\frac {\partial ^{2}u}{\partial x^{2}}}+{\frac {\partial ^{2}u}{\partial y^{2}}}\right)+f_{x}(x,y,t)$
+
+${\frac {\partial v}{\partial t}}+u{\frac {\partial v}{\partial x}}+v{\frac {\partial v}{\partial y}}=-{\frac {1}{\rho }}{\frac {\partial p}{\partial y}}+\nu \left({\frac {\partial ^{2}v}{\partial x^{2}}}+{\frac {\partial ^{2}v}{\partial y^{2}}}\right)+f_{y}(x,y,t)$
+
+${\frac {\partial u}{\partial x}}+{\frac {\partial v}{\partial y}}=0$
+
+where $\rho$ is the density, $\nu$ is the kinematic viscosity, and $\mathbf {f} (x,y,t)=(f_{x}(x,y,t),f_{y}(x,y,t))$ is an external force. The boundary conditions might specify that the velocity is fixed at the walls of the domain, or that the pressure is fixed at certain points.
+
+To solve these equations numerically, we can divide the domain into a series of smaller elements, and solve the equations locally within each element. For example, using a finite element method, we might represent the velocity and pressure fields as:
+
+$u(x,y,t)=\sum _{i=1}^{N}U_{i}(t)\phi _{i}(x,y)$
+
+$v(x,y,t)=\sum _{i=1}^{N}V_{i}(t)\phi _{i}(x,y)$
+
+$p(x,y,t)=\sum _{i=1}^{N}P_{i}(t)\phi _{i}(x,y)$
+
+where $N$ is the number of elements, and $\phi _{i}(x,y)$ are the shape functions associated with each element. Substituting these expressions into the Navier–Stokes equations and applying the finite element method, we can derive a system of ordinary differential equations
+
+## Statement of the periodic problem
+
+### Hypotheses
+
+The functions sought now are periodic in the space variables of period 1. More precisely, let $e_{i}$ be the unitary vector in the i - direction:
+
+$e_{1}=(1,0,0)\,,\qquad e_{2}=(0,1,0)\,,\qquad e_{3}=(0,0,1)$
+
+Then $\mathbf {v} (x,t)$ is periodic in the space variables if for any $i=1,2,3$ , then:
+
+$\mathbf {v} (x+e_{i},t)=\mathbf {v} (x,t){\text{ for all }}(x,t)\in \mathbb {R} ^{3}\times [0,\infty ).$
+
+Notice that this is considering the coordinates mod 1 . This allows working not on the whole space $\mathbb {R} ^{3}$ but on the quotient space $\mathbb {R} ^{3}/\mathbb {Z} ^{3}$ , which turns out to be the 3-dimensional torus:
+
+$\mathbb {T} ^{3}=\{(\theta _{1},\theta _{2},\theta _{3}):0\leq \theta _{i}<2\pi \,,\quad i=1,2,3\}.$
+
+Now the hypotheses can be stated properly. The initial condition $\mathbf {v} _{0}(x)$ is assumed to be a smooth and divergence-free function and the external force $\mathbf {f} (x,t)$ is assumed to be a smooth function as well. The type of solutions that are physically relevant are those who satisfy these conditions:
+
+- $\mathbf {v} (x,t)\in C^{\infty }(\mathbb {T} ^{3}\times [0,\infty )),\qquad p(x,t)\in C^{\infty }(\mathbb {T} ^{3}\times [0,\infty ))$
+
+- There exists a constant $E\in (0,\infty )$ such that $\int _{\mathbb {T} ^{3}}\vert \mathbf {v} (x,t)\vert ^{2}\,dx<E$ for all $t\geq 0\,.$
+
+Just as in the previous case, condition 3 implies that the functions are smooth and globally defined and condition 4 means that the kinetic energy of the solution is globally bounded.
+
+### The periodic Millennium Prize theorems
+
+(C) Existence and smoothness of the Navier–Stokes solutions in $\mathbb {T} ^{3}$
+
+Let $\mathbf {f} (x,t)\equiv 0$ . For any initial condition $\mathbf {v} _{0}(x)$ satisfying the above hypotheses there exist smooth and globally defined solutions to the Navier–Stokes equations, i.e. there is a velocity vector $\mathbf {v} (x,t)$ and a pressure $p(x,t)$ satisfying conditions 3 and 4 above.
+
+(D) Breakdown of the Navier–Stokes solutions in $\mathbb {T} ^{3}$
+
+There exists an initial condition $\mathbf {v} _{0}(x)$ and an external force $\mathbf {f} (x,t)$ such that there exists no solutions $\mathbf {v} (x,t)$ and $p(x,t)$ satisfying conditions 3 and 4 above.
+
+## Partial results
+
+In 1934, Jean Leray proved that there are smooth and globally defined solutions to the Navier–Stokes equations under the assumption that the initial velocity $\mathbf {v} _{0}(x)$ is sufficiently small. He also proved the existence of so-called weak solutions to the Navier–Stokes equations, which may not satisfy the equations pointwise but do satisfy them in mean value.
+
+In the 1960s, the finite difference method was proven to be convergent for the Navier–Stokes equations and the equations were numerically solved. It was also proven that there are smooth and globally defined solutions to the Navier–Stokes equations in 2 dimensions.
+
+It is known that given an initial velocity $\mathbf {v} _{0}(x)$ there exists a finite "blowup time" T , depending on $\mathbf {v} _{0}(x)$ , such that the Navier–Stokes equations on $\mathbb {R} ^{3}\times (0,T)$ have smooth solutions $\mathbf {v} (x,t)$ and $p(x,t)$ . These solutions may, however, not hold for values of $t$ beyond the blowup time.
+
+In 2016, Terence Tao published a paper titled "Finite time blowup for an averaged three-dimensional Navier–Stokes equation", in which he formalizes the idea of a "supercriticality barrier" for the global regularity problem for the true Navier–Stokes equations, and claims that his method of proof hints at a possible route to establishing blowup for the true equations.
+
+## In popular culture
+
+Unsolved problems have been used to indicate a rare mathematical talent in fiction. The Navier–Stokes problem features in The Mathematician's Shiva (2014), a book about a prestigious, deceased, fictional mathematician named Rachela Karnokovitch taking the proof to her grave in protest of academia. The movie Gifted (2017) referenced the Millennium Prize problems and dealt with the potential for a 7-year-old girl and her deceased mathematician mother for solving the Navier–Stokes problem.

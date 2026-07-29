@@ -1,0 +1,25 @@
+# Timeline of the far future
+
+> **Query Topic**: main factor that determines the occurrence of each type of supernova (Rank #3 Search Result)
+> **Source Queue**: test (Row ID: 110, Frequency: 10)
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Timeline_of_the_far_future
+
+---
+
+While the future cannot be predicted with certainty, present understanding in various scientific fields allows for the prediction of some far-future events, if only in the broadest outline. These fields include astrophysics , which studies how planets and stars form, interact and die; particle physics , which has revealed how matter behaves at the smallest scales; evolutionary biology , which studies how life evolves over time; plate tectonics , which shows how continents shift over millennia; and sociology , which examines how human societies and cultures evolve.
+
+These timelines begin at the start of the 4th millennium in 3001 CE, and continue until the furthest and most remote reaches of future time. They include alternative future events that address unresolved scientific questions, such as whether humans will become extinct , whether the Earth survives when the Sun expands to become a red giant and whether proton decay will be the eventual end of all matter in the universe.
+
+## Earth, the Solar System, and the universe
+
+All projections of the future of Earth , the Solar System and the universe must account for the second law of thermodynamics , which states that entropy , or a loss of the energy available to do work, must rise over time. Stars will eventually exhaust their supply of hydrogen fuel via fusion and burn out. The Sun will likely expand sufficiently to overwhelm most of the inner planets (Mercury, Venus, and possibly Earth) but not the giant planets, including Jupiter and Saturn. Afterwards, the Sun will be reduced to the size of a white dwarf , and the outer planets and their moons will continue to orbit this diminutive solar remnant. This future situation may be similar to the white dwarf star MOA-2010-BLG-477L and the Jupiter-sized exoplanet orbiting it.
+
+Long after the death of the Solar System, physicists expect that matter itself will eventually disintegrate under the influence of radioactive decay , as even the most stable materials break apart into subatomic particles. Current data suggest that the universe has a flat geometry (or very close to flat) and will therefore not collapse in on itself after a finite time. This infinite future could allow for the occurrence of massively improbable events, such as the formation of Boltzmann brains or spontaneous inflation triggering a new Big Bang.
+
+Keys
+
+## Humanity and human constructs
+
+Keys
+
+To date, five spacecraft ( Voyager 1 , Voyager 2 , Pioneer 10 , Pioneer 11 and New Horizons ) are on trajectories that will take them out of the Solar System and into interstellar space . Barring an extremely unlikely collision with some object, all five should persist indefinitely.

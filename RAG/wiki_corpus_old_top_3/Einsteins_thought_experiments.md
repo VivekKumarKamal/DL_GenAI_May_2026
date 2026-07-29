@@ -1,0 +1,2030 @@
+# Einstein's thought experiments
+
+> **Query Topic**: concept of simultaneity in Einstein's book Relativity (Rank #2 Search Result)
+> **Source Queue**: train (Row ID: 5, Frequency: 17)
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Einstein's_thought_experiments
+
+---
+
+A hallmark of Albert Einstein's career was his use of visualized thought experiments (German: Gedankenexperiment) as a fundamental tool for understanding physical issues and for elucidating his concepts to others. Einstein's thought experiments took diverse forms. In his youth, he mentally chased beams of light. For special relativity, he employed moving trains and flashes of lightning to explain his theory. For general relativity, he considered a person falling off a roof, accelerating elevators, blind beetles crawling on curved surfaces and the like. In his debates with Niels Bohr on the nature of reality, he proposed imaginary devices that attempted to show, at least in concept, how the Heisenberg uncertainty principle might be evaded. In a contribution to the literature on quantum mechanics, Einstein considered two particles briefly interacting and then flying apart so that their states are correlated, anticipating the phenomenon known as quantum entanglement.
+
+
+== Introduction ==
+
+A thought experiment is a logical argument or mental model cast within the context of an imaginary (hypothetical or even counterfactual) scenario. A scientific thought experiment, in particular, may examine the implications of a theory, law, or set of principles with the aid of fictive and/or natural particulars (demons sorting molecules, cats whose lives hinge upon a radioactive disintegration, men in enclosed elevators) in an idealized environment (massless trapdoors, absence of friction). They describe experiments that, except for some specific and necessary idealizations, could conceivably be performed in the real world.
+As opposed to physical experiments, thought experiments do not report new empirical data. They can only provide conclusions based on deductive or inductive reasoning from their starting assumptions. Thought experiments invoke particulars that are irrelevant to the generality of their conclusions. It is the invocation of these particulars that give thought experiments their experiment-like appearance. A thought experiment can always be reconstructed as a straightforward argument, without the irrelevant particulars. John D. Norton, a well-known philosopher of science, has noted that "a good thought experiment is a good argument; a bad thought experiment is a bad argument."
+When effectively used, the irrelevant particulars that convert a straightforward argument into a thought experiment can act as "intuition pumps" that stimulate readers' ability to apply their intuitions to their understanding of a scenario. Thought experiments have a long history. Perhaps the best known in the history of modern science is Galileo's demonstration that falling objects must fall at the same rate regardless of their masses. This has sometimes been taken to be an actual physical demonstration, involving his climbing up the Leaning Tower of Pisa and dropping two heavy weights off it.  In fact, it was a logical demonstration  described by Galileo in Discorsi e dimostrazioni matematiche (1638).
+Einstein had a highly visual understanding of physics. His work in the patent office "stimulated [him] to see the physical ramifications of theoretical concepts." These aspects of his thinking style inspired him to fill his papers with vivid practical detail making them quite different from, say, the papers of Lorentz or Maxwell. This included his use of thought experiments.
+
+
+== Special relativity ==
+
+
+=== Pursuing a beam of light ===
+
+Late in life, Einstein recalled
+
+...a paradox upon which I had already hit at the age of sixteen: If I pursue a beam of light with the velocity c (velocity of light in a vacuum), I should observe such a beam of light as an electromagnetic field at rest though spatially oscillating. There seems to be no such thing, however, neither on the basis of experience nor according to Maxwell's equations. From the very beginning it appeared to me intuitively clear that, judged from the standpoint of such an observer, everything would have to happen according to the same laws as for an observer who, relative to the earth, was at rest. For how should the first observer know or be able to determine, that he is in a state of fast uniform motion? One sees in this paradox the germ of the special relativity theory is already contained. 
+
+Einstein's recollections of his youthful musings are widely cited because of the hints they provide of his later great discovery. However, Norton has noted that Einstein's reminiscences were probably colored by a half-century of hindsight. Norton lists several problems with Einstein's recounting, both historical and scientific:
+
+1. At 16 years old and a student at the Gymnasium in Aarau, Einstein would have had the thought experiment in late 1895 to early 1896. But various sources note that Einstein did not learn Maxwell's theory until 1898, in university.
+2. A 19th century aether theorist would have had no difficulties with the thought experiment. Einstein's statement, "...there seems to be no such thing...on the basis of experience," would not have counted as an objection, but would have represented a mere statement of fact, since no one had ever traveled at such speeds.
+3. An aether theorist would have regarded "...nor according to Maxwell's equations" as simply representing a misunderstanding on Einstein's part. Unfettered by any notion that the speed of light represents a cosmic limit, the aether theorist would simply have set velocity equal to c, noted that yes indeed, the light would appear to be frozen, and then thought no more of it.
+Rather than the thought experiment being at all incompatible with aether theories (which it is not), the youthful Einstein appears to have reacted to the scenario out of an intuitive sense of wrongness. He felt that the laws of optics should obey the principle of relativity. As he grew older, his early thought experiment acquired deeper levels of significance: Einstein felt that Maxwell's equations should be the same for all observers in inertial motion. From Maxwell's equations, one can deduce a single speed of light, and there is nothing in this computation that depends on an observer's speed. Einstein sensed a conflict between Newtonian mechanics and the constant speed of light determined by Maxwell's equations.
+Regardless of the historical and scientific issues described above, Einstein's early thought experiment was part of the repertoire of test cases that he used to check on the viability of physical theories. Norton suggests that the real importance of the thought experiment was that it provided a powerful objection to emission theories of light, which Einstein had worked on for several years prior to 1905.
+
+
+=== Magnet and conductor ===
+
+In the first paragraph of Einstein's 1905 work introducing special relativity, he writes: It is well known that Maxwell's electrodynamics—as usually understood at present—when applied to moving bodies, leads to asymmetries that do not seem to attach to the phenomena. Let us recall, for example, the electrodynamic interaction between a magnet and a conductor. The observable phenomenon depends here only on the relative motion of conductor and magnet, while according to the customary conception the two cases, in which, respectively, either the one or the other of the two bodies is the one in motion, are to be strictly differentiated from each other. For if the magnet is in motion and the conductor is at rest, there arises in the surroundings of the magnet an electric field endowed with a certain energy value that produces a current in the places where parts of the conductor are located. But if the magnet is at rest and the conductor is in motion, no electric field arises in the surroundings of the magnet, while in the conductor an electromotive force will arise, to which in itself there does not correspond any energy, but which, provided that the relative motion in the two cases considered is the same, gives rise to electrical currents that have the same magnitude and the same course as those produced by the electric forces in the first-mentioned case.
+
+This opening paragraph recounts well-known experimental results obtained by Michael Faraday in 1831. The experiments describe what appeared to be two different phenomena: the motional EMF generated when a wire moves through a magnetic field (see Lorentz force), and the transformer EMF generated by a changing magnetic field (due to the Maxwell–Faraday equation). James Clerk Maxwell himself drew attention to this fact in his 1861 paper On Physical Lines of Force. In the latter half of Part II of that paper, Maxwell gave a separate physical explanation for each of the two phenomena.
+Although Einstein calls the asymmetry "well-known", there is no evidence that any of Einstein's contemporaries considered the distinction between motional EMF and transformer EMF to be in any way odd or pointing to a lack of understanding of the underlying physics. Maxwell, for instance, had repeatedly discussed Faraday's laws of induction, stressing that the magnitude and direction of the induced current was a function only of the relative motion of the magnet and the conductor, without being bothered by the clear distinction between conductor-in-motion and magnet-in-motion in the underlying theoretical treatment.
+Yet Einstein's reflection on this experiment represented the decisive moment in his long and tortuous path to special relativity. Although the equations describing the two scenarios are entirely different, there is no measurement that can distinguish whether the magnet is moving, the conductor is moving, or both.
+In a 1920 review on the Fundamental Ideas and Methods of the Theory of Relativity (unpublished), Einstein related how disturbing he found this asymmetry: 
+
+The idea that these two cases should essentially be different was unbearable to me. According to my conviction, the difference between the two could only lie in the choice of the point of view, but not in a real difference <in the reality of nature>. 
+Einstein needed to extend the relativity of motion that he perceived between magnet and conductor in the above thought experiment to a full theory. For years, however, he did not know how this might be done. The exact path that Einstein took to resolve this issue is unknown. We do know, however, that Einstein spent several years pursuing an emission theory of light, encountering difficulties that eventually led him to give up the attempt. 
+
+Gradually I despaired of the possibility of discovering the true laws by means of constructive efforts based on known facts. The longer and more desperately I tried, the more I came to the conviction that only the discovery of a universal formal principle could lead us to assured results. 
+That decision ultimately led to his development of special relativity as a theory founded on two postulates. Einstein's original expression of these postulates was:
+
+"The laws governing the changes of the state of any physical system do not depend on which one of two coordinate systems in uniform translational motion relative to each other these changes of the state are referred to.
+Each ray of light moves in the coordinate system "at rest" with the definite velocity V independent of whether this ray of light is emitted by a body at rest or a body in motion."
+In their modern form:
+
+1. The laws of physics take the same form in all inertial frames.
+2. In any given inertial frame, the velocity of light c is the same whether the light be emitted by a body at rest or by a body in uniform motion. [Emphasis added by editor]
+Einstein's wording of the first postulate was one with which nearly all theorists of his day could agree. His second postulate expresses a new idea about the character of light. Modern textbooks combine the two postulates. One popular textbook expresses the second postulate as, "The speed of light in free space has the same value c in all directions and in all inertial reference frames."
+
+
+=== Trains, embankments, and lightning flashes ===
+
+The topic of how Einstein arrived at special relativity has been a fascinating one to many scholars: A twenty-six year old patent officer (third class), largely self-taught in physics and completely divorced from mainstream research, nevertheless in the year 1905 produced four extraordinary works (Annus Mirabilis papers), only one of which (his paper on Brownian motion) appeared related to anything that he had ever published before.
+Einstein's paper, On the Electrodynamics of Moving Bodies, is a polished work that bears few traces of its gestation. Documentary evidence concerning the development of the ideas that went into it consist of, quite literally, only two sentences in a handful of preserved early letters, and various later historical remarks by Einstein himself, some of them known only second-hand and at times contradictory.
+
+In regards to the relativity of simultaneity, Einstein's 1905 paper develops the concept vividly by carefully considering the basics of how time may be disseminated through the exchange of signals between clocks. In his popular work, Relativity: The Special and General Theory, Einstein translates the formal presentation of his paper into a thought experiment using a train, a railway embankment, and lightning flashes. The essence of the thought experiment is as follows: 
+
+Observer M stands on an embankment, while observer M' rides on a rapidly traveling train. At the precise moment that M and M' coincide in their positions, lightning strikes points A and B equidistant from M and M'.
+Light from these two flashes reach M at the same time, from which M concludes that the bolts were synchronous.
+The combination of Einstein's first and second postulates implies that, despite the rapid motion of the train relative to the embankment, M' measures exactly the same speed of light as does M. Since M' was equidistant from A and B when lightning struck, the fact that M' receives light from B before light from A means that to M', the bolts were not synchronous. Instead, the bolt at B struck first. 
+A routine supposition among historians of science is that, in accordance with the analysis given in his 1905 special relativity paper and in his popular writings, Einstein discovered the relativity of simultaneity by thinking about how clocks could be synchronized by light signals. The Einstein synchronization convention was originally developed by telegraphers in the middle 19th century. The dissemination of precise time was an increasingly important topic during this period. Trains needed accurate time to schedule use of track, cartographers needed accurate time to determine longitude, while astronomers and surveyors dared to consider the worldwide dissemination of time to accuracies of thousandths of a second. Following this line of argument, Einstein's position in the patent office, where he specialized in evaluating electromagnetic and electromechanical patents, would have exposed him to the latest developments in time technology, which would have guided him in his thoughts towards understanding the relativity of simultaneity.
+However, all of the above is supposition. In later recollections, when Einstein was asked about what inspired him to develop special relativity, he would mention his riding a light beam and his magnet and conductor thought experiments. He would also mention the importance of the Fizeau experiment and the observation of stellar aberration. "They were enough", he said. He never mentioned thought experiments about clocks and their synchronization.
+The routine analyses of the Fizeau experiment and of stellar aberration, that treat light as Newtonian corpuscles, do not require relativity. But problems arise if one considers light as waves traveling through an aether, which are resolved by applying the relativity of simultaneity. It is entirely possible, therefore, that Einstein arrived at special relativity through a different path than that commonly assumed, through  Einstein's examination of Fizeau's experiment and stellar aberration.
+We therefore do not know just how important clock synchronization and the train and embankment thought experiment were to Einstein's development of the concept of the relativity of simultaneity. We do know, however, that the train and embankment thought experiment was the preferred means whereby he chose to teach this concept to the general public.
+
+
+=== Relativistic center-of-mass theorem ===
+
+Einstein proposed the equivalence of mass and energy in his final Annus Mirabilis paper. Over the next several decades, the understanding of energy and its relationship with momentum were further developed by Einstein and other physicists including Max Planck, Gilbert N. Lewis, Richard C. Tolman, Max von Laue (who in 1911 gave a comprehensive proof of M0 = E0/c2 from the stress–energy tensor), and Paul Dirac (whose investigations of negative solutions in his 1928 formulation of the energy–momentum relation led to the 1930 prediction of the existence of antimatter).
+
+Einstein's relativistic center-of-mass theorem of 1906 is a case in point. In 1900, Henri Poincaré had noted a paradox in modern physics as it was then understood: When he applied well-known results of Maxwell's equations to the equality of action and reaction, he could describe a cyclic process which would result in creation of a reactionless drive, i.e. a device which could displace its center of mass without the exhaust of a propellant, in violation of the conservation of momentum. Poincaré resolved this paradox by imagining electromagnetic energy to be a fluid having a given density, which is created and destroyed with a given momentum as energy is absorbed and emitted. The motions of this fluid would oppose displacement of the center of mass in such fashion as to preserve the conservation of momentum.
+Einstein demonstrated that Poincaré's artifice was superfluous. Rather, he argued that mass-energy equivalence was a necessary and sufficient condition to resolve the paradox. In his demonstration, Einstein provided a derivation of mass-energy equivalence that was distinct from his original derivation. Einstein began by recasting Poincaré's abstract mathematical argument into the form of a thought experiment:
+Einstein considered (a) an initially stationary, closed, hollow cylinder free-floating in space, of mass 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ and length 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+, (b) with some sort of arrangement for sending a quantity of radiative energy (a burst of photons) 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ from the left to the right. The radiation has momentum 
+  
+    
+      
+        E
+        
+          /
+        
+        c
+        .
+      
+    
+    {\displaystyle E/c.}
+  
+ Since the total momentum of the system is zero, the cylinder recoils with a speed 
+  
+    
+      
+        v
+        =
+        −
+        E
+        
+          /
+        
+        (
+        M
+        c
+        )
+        .
+      
+    
+    {\displaystyle v=-E/(Mc).}
+  
+ (c) The radiation hits the other end of the cylinder in time 
+  
+    
+      
+        Δ
+        t
+        =
+        L
+        
+          /
+        
+        c
+        ,
+      
+    
+    {\displaystyle \Delta t=L/c,}
+  
+ (assuming 
+  
+    
+      
+        v
+        <<
+        c
+      
+    
+    {\displaystyle v<<c}
+  
+), bringing the cylinder to a stop after it has moved through a distance
+
+  
+    
+      
+        Δ
+        x
+        =
+        −
+        
+          
+            
+              E
+              L
+            
+            
+              M
+              
+                c
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \Delta x=-{\frac {EL}{Mc^{2}}}.}
+  
+
+(d) The energy deposited on the right wall of the cylinder is transferred to a massless shuttle mechanism 
+  
+    
+      
+        k
+        ,
+      
+    
+    {\displaystyle k,}
+  
+ (e) which transports the energy to the left wall (f) and then returns to re-create the starting configuration of the system, except with the cylinder displaced to the left. The cycle may then be repeated.
+The reactionless drive described here violates the laws of mechanics, according to which the center of mass of a body at rest cannot be displaced in the absence of external forces. Einstein argued that the shuttle 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ cannot be massless while transferring energy from the right to the left. If energy 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ possesses the inertia 
+  
+    
+      
+        m
+        =
+        E
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle m=E/c^{2},}
+  
+ the contradiction disappears.
+Modern analysis suggests that neither Einstein's original 1905 derivation of mass-energy equivalence nor the alternate derivation implied by his 1906 center-of-mass theorem are definitively correct. For instance, the center-of-mass thought experiment regards the cylinder as a completely rigid body. In reality, the impulse provided to the cylinder by the burst of light in step (b) cannot travel faster than light, so that when the burst of photons reaches the right wall in step (c), the wall has not yet begun to move. Ohanian has credited von Laue (1911) as having provided the first truly definitive derivation of M0 = E0/c2.
+
+
+=== Impossibility of faster-than-light signaling ===
+
+In 1907, Einstein noted that from the composition law for velocities, one could deduce that there cannot exist an effect that allows faster-than-light signaling.
+Einstein imagined a strip of material that allows propagation of signals at the faster-than-light speed of 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ (as viewed from the material strip). Imagine two observers, A and B, standing on the x-axis and separated by the distance 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+. They stand next to the material strip, which is not at rest, but rather is moving in the negative x-direction with speed 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+. A uses the strip to send a signal to B. From the velocity composition formula, the signal propagates from A to B with speed 
+  
+    
+      
+        
+          (
+          W
+          −
+          v
+          )
+          
+            /
+          
+          (
+          1
+          −
+          (
+          W
+          v
+          
+            /
+          
+          
+            c
+            
+              2
+            
+          
+          )
+          )
+        
+      
+    
+    {\displaystyle {(W-v)/(1-(Wv/c^{2}))}}
+  
+. The time 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ required for the signal to propagate from A to B is given by
+
+  
+    
+      
+        T
+        =
+        L
+        
+          
+            
+              1
+              −
+              (
+              W
+              v
+              
+                /
+              
+              
+                c
+                
+                  2
+                
+              
+              )
+            
+            
+              W
+              −
+              v
+            
+          
+        
+        .
+      
+    
+    {\displaystyle T=L{1-(Wv/c^{2}) \over W-v}.}
+  
+
+The strip can move at any speed 
+  
+    
+      
+        v
+        <
+        c
+      
+    
+    {\displaystyle v<c}
+  
+. Given the starting assumption 
+  
+    
+      
+        W
+        >
+        c
+      
+    
+    {\displaystyle W>c}
+  
+, one can always set the strip moving at a speed 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ such that 
+  
+    
+      
+        T
+        <
+        0
+      
+    
+    {\displaystyle T<0}
+  
+.
+In other words, given the existence of a means of transmitting signals faster-than-light, scenarios can be envisioned whereby the recipient of a signal will receive the signal before the transmitter has transmitted it.
+About this thought experiment, Einstein wrote: 
+
+Even though this result, in my opinion, does not contain any contradiction from a purely logical point of view, it conflicts with the character of all our experience to such an extent that this seems sufficient to prove the impossibility of the assumption 
+  
+    
+      
+        W
+        >
+        c
+      
+    
+    {\displaystyle W>c}
+  
+. 
+
+
+== General relativity ==
+
+
+=== Falling painters and accelerating elevators ===
+
+In his unpublished 1920 review, Einstein related the genesis of his thoughts on the equivalence principle: When I was busy (in 1907) writing a summary of my work on the theory of special relativity for the Jahrbuch der Radioaktivität und Elektronik [Yearbook for Radioactivity and Electronics], I also had to try to modify the Newtonian theory of gravitation such as to fit its laws into the theory. While attempts in this direction showed the practicability of this enterprise, they did not satisfy me because they would have had to be based upon unfounded physical hypotheses. At that moment I got the happiest thought of my life in the following form: In an example worth considering, the gravitational field has a relative existence only in a manner similar to the electric field generated by magneto-electric induction. Because for an observer in free-fall from the roof of a house there is during the fall—at least in his immediate vicinity—no gravitational field. Namely, if the observer lets go of any bodies, they remain relative to him, in a state of rest or uniform motion, independent of their special chemical or physical nature. The observer, therefore, is justified in interpreting his state as being "at rest." 
+The realization "startled" Einstein, and inspired him to begin an eight-year quest that led to what is considered to be his greatest work, the theory of general relativity. Over the years, the story of the falling man has become an iconic one, much embellished by other writers. In most retellings of Einstein's story, the falling man is identified as a painter. In some accounts, Einstein was inspired after he witnessed a painter falling from the roof of a building adjacent to the patent office where he worked. This version of the story leaves unanswered the question of why Einstein might consider his observation of such an unfortunate accident to represent the happiest thought in his life.
+
+Einstein later refined his thought experiment to consider a man inside a large enclosed chest or elevator falling freely in space. While in free fall, the man would consider himself weightless, and any loose objects that he emptied from his pockets would float alongside him. Then Einstein imagined a rope attached to the roof of the chamber. A powerful "being" of some sort begins pulling on the rope with constant force. The chamber begins to move "upwards" with a uniformly accelerated motion. Within the chamber, all of the man's perceptions are consistent with his being in a uniform gravitational field. Einstein asked, "Ought we to smile at the man and say that he errs in his conclusion?" Einstein answered no. Rather, the thought experiment provided "good grounds for extending the principle of relativity to include bodies of reference which are accelerated with respect to each other, and as a result we have gained a powerful argument for a generalised postulate of relativity."
+Through this thought experiment, Einstein addressed an issue that was so well known, scientists rarely worried about it or considered it puzzling: Objects have "gravitational mass," which determines the force with which they are attracted to other objects. Objects also have "inertial mass," which determines the relationship between the force applied to an object and how much it accelerates. Newton had pointed out that, even though they are defined differently, gravitational mass and inertial mass always seem to be equal. But until Einstein, no one had conceived a good explanation as to why this should be so. From the correspondence revealed by his thought experiment, Einstein concluded that "it is impossible to discover by experiment whether a given system of coordinates is accelerated, or whether...the observed effects are due to a gravitational field." This correspondence between gravitational mass and inertial mass is the equivalence principle.
+An extension to his accelerating observer thought experiment allowed Einstein to deduce that "rays of light are propagated curvilinearly in gravitational fields."
+
+
+=== Early applications of the equivalence principle ===
+Einstein's formulation of special relativity was in terms of kinematics (the study of moving bodies without reference to forces). Late in 1907, his former mathematics professor, Hermann Minkowski, presented an alternative, geometric interpretation of special relativity in a lecture to the Göttingen Mathematical society, introducing the concept of spacetime. Einstein was initially dismissive of Minkowski's geometric interpretation, regarding it as überflüssige Gelehrsamkeit (superfluous learnedness).
+As with special relativity, Einstein's early results in developing what was ultimately to become general relativity were accomplished using kinematic analysis rather than geometric techniques of analysis.
+In his 1907 Jahrbuch paper, Einstein first addressed the question of whether the propagation of light is influenced by gravitation, and whether there is any effect of a gravitational field on clocks. In 1911, Einstein returned to this subject, in part because he had realized that certain predictions of his nascent theory were amenable to experimental test.
+By the time of his 1911 paper, Einstein and other scientists had offered several alternative demonstrations that the inertial mass of a body increases with its energy content: If the energy increase of the body is 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+, then the increase in its inertial mass is 
+  
+    
+      
+        E
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle E/c^{2}.}
+  
+
+Einstein asked whether there is an increase of gravitational mass corresponding to the increase in inertial mass, and if there is such an increase, is the increase in gravitational mass precisely the same as its increase in inertial mass? Using the equivalence principle, Einstein concluded that this must be so.
+
+To show that the equivalence principle necessarily implies the gravitation of energy, Einstein considered a light source 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ separated along the z-axis by a distance 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ above a receiver 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ in a homogeneous gravitational field having a force per unit mass of 1 
+  
+    
+      
+        g
+        .
+      
+    
+    {\displaystyle g.}
+  
+ A certain amount of electromagnetic energy 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ is emitted by 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ towards 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{1}.}
+  
+  According to the equivalence principle, this system is equivalent to a gravitation-free system which moves with uniform acceleration 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ in the direction of the positive z-axis, with 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ separated by a constant distance 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ from 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{1}.}
+  
+
+In the accelerated system, light emitted from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ takes (to a first approximation) 
+  
+    
+      
+        h
+        
+          /
+        
+        c
+      
+    
+    {\displaystyle h/c}
+  
+ to arrive at 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{1}.}
+  
+ But in this time, the velocity of 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ will have increased by 
+  
+    
+      
+        v
+        =
+        g
+        h
+        
+          /
+        
+        c
+      
+    
+    {\displaystyle v=gh/c}
+  
+ from its velocity when the light was emitted. The energy arriving at 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ will therefore not be the energy 
+  
+    
+      
+        
+          E
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle E_{2},}
+  
+ but the greater energy  
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+      
+    
+    {\displaystyle E_{1}}
+  
+ given by
+
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+        ≈
+        
+          E
+          
+            2
+          
+        
+        
+          (
+          
+            1
+            +
+            
+              
+                v
+                c
+              
+            
+          
+          )
+        
+        =
+        
+          E
+          
+            2
+          
+        
+        
+          (
+          
+            1
+            +
+            
+              
+                
+                  g
+                  h
+                
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle E_{1}\approx E_{2}\left(1+{\frac {v}{c}}\right)=E_{2}\left(1+{\frac {gh}{c^{2}}}\right).}
+  
+
+According to the equivalence principle, the same relation holds for the non-accelerated system in a gravitational field, where we replace 
+  
+    
+      
+        g
+        h
+      
+    
+    {\displaystyle gh}
+  
+ by the gravitational potential difference 
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+ between 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ and 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ so that
+
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+        =
+        
+          E
+          
+            2
+          
+        
+        +
+        
+          
+            
+              E
+              
+                2
+              
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Φ
+        .
+      
+    
+    {\displaystyle E_{1}=E_{2}+{\frac {E_{2}}{c^{2}}}\Phi .}
+  
+
+The energy 
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+      
+    
+    {\displaystyle E_{1}}
+  
+ arriving at 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ is greater than the energy 
+  
+    
+      
+        
+          E
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E_{2}}
+  
+ emitted by 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ by the potential energy of the mass 
+  
+    
+      
+        
+          E
+          
+            2
+          
+        
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E_{2}/c^{2}}
+  
+ in the gravitational field. Hence 
+  
+    
+      
+        E
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E/c^{2}}
+  
+ corresponds to the gravitational mass as well as the inertial mass of a quantity of energy.
+
+To further clarify that the energy of gravitational mass must equal the energy of inertial mass, Einstein proposed the following cyclic process: (a) A light source 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ is situated a distance 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ above a receiver 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ in a uniform gravitational field. A movable mass 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ can shuttle between 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ and 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{1}.}
+  
+ (b) A pulse of electromagnetic energy 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ is sent from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ to 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{1}.}
+  
+ The energy 
+  
+    
+      
+        E
+        (
+        1
+        +
+        g
+        h
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle E(1+gh/c^{2})}
+  
+ is absorbed by 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{1}.}
+  
+ (c) Mass 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ is lowered from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ to 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle S_{1},}
+  
+ releasing an amount of work equal to 
+  
+    
+      
+        M
+        g
+        h
+        .
+      
+    
+    {\displaystyle Mgh.}
+  
+ (d) The energy absorbed by 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ is transferred to 
+  
+    
+      
+        M
+        .
+      
+    
+    {\displaystyle M.}
+  
+ This increases the gravitational mass of 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ to a new value 
+  
+    
+      
+        
+          M
+          ′
+        
+        .
+      
+    
+    {\displaystyle M'.}
+  
+ (e) The mass is lifted back to 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+, requiring the input of work 
+  
+    
+      
+        
+          M
+          ′
+        
+        g
+        h
+        .
+      
+    
+    {\displaystyle M'gh.}
+  
+ (e) The energy carried by the mass is then transferred to 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle S_{2},}
+  
+ completing the cycle.
+Conservation of energy demands that the difference in work between raising the mass and lowering the mass, 
+  
+    
+      
+        
+          M
+          ′
+        
+        g
+        h
+        −
+        M
+        g
+        h
+      
+    
+    {\displaystyle M'gh-Mgh}
+  
+, must equal 
+  
+    
+      
+        E
+        g
+        h
+        
+          /
+        
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle Egh/c^{2}}
+  
+, or one could potentially define a perpetual motion machine. Therefore,
+
+  
+    
+      
+        
+          M
+          ′
+        
+        −
+        M
+        =
+        
+          
+            E
+            
+              c
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle M'-M={\frac {E}{c^{2}}}.}
+  
+
+In other words, the increase in gravitational mass predicted by the above arguments is precisely equal to the increase in inertial mass predicted by special relativity.
+Einstein then considered sending a continuous electromagnetic beam of frequency 
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+      
+    
+    {\displaystyle v_{2}}
+  
+ (as measured at 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+) from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ to 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ in a homogeneous gravitational field. The frequency of the light as measured at 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ will be a larger value 
+  
+    
+      
+        
+          v
+          
+            1
+          
+        
+      
+    
+    {\displaystyle v_{1}}
+  
+ given by
+
+  
+    
+      
+        
+          v
+          
+            1
+          
+        
+        =
+        
+          v
+          
+            2
+          
+        
+        
+          (
+          
+            1
+            +
+            
+              
+                Φ
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle v_{1}=v_{2}\left(1+{\frac {\Phi }{c^{2}}}\right).}
+  
+
+Einstein noted that the above equation seemed to imply something absurd: Given that the transmission of light from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ to 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+ is continuous, how could the number of periods emitted per second from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ be different from that received at 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+        ?
+      
+    
+    {\displaystyle S_{1}?}
+  
+  It is impossible for wave crests to appear on the way down from 
+  
+    
+      
+        
+          S
+          
+            2
+          
+        
+      
+    
+    {\displaystyle S_{2}}
+  
+ to 
+  
+    
+      
+        
+          S
+          
+            1
+          
+        
+      
+    
+    {\displaystyle S_{1}}
+  
+. The simple answer is that this question presupposes an absolute nature of time, when in fact there is nothing that compels us to assume that clocks situated at different gravitational potentials must be conceived of as going at the same rate. The principle of equivalence implies gravitational time dilation.
+It is important to realize that Einstein's arguments predicting gravitational time dilation are valid for any theory of gravity that respects the principle of equivalence. This includes Newtonian gravitation. Experiments such as the Pound–Rebka experiment, which have firmly established gravitational time dilation, therefore do not serve to distinguish general relativity from Newtonian gravitation.
+In the remainder of Einstein's 1911 paper, he discussed the bending of light rays in a gravitational field, but given the incomplete nature of Einstein's theory as it existed at the time, the value that he predicted was half the value that would later be predicted by the full theory of general relativity.
+
+
+=== Non-Euclidean geometry and the rotating disk ===
+
+By 1912, Einstein had reached an impasse in his kinematic development of general relativity, realizing that he needed to go beyond the mathematics that he knew and was familiar with.
+
+Stachel has identified Einstein's analysis of the rigid relativistic rotating disk as being key to this realization. The rigid rotating disk had been a topic of lively discussion since Max Born and Paul Ehrenfest, in 1909, both presented analyses of rigid bodies in special relativity. An observer on the edge of a rotating disk experiences an apparent ("fictitious" or "pseudo") force called "centrifugal force". By 1912, Einstein had become convinced of a close relationship between gravitation and pseudo-forces such as centrifugal force:Such a system K, according to the equivalence principle, is strictly equivalent to a system at rest in which a matter-free static gravitational field of a certain kind exists. 
+In the accompanying illustration, A represents a circular disk of 10 units diameter at rest in an inertial reference frame. The circumference of the disk is 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ times the diameter, and the illustration shows 31.4 rulers laid out along the circumference. B represents a circular disk of 10 units diameter that is spinning rapidly. According to a non-rotating observer, each of the rulers along the circumference is length-contracted along its line of motion. More rulers are required to cover the circumference, while the number of rulers required to span the diameter is unchanged. Note that we have not stated that we set A spinning to get B. In special relativity, it is not possible to set spinning a disk that is "rigid" in Born's sense of the term. Since spinning up disk A would cause the material to contract in the circumferential direction but not in the radial direction, a rigid disk would become fragmented from the induced stresses.
+In later years, Einstein repeatedly stated that consideration of the rapidly rotating disk was of "decisive importance" to him because it showed that a gravitational field causes non-Euclidean arrangements of measuring rods.
+Einstein realized that he did not have the mathematical skills to describe the non-Euclidean view of space and time that he envisioned, so he turned to his mathematician friend, Marcel Grossmann, for help. After researching in the library, Grossman found a review article by Ricci and Levi-Civita on absolute differential calculus (tensor calculus). Grossman tutored Einstein on the subject, and in 1913 and 1914, they published two joint papers describing an initial version of a generalized theory of gravitation.  Over the next several years, Einstein used these mathematical tools to generalize Minkowski's geometric approach to relativity so as to encompass curved spacetime.
+
+
+== Quantum mechanics ==
+
+
+=== Background: Einstein and the quantum ===
+Many myths have grown up about Einstein's relationship with quantum mechanics. Freshman physics students are aware that Einstein explained the photoelectric effect and introduced the concept of the photon. But students who have grown up with the photon may not be aware of how revolutionary the concept was for his time. The best-known factoids about Einstein's relationship with quantum mechanics are his statement, "God does not play dice with the universe" and the indisputable fact that he just did not like the theory in its final form. This has led to the general impression that, despite his initial contributions, Einstein was out of touch with quantum research and played at best a secondary role in its development. Concerning Einstein's estrangement from the general direction of physics research after 1925, his scientific biographer, Abraham Pais, wrote:
+
+Einstein is the only scientist to be justly held equal to Newton. That comparison is based exclusively on what he did before 1925. In the remaining 30 years of his life he remained active in research but his fame would be undiminished, if not enhanced, had he gone fishing instead. 
+In hindsight, we know that Pais was incorrect in his assessment.
+Einstein was arguably the greatest single contributor to the "old" quantum theory.
+
+In his 1905 paper on light quanta, Einstein created the quantum theory of light. His proposal that light exists as tiny packets (photons) was so revolutionary, that even such major pioneers of quantum theory as Planck and Bohr refused to believe that it could be true.   Bohr, in particular, was a passionate disbeliever in light quanta, and repeatedly argued against them until 1925, when he yielded in the face of overwhelming evidence for their existence.
+In his 1906 theory of specific heats, Einstein was the first to realize that quantized energy levels explained the specific heat of solids. In this manner, he found a rational justification for the third law of thermodynamics (i.e. the entropy of any system approaches zero as the temperature approaches absolute zero): at very cold temperatures, atoms in a solid do not have enough thermal energy to reach even the first excited quantum level, and so cannot vibrate. 
+Einstein proposed the wave–particle duality of light. In 1909, using a rigorous fluctuation argument based on a thought experiment and drawing on his previous work on Brownian motion, he predicted the emergence of a "fusion theory" that would combine the two views. Basically, he demonstrated that the Brownian motion experienced by a mirror in thermal equilibrium with black-body radiation would be the sum of two terms, one due to the wave properties of radiation, the other due to its particulate properties.
+Although Planck is justly hailed as the father of quantum mechanics, his derivation of the law of black-body radiation rested on fragile ground, since it required ad hoc assumptions of an unreasonable character. Furthermore, Planck's derivation represented an analysis of classical harmonic oscillators merged with quantum assumptions in an improvised fashion.  In his 1916 theory of radiation, Einstein was the first to create a purely quantum explanation. This paper, well known for broaching the possibility of stimulated emission (the basis of the laser), changed the nature of the evolving quantum theory by introducing the fundamental role of random chance.
+In 1924, Einstein received a short manuscript by an unknown Indian professor, Satyendra Nath Bose, outlining a new  method of deriving the law of blackbody radiation. Einstein was intrigued by Bose's peculiar method of counting the number of distinct ways of putting photons into the available states, a method of counting that Bose apparently did not realize was unusual. Einstein, however, understood that Bose's counting method implied that photons are, in a deep sense, indistinguishable. He translated the paper into German and had it published. Einstein then followed Bose's paper with an extension to Bose's work which predicted Bose–Einstein condensation, one of the fundamental research topics of condensed matter physics.
+While trying to develop a mathematical theory of light which would fully encompass its wavelike and particle-like aspects, Einstein developed the concept of "ghost fields". A guiding wave obeying Maxwell's classical laws would propagate following the normal laws of optics, but would not transmit any energy. This guiding wave, however, would govern the appearance of quanta of energy 
+  
+    
+      
+        h
+        ν
+      
+    
+    {\displaystyle h\nu }
+  
+ on a statistical basis, so that the appearance of these quanta would be proportional to the intensity of the interference radiation. These ideas became widely known in the physics community, and through Born's work in 1926, later became a key concept in the modern quantum theory of radiation and matter. 
+Therefore, Einstein before 1925 originated most of the key concepts of quantum theory: light quanta, wave–particle duality, the fundamental randomness of physical processes, the concept of indistinguishability, and the probability density interpretation of the wave equation. In addition, Einstein can arguably be considered the father of solid state physics and condensed matter physics. He provided a correct derivation of the blackbody radiation law and sparked the notion of the laser.
+In 1935, working with two younger colleagues, Einstein issued a final challenge to quantum mechanics, attempting to show that it could not represent a final solution. Despite the questions raised by this paper, it made little or no difference to how physicists employed quantum mechanics in their work. Of this paper, Pais was to write:
+
+The only part of this article that will ultimately survive, I believe, is this last phrase [i.e. "No reasonable definition of reality could be expect to permit this" where "this" refers to the instantaneous transmission of information over a distance], which so poignantly summarizes Einstein's views on quantum mechanics in his later years....This conclusion has not affected subsequent developments in physics, and it is doubtful that it ever will. 
+In contrast to Pais' negative assessment, this paper, outlining the EPR paradox, has become one of the most widely cited articles in the entire physics literature. It is considered the centerpiece of the development of quantum information theory, which has been termed the "third quantum revolution." 
+
+
+=== Wave–particle duality ===
+
+All of Einstein's major contributions to the old quantum theory were arrived at via statistical argument. This includes his 1905 paper arguing that light has particle properties, his 1906 work on specific heats, his 1909 introduction of the concept of wave–particle duality, his 1916 work presenting an improved derivation of the blackbody radiation formula, and his 1924 work that introduced the concept of indistinguishability.
+
+Einstein's 1909 arguments for the wave–particle duality of light were based on a thought experiment. Einstein imagined a mirror in a cavity containing particles of an ideal gas and filled with black-body radiation, with the entire system in thermal equilibrium. The mirror is constrained in its motions to a direction perpendicular to its surface.
+The mirror jiggles from Brownian motion due to collisions with the gas molecules. Since the mirror is in a radiation field, the moving mirror transfers some of its kinetic energy to the radiation field as a result of the difference in the radiation pressure between its forwards and reverse surfaces. This implies that there must be fluctuations in the black-body radiation field, and hence fluctuations in the black-body radiation pressure. Reversing the argument shows that there must be a route for the return of energy from the fluctuating black-body radiation field back to the gas molecules.
+Given the known shape of the radiation field given by Planck's law, Einstein could calculate the mean square energy fluctuation of the black-body radiation. He found the root mean square energy fluctuation 
+  
+    
+      
+        
+          ⟨
+          
+            ϵ
+            
+              2
+            
+          
+          ⟩
+        
+      
+    
+    {\displaystyle \left\langle \epsilon ^{2}\right\rangle }
+  
+ in a small volume 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ of a cavity filled with thermal radiation in the frequency interval between 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ and 
+  
+    
+      
+        ν
+        +
+        d
+        ν
+      
+    
+    {\displaystyle \nu +d\nu }
+  
+ to be a function of frequency and temperature:
+
+  
+    
+      
+        
+          ⟨
+          
+            
+              ϵ
+              
+                2
+              
+            
+            (
+            ν
+            ,
+            T
+            )
+          
+          ⟩
+        
+        =
+        
+          (
+          
+            h
+            ν
+            ρ
+            +
+            
+              
+                
+                  c
+                  
+                    3
+                  
+                
+                
+                  8
+                  π
+                  
+                    ν
+                    
+                      2
+                    
+                  
+                
+              
+            
+            
+              ρ
+              
+                2
+              
+            
+          
+          )
+        
+        v
+        d
+        ν
+        ,
+      
+    
+    {\displaystyle \left\langle \epsilon ^{2}(\nu ,T)\right\rangle =\left(h\nu \rho +{\frac {c^{3}}{8\pi \nu ^{2}}}\rho ^{2}\right)vd\nu ,}
+  
+
+where 
+  
+    
+      
+        ρ
+        v
+        d
+        ν
+      
+    
+    {\displaystyle \rho vd\nu }
+  
+ would be the average energy of the volume in contact with the thermal bath. The above expression has two terms, the second corresponding to the classical Rayleigh-Jeans law (i.e. a wavelike term), and the first corresponding to the Wien distribution law (which from Einstein's 1905 analysis, would result from point-like quanta with energy 
+  
+    
+      
+        h
+        ν
+      
+    
+    {\displaystyle h\nu }
+  
+). From this, Einstein concluded that radiation had simultaneous wave and particle aspects. 
+
+
+=== Bubble paradox ===
+From 1905 to 1923, Einstein was virtually the only physicist who took light-quanta seriously. Throughout most of this period, the physics community treated the light-quanta hypothesis with "skepticism bordering on derision" and maintained this attitude even after Einstein's photoelectric law was validated. The citation for Einstein's 1922 Nobel Prize very deliberately avoided all mention of light-quanta, instead stating that it was being awarded for "his services to theoretical physics and especially for his discovery of the law of the photoelectric effect". This dismissive stance contrasts sharply with the enthusiastic manner in which Einstein's other major contributions were accepted, including his work on Brownian motion, special relativity, general relativity, and his numerous other contributions to the "old" quantum theory.
+Various explanations have been given for this neglect on the part of the physics community. First and foremost was wave theory's long and indisputable success in explaining purely optical phenomena. Second was the fact that his 1905 paper, which pointed out that certain phenomena would be more readily explained under the assumption that light is particulate, presented the hypothesis only as a "heuristic viewpoint". The paper offered no compelling, comprehensive alternative to existing electromagnetic theory. Third was the fact that his 1905 paper introducing light quanta and his two 1909 papers that argued for a wave–particle fusion theory approached their subjects via statistical arguments that his contemporaries "might accept as theoretical exercise—crazy, perhaps, but harmless".
+Most of Einstein's contemporaries adopted the position that light is ultimately a wave, but appears particulate in certain circumstances only because atoms absorb wave energy in discrete units.
+
+Among the thought experiments that Einstein presented in his 1909 lecture on the nature and constitution of radiation was one that he used to point out the implausibility of the above argument. He
+used this thought experiment to argue that atoms emit light as discrete particles rather than as continuous waves: (a) An electron in a cathode ray beam strikes an atom in a target. The intensity of the beam is set so low that we can consider one electron at a time as impinging on the target. (b) The atom emits a spherically radiating electromagnetic wave. (c) This wave excites an atom in a secondary target, causing it to release an electron of energy comparable to that of the original electron. The energy of the secondary electron depends only on the energy of the original electron and not at all on the distance between the primary and secondary targets. All the energy spread around the circumference of the radiating electromagnetic wave would appear to be instantaneously focused on the target atom, an action that Einstein considered implausible. Far more plausible would be to say that the first atom emitted a particle in the direction of the second atom.
+Although Einstein originally presented this thought experiment as an argument for light having a particulate nature, it has been noted that this thought experiment, which has been termed the "bubble paradox", foreshadows the famous 1935 EPR paper. In his 1927 Solvay debate with Bohr, Einstein employed this thought experiment to illustrate that according to the Copenhagen interpretation of quantum mechanics that Bohr championed, the quantum wavefunction of a particle would abruptly collapse like a "popped bubble" no matter how widely dispersed the wavefunction. The transmission of energy from opposite sides of the bubble to a single point would occur faster than light, violating the principle of locality.
+In the end, it was experiment, not any theoretical argument, that finally enabled the concept of the light quantum to prevail. In 1923, Arthur Compton was studying the scattering of high energy X-rays from a graphite target. Unexpectedly, he found that the scattered X-rays were shifted in wavelength, corresponding to inelastic scattering of the X-rays by the electrons in the target. His observations were totally inconsistent with wave behavior, but instead could only be explained if the X-rays acted as particles. This observation of the Compton effect rapidly brought about a change in attitude, and by 1926, the concept of the "photon" was generally accepted by the physics community. 
+
+
+=== Einstein's light box ===
+
+Einstein did not like the direction in which quantum mechanics had turned after 1925. Although excited by Heisenberg's matrix mechanics, Schroedinger's wave mechanics, and Born's clarification of the meaning of the Schroedinger wave equation (i.e. that the absolute square of the wave function is to be interpreted as a probability density), his instincts told him that something was missing. In a letter to Born, he wrote:
+
+Quantum mechanics is very impressive. But an inner voice tells me that it is not yet the real thing. The theory produces a good deal but hardly brings us closer to the secret of the Old One. 
+The Solvay Debates between Bohr and Einstein began in dining-room discussions at the Fifth Solvay International Conference on Electrons and Photons  in 1927. Einstein's issue with the new quantum mechanics was not just that, with the probability interpretation, it rendered invalid the notion of rigorous causality. After all, as noted above, Einstein himself had introduced random processes in his 1916 theory of radiation. Rather, by defining and delimiting the maximum amount of information obtainable in a given experimental arrangement, the Heisenberg uncertainty principle denied the existence of any knowable reality in terms of a complete specification of the momenta and description of individual particles, an objective reality that would exist whether or not we could ever observe it.
+Over dinner, during after-dinner discussions, and at breakfast, Einstein debated with Bohr and his followers on the question whether quantum mechanics in its present form could be called complete. Einstein illustrated his points with increasingly clever thought experiments intended to prove that position and momentum could in principle be simultaneously known to arbitrary precision. For example, one of his thought experiments involved sending a beam of electrons through a shuttered screen, recording the positions of the electrons as they struck a photographic screen. Bohr and his allies would always be able to counter Einstein's proposal, usually by the end of the same day.
+On the final day of the conference, Einstein revealed that the uncertainty principle was not the only aspect of the new quantum mechanics that bothered him. Quantum mechanics, at least in the Copenhagen interpretation, appeared to allow action at a distance, the ability for two separated objects to communicate at speeds greater than light. By 1928, the consensus was that Einstein had lost the debate, and even his closest allies during the Fifth Solvay Conference, for example Louis de Broglie, conceded that quantum mechanics appeared to be complete.
+
+At the Sixth Solvay International Conference on Magnetism (1930), Einstein came armed with a new thought experiment. This involved a box with a shutter that operated so quickly, it would allow only one photon to escape at a time. The box would first be weighed exactly. Then, at a precise moment, the shutter would open, allowing a photon to escape. The box would then be re-weighed. The well-known relationship between mass and energy 
+  
+    
+      
+        E
+        =
+        m
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E=mc^{2}}
+  
+ would allow the energy of the particle to be precisely determined. With this gadget, Einstein believed that he had demonstrated a means to obtain, simultaneously, a precise determination of the energy of the photon as well as its exact time of departure from the system.
+Bohr was shaken by this thought experiment. Unable to think of a refutation, he went from one conference participant to another, trying to convince them that Einstein's thought experiment could not be true, that if it were true, it would literally mean the end of physics. After a sleepless night, he finally worked out a response which, ironically, depended on Einstein's general relativity. Consider the illustration of Einstein's light box:
+
+1. After emitting a photon, the loss of weight causes the box to rise in the gravitational field.
+2. The observer returns the box to its original height by adding weights until the pointer points to its initial position. It takes a certain amount of time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ for the observer to perform this procedure. How long it takes depends on the strength of the spring and on how well-damped the system is. If undamped, the box will bounce up and down forever. If over-damped, the box will return to its original position sluggishly (See Damped spring-mass system).
+3. The longer that the observer allows the damped spring-mass system to settle, the closer the pointer will reach its equilibrium position. At some point, the observer will conclude that his setting of the pointer to its initial position is within an allowable tolerance. There will be some residual error 
+  
+    
+      
+        Δ
+        q
+      
+    
+    {\displaystyle \Delta q}
+  
+ in returning the pointer to its initial position. Correspondingly, there will be some residual error 
+  
+    
+      
+        Δ
+        m
+      
+    
+    {\displaystyle \Delta m}
+  
+ in the weight measurement.
+4. Adding the weights imparts a momentum 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ to the box which can be measured with an accuracy 
+  
+    
+      
+        Δ
+        p
+      
+    
+    {\displaystyle \Delta p}
+  
+ delimited by 
+  
+    
+      
+        Δ
+        p
+        Δ
+        q
+        ≈
+        h
+        .
+      
+    
+    {\displaystyle \Delta p\Delta q\approx h.}
+  
+ It is clear that 
+  
+    
+      
+        Δ
+        p
+        <
+        g
+        t
+        Δ
+        m
+        ,
+      
+    
+    {\displaystyle \Delta p<gt\Delta m,}
+  
+ where 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ is the gravitational constant. Plugging in yields 
+  
+    
+      
+        g
+        t
+        Δ
+        m
+        Δ
+        q
+        >
+        h
+        .
+      
+    
+    {\displaystyle gt\Delta m\Delta q>h.}
+  
+
+5. General relativity informs us that while the box has been at a height different than its original height, it has been ticking at a rate different than its original rate. The red shift formula informs us that there will be an uncertainty 
+  
+    
+      
+        Δ
+        t
+        =
+        
+          c
+          
+            −
+            2
+          
+        
+        g
+        t
+        Δ
+        q
+      
+    
+    {\displaystyle \Delta t=c^{-2}gt\Delta q}
+  
+ in the determination of 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+        ,
+      
+    
+    {\displaystyle t_{0},}
+  
+ the emission time of the photon.
+6. Hence, 
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+        Δ
+        m
+        Δ
+        t
+        =
+        Δ
+        E
+        Δ
+        t
+        >
+        h
+        .
+      
+    
+    {\displaystyle c^{2}\Delta m\Delta t=\Delta E\Delta t>h.}
+  
+ The accuracy with which the energy of the photon is measured restricts the precision with which its moment of emission can be measured, following the Heisenberg uncertainty principle.
+After finding his last attempt at finding a loophole around the uncertainty principle refuted, Einstein quit trying to search for inconsistencies in quantum mechanics. Instead, he shifted his focus to the other aspects of quantum mechanics with which he was uncomfortable, focusing on his critique of action at a distance. His next paper on quantum mechanics foreshadowed his later paper on the EPR paradox.
+Einstein was gracious in his defeat. The following September, Einstein nominated Heisenberg and Schroedinger for the Nobel Prize, stating, "I am convinced that this theory undoubtedly contains a part of the ultimate truth."
+Modern analysis suggests Einstein’s photon-box paradox does not require gravity or general-relativistic arguments. Although Bohr’s original reply invoked gravitational redshift to restore the energy–time uncertainty relation, later analyses showed that opening the shutter entangles the box’s internal clock with its energy, and any attempt to measure the photon’s energy by weighing the box inevitably disturbs the clock state. Because the clock variable and the box’s internal energy are conjugate observables, precise determination of one necessarily introduces quantum back-action on the other, enforcing 
+  
+    
+      
+        Δ
+        E
+        Δ
+        t
+        ≥
+        ℏ
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \Delta E\Delta t\geq \hbar /2}
+  
+ without reference to gravitational effects. However, different meanings of "uncertainty" make analysis of the experiment complex.
+
+
+=== EPR paradox ===
+
+Both Bohr and Einstein were subtle men. Einstein tried very hard to show that quantum mechanics was inconsistent; Bohr, however, was always able to counter his arguments. But in his final attack Einstein pointed to something so deep, so counterintuitive, so troubling, and yet so exciting, that at the beginning of the twenty-first century it has returned to fascinate theoretical physicists. Bohr's only answer to Einstein's last great discovery—the discovery of entanglement—was to ignore it.
+Einstein's fundamental dispute with quantum mechanics was not about whether God rolled dice, whether the uncertainty principle allowed simultaneous measurement of position and momentum, or even whether quantum mechanics was complete. It was about reality. Does a physical reality exist independent of our ability to observe it? To Bohr and his followers, such questions were meaningless. All that we can know are the results of measurements and observations. It makes no sense to speculate about an ultimate reality that exists beyond our perceptions.
+Einstein's beliefs had evolved over the years from those that he had held when he was young, when, as a logical positivist heavily influenced by his reading of David Hume and Ernst Mach, he had rejected such unobservable concepts as absolute time and space. Einstein believed: 
+
+1. A reality exists independent of our ability to observe it.
+2. Objects are located at distinct points in spacetime and have their own independent, real existence. In other words, he believed in separability and locality.
+3. Although at a superficial level, quantum events may appear random, at some ultimate level, strict causality underlies all processes in nature.
+
+Einstein considered that realism and localism were fundamental underpinnings of physics. After leaving Nazi Germany and settling in Princeton at the Institute for Advanced Study, Einstein began writing up a thought experiment that he had been mulling over since attending a lecture by Léon Rosenfeld in 1933. Since the paper was to be in English, Einstein enlisted the help of the 46-year-old Boris Podolsky, a fellow who had moved to the institute from Caltech; he also enlisted the help of the 26-year-old Nathan Rosen, also at the institute, who did much of the math. The result of their collaboration was the four page EPR paper, which in its title asked the question Can Quantum-Mechanical Description of Physical Reality be Considered Complete?
+After seeing the paper in print, Einstein found himself unhappy with the result. His clear conceptual visualization had been buried under layers of mathematical formalism.
+Einstein's thought experiment involved two particles that have collided or which have been created in such a way that they have properties which are correlated. The total wave function for the pair links the positions of the particles as well as their linear momenta. The figure depicts the spreading of the wave function from the collision point. However, observation of the position of the first particle allows us to determine precisely the position of the second particle no matter how far the pair have separated. Likewise, measuring the momentum of the first particle allows us to determine precisely the momentum of the second particle. "In accordance with our criterion for reality, in the first case we must consider the quantity P as being an element of reality, in the second case the quantity Q is an element of reality."
+Einstein concluded that the second particle, which we have never directly observed, must have at any moment a position that is real and a momentum that is real. Quantum mechanics does not account for these features of reality. Therefore, quantum mechanics is not complete. It is known, from the uncertainty principle, that position and momentum cannot be measured at the same time. But even though their values can only be determined in distinct contexts of measurement, can they both be definite at the same time? Einstein concluded that the answer must be yes.
+The only alternative, claimed Einstein, would be to assert that measuring the first particle instantaneously affected the reality of the position and momentum of the second particle. "No reasonable definition of reality could be expected to permit this."
+Bohr was stunned when he read Einstein's paper and spent more than six weeks framing his response, which he gave exactly the same title as the EPR paper. The EPR paper forced Bohr to make a major revision in his understanding of complementarity in the Copenhagen interpretation of quantum mechanics.
+Prior to EPR, Bohr had maintained that disturbance caused by the act of observation was the physical explanation for quantum uncertainty. In the EPR thought experiment, however, Bohr had to admit that "there is no question of a mechanical disturbance of the system under investigation." On the other hand, he noted that the two particles were one system described by one quantum function. Furthermore, the EPR paper did nothing to dispel the uncertainty principle. 
+Later commentators have questioned the strength and coherence of Bohr's response. As a practical matter, however, physicists for the most part did not pay much attention to the debate between Bohr and Einstein, since the opposing views did not affect one's ability to apply quantum mechanics to practical problems, but only affected one's interpretation of the quantum formalism. If they thought about the problem at all, most working physicists tended to follow Bohr's leadership.
+In 1964, John Stewart Bell made the groundbreaking discovery that Einstein's local realist world view made experimentally verifiable predictions that would be in conflict with those of quantum mechanics. Bell's discovery shifted the Einstein–Bohr debate from philosophy to the realm of experimental physics. Bell's theorem showed that, for any local realist formalism, there exist limits on the predicted correlations between pairs of particles in an experimental realization of the EPR thought experiment. In 1972, the first experimental tests were carried out that demonstrated violation of these limits. Successive experiments improved the accuracy of observation and closed loopholes. To date, it is virtually certain that local realist theories have been falsified. 
+The EPR paper has recently been recognized as prescient, since it identified the phenomenon of quantum entanglement, which has inspired approaches to quantum mechanics different from the Copenhagen interpretation, and has been at the forefront of major technological advances in quantum computing, quantum encryption, and quantum information theory.
+
+
+== Notes ==
+
+
+== Primary sources ==
+
+
+== References ==
+
+
+== External links ==
+NOVA: Inside Einstein's Mind (2015) — Retrace the thought experiments that inspired his theory on the nature of reality.

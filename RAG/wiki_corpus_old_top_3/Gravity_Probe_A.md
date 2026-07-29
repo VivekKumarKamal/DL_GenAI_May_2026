@@ -1,0 +1,77 @@
+# Gravity Probe A
+
+> **Query Topic**: Gravity Probe B (Rank #2 Search Result)
+> **Source Queue**: train (Row ID: 290, Frequency: 23)
+> **Wikipedia Page**: https://en.wikipedia.org/wiki/Gravity_Probe_A
+
+---
+
+Gravity Probe A (GP-A) was a space-based experiment to test the equivalence principle, a feature of Einstein's theory of relativity. It was performed jointly by the Smithsonian Astrophysical Observatory and the National Aeronautics and Space Administration. The experiment sent a hydrogen maser—a highly accurate frequency standard—into space to measure with high precision the rate at which time passes in a weaker gravitational field. Masses cause distortions in spacetime, which leads to the effects of length contraction and time dilation, both predicted results of Albert Einstein's theory of general relativity. Because of the bending of spacetime, an observer on Earth (in a lower gravitational potential) should measure a slower rate at which time passes than an observer that is higher in altitude (at higher gravitational potential). This effect is known as gravitational time dilation.
+The experiment was a test of a major consequence of Einstein's general relativity, the equivalence principle. The equivalence principle states that a reference frame in a uniform gravitational field is indistinguishable from a reference frame that is under uniform acceleration. Further, the equivalence principle predicts that the phenomenon of different time flow rates, present in a uniformly accelerating reference frame, will also be present in a stationary reference frame that is in a uniform gravitational field.
+The probe was launched on June 18, 1976, from the NASA-Wallops Flight Center in Wallops Island, Virginia. The probe was carried via a Scout rocket, and attained a height of 10,000 km (6,200 mi), while remaining in space for 1 hour and 55 minutes, as intended. It returned to Earth by splashing down into the Atlantic Ocean.
+
+
+== Background ==
+The objective of the Gravity Probe A experiment was to test the validity of the equivalence principle. The equivalence principle is a key component of Albert Einstein's theory of general relativity, and states that the laws of physics are the same in an accelerating reference frame as they are in a reference frame that is acted upon by a uniform gravitational field.
+
+
+=== Equivalence principle ===
+
+The equivalence principle can be understood by comparing a rocket ship in two scenarios. First, imagine a rocket ship that is at rest on the Earth's surface; objects dropped within the rocket ship will fall towards the floor with an acceleration of 9.8 m/s2. Now, imagine a distant rocket ship that has escaped Earth's gravitational field and is accelerating at a constant 9.8 m/s2 due to thrust from its rockets; objects in the rocket ship that are unconstrained will move towards the floor with an acceleration of 9.8 m/s2. This example shows one way that a uniformly accelerating reference frame is indistinguishable from a gravitational reference frame.
+Furthermore, the equivalence principle postulates that phenomena that are caused by inertial effects will also be present due to gravitational effects. Consider a beam of light that is shone horizontally across a rocket ship, which is accelerating. According to a non-accelerating observer outside the rocket ship, the floor of the rocket ship accelerates towards the light beam. Therefore, the light beam does not seem to travel on a horizontal path according to the inside observer, rather the light ray appears to bend toward the floor. This is an example of an inertial effect that causes light to bend. The equivalence principle states that this inertial phenomenon will occur in a gravitational reference frame as well. Indeed, the phenomenon of gravitational lensing states that matter can bend light, and this phenomenon has been observed by the Hubble Space Telescope, and other experiments.
+
+
+=== Time dilation ===
+
+Time dilation refers to the expansion or contraction in the rate at which time passes, and was the subject of the Gravity Probe A experiment. Under Einstein's theory of general relativity, matter distorts the surrounding spacetime. This distortion causes time to pass more slowly in the vicinity of a massive object, compared to the rate experienced by a distant observer. The Schwarzschild metric, surrounding a spherically symmetric gravitating body, has a smaller coefficient at 
+  
+    
+      
+        d
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle dt^{2}}
+  
+ closer to the body, which means slower rate of time flow there.
+There is a similar idea of time dilation occurrence in Einstein's theory of special relativity (which involves neither gravity nor the idea of curved spacetime). Such time dilation appears in the Rindler coordinates, attached to a uniformly accelerating particle in a flat spacetime. Such a particle would observe time passing faster on the side it is accelerating towards and more slowly on the opposite side. From this apparent variance in time, Einstein inferred that change in velocity affects the relativity of simultaneity for the particle. Einstein's equivalence principle generalizes this analogy, stating that an accelerating reference frame is locally indistinguishable from an inertial reference frame with a gravity force acting upon it. In this way, the Gravity Probe A was a test of the equivalence principle, matching the observations in the inertial reference frame (of special relativity) of the Earth's surface affected by gravity, with the predictions of special relativity for the same frame treated as being accelerating upwards with respect to free fall reference, which can thought of being inertial and gravity-less.
+
+
+== Experimental setup ==
+The 60 kg Gravity Probe A spacecraft housed an atomic hydrogen maser system. Maser is an acronym for microwave amplification by stimulated emission of radiation, and is similar to a laser, as it produces coherent electromagnetic waves in the microwave region of the electromagnetic spectrum. A hydrogen maser produces a very accurate signal (1.42 billion cycles per second), which is highly stable—to one part in a quadrillion (1015). This is equivalent to a clock that drifts by less than two seconds every 100 million years. A microwave signal derived from the maser frequency was transmitted to the ground throughout the mission. The one-way signal received from the rocket was relativistically Doppler shifted due to the speed of the rocket and in addition was gravitationally Doppler blue-shifted by a minute amount.
+In addition to the hydrogen maser carried by the rocket, another hydrogen maser on the ground was used as a source for continuous transmission of a microwave signal to the rocket. A microwave transponder carried on the rocket returned the signal to the Earth. On the way up, the signal received by the rocket was Doppler shifted due to the speed of the rocket and was gravitationally red-shifted by a minute amount. The transponder signal received on the ground was Doppler shifted due to the speed of the rocket and was gravitationally blue-shifted by the same amount that it was red-shifted on the way up. Since the gravitational Doppler shift of the signals on the way up always exactly cancelled the gravitational Doppler shift on its way down, the two-way Doppler shift of the signal received on the ground depended only on the speed of the rocket.
+In a microwave frequency mixer, one-half of the two-way Doppler shift from the transponded ground maser signal was subtracted from the Doppler shift of the space maser. In this way, the Doppler shift due to the spacecraft's motion was completely cancelled out, leaving only the gravitational component of the Doppler shift.
+The probe was launched nearly vertically upward to cause a large change in the gravitational potential, reaching a height of 10,000 km (6,200 mi). At this height, general relativity predicted a clock should run 4.5 parts in 1010 faster than one on the Earth, or about one second every 73 years. The maser oscillations represented the ticks of a clock, and by measuring the frequency of the maser as it changed elevation, the effects of gravitational time dilation were detected.
+
+
+== Results ==
+The goal of the experiment was to measure the rate at which time passes in a higher gravitational potential, so to test this the maser in the probe was compared to a similar maser that remained on Earth. Before the two clock rates could be compared, the Doppler shift was subtracted from the clock rate measured by the maser that was sent into space, to correct for the relative motion between the observers on Earth and the motion of the probe. The two clock rates were then compared and further compared against the theoretical predictions of how the two clock rates should differ. The stability of the maser permitted measurement of changes in the rate of the maser of 1 part in 1014 for a 100-second measurement.
+The experiment was thus able to test the equivalence principle. Gravity Probe A confirmed the prediction that deeper in the gravity well, the flow of time is slower, and the observed effects matched the predicted effects to an accuracy of about 70 parts per million.
+
+
+== See also ==
+Doppler Effect
+General Relativity
+Gravitational Redshift
+Gravity Probe B
+Pound–Rebka experiment
+Timeline of gravitational physics
+
+
+== Primary references ==
+
+
+== References ==
+
+
+== Further reading ==
+Validation of Local Position Invariance through Gravitational Red-Shift Experiment
+
+
+== External links ==
+Gravity Probe A Collection, The University of Alabama in Huntsville Archives and Special Collections
